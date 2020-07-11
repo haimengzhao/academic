@@ -18,27 +18,27 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
+  title = "The CAE-ADMM Research"
+  company = "A Research on Lossy Image Compression"
   company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
+  location = "China"
+  date_start = "2018-09-01"
+  date_end = "2019-12-01"
   description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
+  Learned how to do research, preprinted a [paper](https://arxiv.org/abs/1901.07196), and received the following awards:
+  * S. -T. Yau High School Science Award (Computer), Gold Prize
+  * The Awarding Program for Future Scientists, title of "Future Scientist"
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "China Physics Olympiad"
+  company = "Bronze Medal"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  location = "China"
+  date_start = "2017-09-01"
+  date_end = "2019-10-31"
+  description = """
+  Learned how to teach myself, solve tricky physics problems, and handle failure.
+  """
 
 +++
