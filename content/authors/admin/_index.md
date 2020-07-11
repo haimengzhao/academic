@@ -21,7 +21,8 @@ organizations:
 bio: 
 
 interests:
-- Theoretical Physics
+- Mathematics
+- Physics
 - Artificial Intelligence
 
 education:
@@ -64,4 +65,4 @@ user_groups:
 - Visitors
 ---
 
-Haimeng Zhao (赵海萌) is an undergraduate student at a yet-to-decide university. His interests include mathematics, physics and artificial intelligence.
+Haimeng Zhao (赵海萌) is an undergraduate at a yet-to-decide university. His interests include mathematics, physics and artificial intelligence.
