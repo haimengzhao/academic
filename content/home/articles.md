@@ -22,6 +22,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Mathematics"
   title = """数列、矩阵与微分方程的特征值
+  
   Eigenvalues of Sequences, Matrices and ODEs
   """
   url = "https://zhuanlan.zhihu.com/p/109529158"
@@ -32,6 +33,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Physics"
   title = """利用定量时空图解决狭义相对论运动学问题
+  
   Solving Kinematic Problems in Special Relativity via Quantitative Spacetime Diagrams
   """
   url = "https://zhuanlan.zhihu.com/p/47004096"
@@ -42,6 +44,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Physics"
   title = """利用保角变换解决一类平面静电场问题
+  
   Using Conformal Transformation to Solve Electrostatic Problems
   """
   url = "https://zhuanlan.zhihu.com/p/56388478"
