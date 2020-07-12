@@ -32,7 +32,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "China Physics Olympiad"
-  company = "Bronze Medal"
+  company = "Bronze Medal, Rank 10 in Shanghai"
   company_url = ""
   location = "China"
   date_start = "2017-09-01"
