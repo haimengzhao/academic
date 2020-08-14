@@ -20,7 +20,7 @@ subtitle = ""
   name = "Programming"
   description = """
   Python, MATLAB\n
-  Experience with C, Java, Swift, Lua
+  Experience with C, Java, Swift, Lua, Unity3D
   """
   
 [[feature]]
