@@ -28,7 +28,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "Tools"
   description = """
-  Git, $\LaTeX$, Shell, Slurm
+  Git, LaTeX, Shell, Slurm
   PyTorch, Keras, TensorFlow
   numpy, pandas, scikit-learn
   """  
