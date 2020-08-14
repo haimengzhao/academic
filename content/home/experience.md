@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "The CAE-ADMM Research"
-  company = "A Research on Lossy Image Compression"
+  company = "Learned Image Compression, Neural Architecture Search, Computer Vision, Deep Learning"
   company_url = ""
   location = "China"
   date_start = "2018-09-01"
