@@ -19,7 +19,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = """
-  Python, MATLAB,
+  Python, MATLAB,\n
   Experience with C, Java, Swift, Lua
   """
   
@@ -28,8 +28,8 @@ subtitle = ""
   icon_pack = "fas"
   name = "Tools"
   description = """
-  Git, LaTeX, Shell, Slurm
-  PyTorch, Keras, TensorFlow
+  Git, $\\LaTeX$, Shell, Slurm\n
+  PyTorch, Keras, TensorFlow\n
   numpy, pandas, scikit-learn
   """  
   
@@ -38,8 +38,8 @@ subtitle = ""
   icon_pack = "fas"
   name = "Courses"
   description = """
-  Machine Learning
-  General Physics
+  Machine Learning\n
+  General Physics\n
   Calculus, Linear Algebra
   """
 
