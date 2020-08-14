@@ -66,8 +66,8 @@ user_groups:
 ---
 Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Tsinghua University. My research interests include theoretical physics, artificial intelligence and quantum information.
 
-In my childhood, I read tons of science books depicting the magical quantum landscape. Fascinated by the philosophical mysteries of quantum physics and driven by the urge to understand what's going on in the universe, I began teaching myself mathematics and physics in leisure.
+Since childhood, fascinated by the philosophical mysteries of quantum physics and driven by the urge to understand what's going on in the universe, I've been teaching myself mathematics and physics in leisure.
 
-In high school, I took part in the Chinese Physics Olympiad and received a solid, comprehensive training in general physics. Meanwhile, the rise of deep learning intrigued me. Following a set of online courses, I quickly grasped the basics of statistical machine learning and dived into the frontier of its development. I transplanted the pruning techniques in NAS to learned image compression and preprinted a paper.
+In high school, I took part in the Chinese Physics Olympiad and received a solid, comprehensive training in general physics. Meanwhile, I found deep learning interesting and dived into the frontier of it, transplanted the pruning techniques in NAS to learned image compression and preprinted a paper.
 
 However, despite the flourish of tricks and techniques developed in neural networks, we still know little about what on earth they have learned. A perspective from physics might shed light on these fundamental problems in understanding intelligence. Conversely, tools from machine learning and information science might also contribute to the development of theoretical physics. These are where my interests lie.
