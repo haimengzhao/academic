@@ -19,7 +19,7 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = """
-  Python, MATLAB,\n
+  Python, MATLAB\n
   Experience with C, Java, Swift, Lua
   """
   
