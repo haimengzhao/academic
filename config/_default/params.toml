@@ -306,3 +306,6 @@ plugins_js  = []
 [cms]
   # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
   netlify_cms = true
+
+[icon.pack]
+  ai = true
