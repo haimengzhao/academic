@@ -69,4 +69,24 @@ date_format = "Jan 2006"
   date_end = ""
   description = ""
 
+[[item]]
+  organization = "Carnegie Mellon University"
+  organization_url = ""
+  title = "15-251 Great Theoretical Ideas in Computer Science"
+  url = "https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bcf8243e-cf18-481f-960f-3c5b26fbb69b%22"
+  certificate_url = ""
+  date_start = "Currently"
+  date_end = ""
+  description = ""
+  
+[[item]]
+  organization = "Sadri Hassani"
+  organization_url = ""
+  title = "Mathematical Physics: A Modern Introduction to Its Foundations"
+  url = "https://www.springer.com/gp/book/9783319011943"
+  certificate_url = ""
+  date_start = "Currently"
+  date_end = ""
+  description = ""
+
 +++
