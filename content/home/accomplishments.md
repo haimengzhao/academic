@@ -75,9 +75,9 @@ date_format = "Jan 2006"
   title = "15-251 Great Theoretical Ideas in Computer Science"
   url = "https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bcf8243e-cf18-481f-960f-3c5b26fbb69b%22"
   certificate_url = ""
-  date_start = "Currently"
+  date_start = "2020-8-22"
   date_end = ""
-  description = ""
+  description = "In Progress"
   
 [[item]]
   organization = "Sadri Hassani"
@@ -85,8 +85,8 @@ date_format = "Jan 2006"
   title = "Mathematical Physics: A Modern Introduction to Its Foundations"
   url = "https://www.springer.com/gp/book/9783319011943"
   certificate_url = ""
-  date_start = "Currently"
+  date_start = "2020-8-1"
   date_end = ""
-  description = ""
+  description = "In Progress"
 
 +++
