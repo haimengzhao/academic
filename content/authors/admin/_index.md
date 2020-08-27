@@ -45,6 +45,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=mgLoPQcAAAAJ
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-6675-1489
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/jasonzhm-29
