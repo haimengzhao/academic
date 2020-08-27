@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 
 
 [[item]]
-  organization = "edX"
+  organization = "UQ@edX"
   organization_url = "https://www.edx.org"
   title = "English Grammar and Style"
   url = "https://www.edx.org/course/english-grammar-and-style"
@@ -30,7 +30,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Coursera"
+  organization = "Stanford@Coursera"
   organization_url = "https://www.coursera.org"
   title = "Machine Learning"
   url = "https://www.coursera.org/learn/machine-learning/"
@@ -40,7 +40,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Coursera"
+  organization = "UW@Coursera"
   organization_url = "https://www.coursera.org"
   title = "Machine Learning Foundations: A Case Study Approach"
   url = "https://www.coursera.org/learn/ml-foundations/"
@@ -50,7 +50,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Coursera"
+  organization = "LMU@Coursera"
   organization_url = "https://www.coursera.org"
   title = "Competitive Strategy"
   url = "https://www.coursera.org/learn/competitive-strategy/"
@@ -60,7 +60,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Coursera"
+  organization = "UCSD@Coursera"
   organization_url = "https://www.coursera.org"
   title = "Learning How to Learn"
   url = "https://www.coursera.org/learn/learning-how-to-learn"
