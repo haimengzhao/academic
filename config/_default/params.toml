@@ -114,6 +114,7 @@ phone = ""
 contact_links = [
   {icon = "github", icon_pack = "fab", name = "Github", link = "https://github.com/JasonZHM"},
   {icon = "google-scholar", icon_pack = "ai", name = "Google Scholar", link = "https://scholar.google.com/citations?user=mgLoPQcAAAAJ"},
+  {icon = "orcid", icon_pack = "ai", name = "ORCID", link = "https://orcid.org/0000-0001-6675-1489"},
   {icon = "zhihu", icon_pack = "fab", name = "Zhihu", link = "https://www.zhihu.com/people/jasonzhm-29"},
   # {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
   # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
