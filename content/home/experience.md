@@ -31,14 +31,14 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "China Physics Olympiad"
+  title = "Chinese Physics Olympiad"
   company = "Bronze Medal, Rank 10 in Shanghai"
   company_url = ""
   location = "China"
   date_start = "2017-09-01"
   date_end = "2019-10-31"
   description = """
-  Learned how to teach myself, solve tricky physics problems, and handle failure.
+  Learned how to teach myself, solve tricky general physics problems, and handle failure.
   """
 
 +++
