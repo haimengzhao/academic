@@ -17,17 +17,6 @@ date_format = "Jan 2006"
 #   `title`, `organization` and `date_start` are the required parameters.
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-
-
-[[item]]
-  organization = "UQ@edX"
-  organization_url = "https://www.edx.org"
-  title = "English Grammar and Style"
-  url = "https://www.edx.org/course/english-grammar-and-style"
-  certificate_url = "https://courses.edx.org/certificates/7e5d0adfea96495d818ded41cec6c41a"
-  date_start = "2020-05-06"
-  date_end = ""
-  description = ""
   
 [[item]]
   organization = "Stanford@Coursera"
@@ -36,36 +25,6 @@ date_format = "Jan 2006"
   url = "https://www.coursera.org/learn/machine-learning/"
   certificate_url = "http://coursera.org/verify/LYWFLMT3XAA2"
   date_start = "2017-05-07"
-  date_end = ""
-  description = ""
-  
-[[item]]
-  organization = "UW@Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Machine Learning Foundations: A Case Study Approach"
-  url = "https://www.coursera.org/learn/ml-foundations/"
-  certificate_url = "http://coursera.org/verify/A3QECB4CYJTH"
-  date_start = "2017-05-26"
-  date_end = ""
-  description = ""
-  
-[[item]]
-  organization = "LMU@Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Competitive Strategy"
-  url = "https://www.coursera.org/learn/competitive-strategy/"
-  certificate_url = "http://coursera.org/verify/RUQPHN8PEEMC"
-  date_start = "2017-07-30"
-  date_end = ""
-  description = ""
-  
-[[item]]
-  organization = "UCSD@Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Learning How to Learn"
-  url = "https://www.coursera.org/learn/learning-how-to-learn"
-  certificate_url = "http://coursera.org/verify/BB62MDC4HM5R"
-  date_start = "2017-05-12"
   date_end = ""
   description = ""
 
