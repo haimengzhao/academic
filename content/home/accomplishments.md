@@ -35,8 +35,8 @@ date_format = "Jan 2006"
   url = "https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bcf8243e-cf18-481f-960f-3c5b26fbb69b%22"
   certificate_url = ""
   date_start = "2020-08-22"
-  date_end = ""
-  description = "In Progress"
+  date_end = "2020-09-23"
+  description = "2020-09-23: Done!"
   
 [[item]]
   organization = "Sadri Hassani"
