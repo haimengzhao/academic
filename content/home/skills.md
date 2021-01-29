@@ -33,15 +33,14 @@ subtitle = ""
   numpy, pandas, scikit-learn
   """  
   
-# [[feature]]
-#   icon = "atom"
-#   icon_pack = "fas"
-#   name = "Courses"
-#   description = """
-#   Machine Learning\n
-#   General Physics\n
-#   Calculus, Linear Algebra
-#   """
+[[feature]]
+  icon = "atom"
+  icon_pack = "fas"
+  name = "Courses"
+  description = """
+  Deep Learning\n
+  Computer Vision
+  """
 
 # Uncomment to use emoji icons.
 # [[feature]]
