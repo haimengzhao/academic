@@ -20,6 +20,17 @@ date_format = "Jan 2006"
 
 
 [[item]]
+  organization = "Physics"
+  title = """不确定性关系的信息熵
+  
+  Entropic Uncertainty Relation
+  """
+  url = "https://zhuanlan.zhihu.com/p/346498815"
+  date_start = "2021-01-23"
+  date_end = ""
+  description = ""
+
+[[item]]
   organization = "Mathematics"
   title = """数列、矩阵与微分方程的特征值
   
