@@ -19,8 +19,8 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = """
-  Python, MATLAB\n
-  Experience with C, Java, Swift, Lua, Unity3D
+  Python, C/C++, Mathematica, MATLAB\n
+  Experience with Java, Swift, Lua, Unity3D
   """
   
 [[feature]]
@@ -33,15 +33,15 @@ subtitle = ""
   numpy, pandas, scikit-learn
   """  
   
-[[feature]]
-  icon = "atom"
-  icon_pack = "fas"
-  name = "Courses"
-  description = """
-  Machine Learning\n
-  General Physics\n
-  Calculus, Linear Algebra
-  """
+# [[feature]]
+#   icon = "atom"
+#   icon_pack = "fas"
+#   name = "Courses"
+#   description = """
+#   Machine Learning\n
+#   General Physics\n
+#   Calculus, Linear Algebra
+#   """
 
 # Uncomment to use emoji icons.
 # [[feature]]
