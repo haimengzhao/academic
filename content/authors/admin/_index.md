@@ -54,9 +54,9 @@ social:
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: cv
+  icon_pack: ai
+  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -67,7 +67,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Tsinghua University. My research interests include theoretical physics, artificial intelligence and quantum information.
+Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Zhili College, Tsinghua University. My research interests include theoretical physics, artificial intelligence and quantum information.
 
 Since childhood, fascinated by the philosophical mysteries in quantum physics and driven by the urge to understand how the universe works, I've been teaching myself mathematics and physics in leisure.
 
