@@ -36,7 +36,7 @@ subtitle = ""
 [[feature]]
   icon = "atom"
   icon_pack = "fas"
-  name = "Courses"
+  name = "Experienced Topics"
   description = """
   Deep Learning\n
   Computer Vision
