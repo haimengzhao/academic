@@ -39,7 +39,8 @@ subtitle = ""
   name = "Experienced Topics"
   description = """
   Deep Learning\n
-  Computer Vision
+  Computer Vision\n
+  Image Compression
   """
 
 # Uncomment to use emoji icons.
