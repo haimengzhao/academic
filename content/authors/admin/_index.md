@@ -21,9 +21,10 @@ organizations:
 bio: 
 
 interests:
-- Theoretical Physics
-- Artificial Intelligence
-- Quantum Information
+- AI for Science, especially Physics & Astrophysics
+- Quantum Information, Algorithms & Machine Learning
+- Quantum Many-body Physics: Theory & Computation
+- Generative Learning, Neural Differential Equations
 
 education:
   courses:
@@ -45,9 +46,12 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=mgLoPQcAAAAJ
-- icon: orcid
+# - icon: orcid
+#   icon_pack: ai
+#   link: https://orcid.org/0000-0001-6675-1489
+- icon: twitter
   icon_pack: ai
-  link: https://orcid.org/0000-0001-6675-1489
+  link: https://twitter.com/haimengzhao
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/jasonzhm-29
@@ -67,7 +71,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Zhili College, Tsinghua University. My research interests include theoretical physics, artificial intelligence and quantum information.
+Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Zhili College, Tsinghua University. My research interests include AI for science, quantum information, algorithms & machine learning, and quantum many-body physics.
 
 Since childhood, fascinated by the philosophical mysteries in quantum physics and driven by the urge to understand how the universe works, I've been teaching myself mathematics and physics in leisure.
 
