@@ -23,11 +23,14 @@ bio:
 interests:
 - AI for Science, especially Physics & Astrophysics
 - Quantum Information, Algorithms & Machine Learning
-- Quantum Many-body Physics: Theory & Computation
+- Quantum Many-body Physics, Theory & Computation
 - Generative Learning, Neural Differential Equations
 
 education:
   courses:
+  - course: Undergraduate
+    institution: Physics, Tsinghua University
+    year: 2020-2024
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
@@ -50,7 +53,7 @@ social:
 #   icon_pack: ai
 #   link: https://orcid.org/0000-0001-6675-1489
 - icon: twitter
-  icon_pack: ai
+  icon_pack: fab
   link: https://twitter.com/haimengzhao
 - icon: zhihu
   icon_pack: fab
