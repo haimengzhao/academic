@@ -20,13 +20,13 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "AI for Astro: Parameter Estimation of Realistic Binary Microlensing Events"
-  company = "Advisor: Prof. Wei Zhu \& Shude Mao, Department of Astronomy @ Tsinghua."
+  company = "Advisor: Prof. Wei Zhu & Shude Mao, Department of Astronomy @ Tsinghua."
   company_url = ""
   location = "**First Author**. Beijing, China"
   date_start = "2021-10-01"
   date_end = "2022-06-20"
   description = """
-  Introduced U-Net and neural controlled differential equation to parameter estimation of microlensing. Developed a machine learning framework for efficiently \& accurately analyzing irregular and noisy ground-observed astronomical time series with large data gaps. Obtained the first real micolensing event ever analyzed by AI!
+  Introduced U-Net and neural controlled differential equation to parameter estimation of microlensing. Developed a machine learning framework for efficiently & accurately analyzing irregular and noisy ground-observed astronomical time series with large data gaps. Obtained the first real micolensing event ever analyzed by AI!
   """
 
 [[experience]]
@@ -62,7 +62,7 @@ date_format = "Jan 2006"
   date_start = "2021-01-01"
   date_end = "2021-6-01"
   description = """
-  Led a team that developed a simulation \& machine learning pipeline to promote neutrino energy detection precision, a key step towards understanding the neutrino mass ordering problem.
+  Led a team that developed a simulation & machine learning pipeline to promote neutrino energy detection precision, a key step towards understanding the neutrino mass ordering problem.
   """
 
 [[experience]]
