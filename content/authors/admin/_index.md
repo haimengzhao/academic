@@ -30,7 +30,10 @@ education:
   courses:
   - course: Undergraduate
     institution: Physics, Tsinghua University
-    year: 2020-2024
+    year: 2020 - 2024(expected)
+  - course: Exchange
+    institution: Physics, EPFL (École Polytechnique Fédérale de Lausanne)
+    year: 2022 Fall
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
@@ -74,10 +77,11 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of physics at Zhili College, Tsinghua University. My research interests include AI for science, quantum information, algorithms & machine learning, and quantum many-body physics.
+Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of Physics at [Zhili College, Tsinghua University](https://www.zlc.tsinghua.edu.cn).
+I'm deeply fascinated by how the universe works and how we can possibly understand it.
+So I started working in the intersection of Physics and Artificial Intelligence.
 
-Since childhood, fascinated by the philosophical mysteries in quantum physics and driven by the urge to understand how the universe works, I've been teaching myself mathematics and physics in leisure.
+Specifically, my interest comes in two folds:
 
-In high school, I took part in the Chinese Physics Olympiad and received a solid, comprehensive training in general physics. Meanwhile, I found deep learning interesting, so I dived into the frontier of it and conducted a research on computer vision.
-
-However, despite the boom of neural networks, we still know little about what they have learned. A perspective from physics might shed light on these fundamental problems in understanding intelligence. Conversely, tools from machine learning and information science might also contribute to the development of theoretical physics. These are where my interests lie.
+- the foundation, application and interplay of quantum physics, information theory and statistics;
+- (quantum) machine learning for physics and physics for machine learning.
