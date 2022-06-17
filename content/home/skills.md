@@ -19,8 +19,8 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = """
-  High performance scientific computing with Python \& C++. \n
-  Differentiable programming with PyTorch (5 years), Jax \& TensorFlow.
+  High performance scientific computing with Python & C++. \n
+  Differentiable programming with PyTorch (5 years), Jax & TensorFlow.
   """
   
 [[feature]]
