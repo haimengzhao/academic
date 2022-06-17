@@ -24,7 +24,7 @@ subtitle = ""
   """
   
 [[feature]]
-  icon = "brain-circuit"
+  icon = "brain"
   icon_pack = "fas"
   name = "(Quantum) Machine Learning"
   description = """
