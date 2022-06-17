@@ -19,28 +19,28 @@ subtitle = ""
   icon_pack = "fas"
   name = "Programming"
   description = """
-  Python, C/C++, Mathematica, MATLAB\n
-  Experience with Java, Swift, Lua, Unity3D
+  High performance scientific computing with Python \& C++. \n
+  Differentiable programming with PyTorch (5 years), Jax \& TensorFlow.
   """
   
 [[feature]]
-  icon = "code-branch"
+  icon = "brain-circuit"
   icon_pack = "fas"
-  name = "Tools"
+  name = "(Quantum) Machine Learning"
   description = """
-  Git, $\\LaTeX$, Shell, Slurm\n
-  PyTorch, Keras, TensorFlow\n
-  numpy, pandas, scikit-learn
+  (Quantum) Generative Learning,\n
+  Neural Differential Equations,\n
+  (PAC) Learning Theory 
   """  
   
 [[feature]]
   icon = "atom"
   icon_pack = "fas"
-  name = "Experienced Topics"
+  name = "Computational Physics"
   description = """
-  Deep Learning\n
-  Computer Vision\n
-  Image Compression
+  Exact Diagonalization,\n
+  (Quantum) Monte Carlo,\n
+  Tensor Network
   """
 
 # Uncomment to use emoji icons.

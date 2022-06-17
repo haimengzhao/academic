@@ -23,8 +23,8 @@ bio:
 interests:
 - AI for Science, especially Physics & Astrophysics
 - Quantum Information, Algorithms & Machine Learning
-- Quantum Many-body Physics, Theory & Computation
-- Generative Learning, Neural Differential Equations
+- Quantum Many-body Physics
+- Generative Learning
 
 education:
   courses:
@@ -32,7 +32,7 @@ education:
     institution: Physics, Tsinghua University
     year: 2020 - 2024(expected)
   - course: Exchange
-    institution: Physics, EPFL (École Polytechnique Fédérale de Lausanne)
+    institution: Physics, EPFL
     year: 2022 Fall
   - course: Outstanding Graduate
     institution: Shanghai High School
