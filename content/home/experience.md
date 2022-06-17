@@ -31,7 +31,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Federated Learning in Multi-class Classification"
-  company = "In collaboration with Prof. Jingyi Zhang, Center for Statistical Science @ Tsinghua, and my friends Junyi \& Yifu."
+  company = "In collaboration with Prof. Jingyi Zhang, Center for Statistical Science @ Tsinghua, and my friends Junyi & Yifu."
   company_url = ""
   location = "Beijing, China"
   date_start = "2022-04-01"
