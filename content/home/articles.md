@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   organization = "Maths and Physics, in Chinese"
   title = """数理教材阅读进度及读后简评（大一春夏）
   
-  Maths & Physics Book Reviews (2020 Spring)
+  Maths & Physics Book Reviews (2021 Spring)
   """
   url = "https://zhuanlan.zhihu.com/p/408967061"
   date_start = "2021-09-15"
