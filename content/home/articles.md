@@ -18,9 +18,30 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  organization = "Maths and Physics, in Chinese"
+  title = """数理教材阅读进度及读后简评（大一春夏）
+  
+  Maths & Physics Book Reviews (2020 Spring)
+  """
+  url = "https://zhuanlan.zhihu.com/p/408967061"
+  date_start = "2021-09-15"
+  date_end = ""
+  description = ""
 
 [[item]]
-  organization = "Physics"
+  organization = "Maths and Physics, in Chinese"
+  title = """数理教材阅读进度及读后简评（大一秋冬）
+  
+  Maths & Physics Book Reviews (2020 Fall)
+  """
+  url = "https://zhuanlan.zhihu.com/p/351083410"
+  date_start = "2021-02-18"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Physics, in Chinese"
   title = """不确定性关系的信息熵
   
   Entropic Uncertainty Relation
@@ -31,7 +52,7 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
-  organization = "Mathematics"
+  organization = "Mathematics, in Chinese"
   title = """数列、矩阵与微分方程的特征值
   
   Eigenvalues of Sequences, Matrices and ODEs
@@ -42,7 +63,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Physics"
+  organization = "Physics, in Chinese"
   title = """利用定量时空图解决狭义相对论运动学问题
   
   Solving Kinematic Problems in Special Relativity via Quantitative Spacetime Diagrams
@@ -53,7 +74,7 @@ date_format = "Jan 2006"
   description = ""
   
 [[item]]
-  organization = "Physics"
+  organization = "Physics, in Chinese"
   title = """利用保角变换解决一类平面静电场问题
   
   Using Conformal Transformation to Solve Electrostatic Problems
