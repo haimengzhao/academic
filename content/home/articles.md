@@ -20,6 +20,17 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Maths and Physics, in Chinese"
+  title = """数理教材阅读进度及读后简评（大二秋冬）
+  
+  Maths & Physics Book Reviews (2022 Fall)
+  """
+  url = "https://zhuanlan.zhihu.com/p/550923432"
+  date_start = "2021-08-20"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Maths and Physics, in Chinese"
   title = """数理教材阅读进度及读后简评（大一春夏）
   
   Maths & Physics Book Reviews (2021 Spring)
