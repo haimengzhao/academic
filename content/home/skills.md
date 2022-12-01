@@ -20,7 +20,7 @@ subtitle = ""
   name = "Programming"
   description = """
   High performance scientific computing with Python & C++. \n
-  Differentiable programming with PyTorch (5 years), Jax & TensorFlow.
+  Differentiable programming with JAX, PyTorch (6 years) & TensorFlow.
   """
   
 [[feature]]
@@ -40,7 +40,8 @@ subtitle = ""
   description = """
   Exact Diagonalization,\n
   (Quantum) Monte Carlo,\n
-  Tensor Network
+  Tensor Network, DFT,\n
+  Neural Quantum State
   """
 
 # Uncomment to use emoji icons.
