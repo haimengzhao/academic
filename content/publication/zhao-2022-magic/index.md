@@ -8,5 +8,7 @@ featured: true
 publication: ""
 url_pdf: "https://arxiv.org/pdf/2206.08199"
 url_code: "https://github.com/JasonZHM/magic-microlensing"
+url_conf: "https://ml4astro.github.io/icml2022/assets/6.pdf"
+url_talk: "conf-AI4Astro.mp4"
 ---
 
