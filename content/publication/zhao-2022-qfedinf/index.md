@@ -1,11 +1,11 @@
 ---
-title: "Exact Decomposition of Quantum Channels for Non-IID Quantum Federated Learning"
-date: 2022-09-02
+title: "Non-IID Quantum Federated Learning with One-shot Communication Complexity"
+date: 2023-01-18
 authors: ["Haimeng Zhao"]
-publication_types: ["3"]
-abstract: "Federated learning refers to the task of performing machine learning with decentralized data from multiple clients while protecting data security and privacy. Works have been done to incorporate quantum advantage in such scenarios. However, when the clients' data are not independent and identically distributed (IID), the performance of conventional federated algorithms deteriorates. In this work, we explore this phenomenon in the quantum regime with both theoretical and numerical analysis. We further prove that a global quantum channel can be exactly decomposed into channels trained by each client with the help of local density estimators. It leads to a general framework for quantum federated learning on non-IID data with one-shot communication complexity. We demonstrate it on classification tasks with numerical simulations."
+publication_types: ["2"]
+abstract: "Federated learning refers to the task of machine learning based on decentralized data from multiple clients with secured data privacy. Recent studies show that quantum algorithms can be exploited to boost its performance. However, when the clients’ data are not independent and identically distributed (IID), the performance of conventional federated algorithms is known to deteriorate. In this work, we explore the non-IID issue in quantum federated learning with both theoretical and numerical analysis. We further prove that a global quantum channel can be exactly decomposed into local channels trained by each client with the help of local density estimators. This observation leads to a general framework for quantum federated learning on non-IID data with one-shot communication complexity. Numerical simulations show that the proposed algorithm outperforms the conventional ones significantly under non-IID settings."
 featured: true
-publication: ""
+publication: "Quantum Machine Intelligence, 5(1), 3."
 url_pdf: "https://arxiv.org/pdf/2209.00768"
 url_code: "https://github.com/JasonZHM/quantum-fed-infer"
 ---
