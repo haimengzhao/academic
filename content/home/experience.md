@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company = "Advisor: Prof. Giuseppe Carleo & Filippo Vicentini, Computational Quantum Science Lab @ EPFL."
   company_url = ""
   location = "First Author. Lausanne, Switzerland"
-  date_start = "2022-8-01"
+  date_start = "2022-08-01"
   date_end = "2023-07-01"
   description = """
   Introduced control variates to control gradient variance and significantly reduce sample complexity.
