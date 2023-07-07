@@ -27,7 +27,7 @@ date_format = "Jan 2006"
   date_end = "2023-07-01"
   description = """
   - Introduced control variates to control gradient variance and significantly reduce sample complexity.
-  - Conducted extensive numerical \& theoretical studies to understand different sample complexity behavior.
+  - Conducted extensive numerical & theoretical studies to understand different sample complexity behavior.
   - Benchmarked different tomography methods and propose to design quantum-resource-efficient NQSs.
   """
 
