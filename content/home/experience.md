@@ -19,21 +19,36 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-  title = "AI for Astro: Parameter Estimation of Realistic Binary Microlensing Events"
-  company = "Advisor: Prof. Wei Zhu & Shude Mao, Department of Astronomy @ Tsinghua."
+  title = "AI for Quantum: Sample Complexity of Neural Quantum State Tomography"
+  company = "Advisor: Prof. Giuseppe Carleo & Filippo Vicentini, Computational Quantum Science Lab @ EPFL."
+  company_url = ""
+  location = "First Author. Lausanne, Switzerland"
+  date_start = "2022-8-01"
+  date_end = "2023-07-01"
+  description = """
+  - Introduced control variates to control gradient variance and significantly reduce sample complexity.
+  - Conducted extensive numerical \& theoretical studies to understand different sample complexity behavior.
+  - Benchmarked different tomography methods and propose to design quantum-resource-efficient NQSs.
+  """
+
+[[experience]]
+  title = "AI for Astro: ML Framework for Realistic Microlensing Event Analysis"
+  company = "Advisor: Prof. Wei Zhu, Department of Astronomy @ Tsinghua."
   company_url = ""
   location = "First Author. Beijing, China"
   date_start = "2021-10-01"
   date_end = "2022-06-20"
   description = """
-  Introduced U-Net and neural controlled differential equation to parameter estimation of microlensing. Developed a machine learning framework for efficiently & accurately analyzing irregular and noisy ground-observed astronomical time series with large data gaps. Obtained the first real micolensing event ever analyzed by AI!
+  - Introduced U-Net and neural controlled differential equations to parameter estimation of microlensing. 
+  - Developed a machine learning framework for irregular astronomical time series, listed on [https://emac.gsfc.nasa.gov?cid=2306-004](NASA EMAC).
+  - Accelerate microlensing analysis by 5 orders of magnitude and successfully applied to real events for the first time.
   """
 
 [[experience]]
   title = "Federated Learning in Multi-class Classification"
   company = "In collaboration with Prof. Jingyi Zhang, Center for Statistical Science @ Tsinghua, and my friends Junyi & Yifu."
   company_url = ""
-  location = "Beijing, China"
+  location = "Third Author. Beijing, China"
   date_start = "2022-04-01"
   date_end = "2022-04-20"
   description = """
@@ -41,17 +56,15 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Quantum AI: A Quantum Generative Model based on Variation qPCA"
-  company = "Advisor: Prof. Dongling Deng, Institute for Interdisciplinary Information Sciences @ Tsinghua."
+  title = "Quantum AI: Non-IID Quantum Federated Learning"
+  company = "Single authored work. Extending Liu et al. to the quantum regime."
   company_url = ""
-  location = "First Author. Beijing, China"
-  date_start = "2021-09-01"
-  date_end = "2022-03-01"
+  location = "Single Author. Beijing, China"
+  date_start = "2021-07-01"
+  date_end = "2022-09-01"
   description = """
-  Proposed a simple yet powerful quantum generative model based on variational quantum principal component analysis (G-qPCA).
-  Conceptually unified the quantum version of GAN, VAE and normalizing flow.
-  Along the way, proposed a fully quantum formulation of variational autoencoder and normalizing flow.
-  It's also implementable on NISQ devices and free from QRAM.
+  - Proposed and studied the non-IID quagmire in quantum federated learning, theoretically and numerically.
+  - Extended Liu et al. to a quantum algorithm. Conducted extensive numerics to show its robustness and efficiency.  
   """
 
 [[experience]]

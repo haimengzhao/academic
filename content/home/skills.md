@@ -28,9 +28,10 @@ subtitle = ""
   icon_pack = "fas"
   name = "(Quantum) Machine Learning"
   description = """
-  (Quantum) Generative Learning,\n
+  (Quantum) Learning Theory,\n
+  Variational Quantum Algorithms,\n
+  Generaitive Learning,\n
   Neural Differential Equations,\n
-  (PAC) Learning Theory 
   """  
   
 [[feature]]
@@ -38,7 +39,6 @@ subtitle = ""
   icon_pack = "fas"
   name = "Computational Physics"
   description = """
-  Exact Diagonalization,\n
   (Quantum) Monte Carlo,\n
   Tensor Network, DFT,\n
   Neural Quantum State

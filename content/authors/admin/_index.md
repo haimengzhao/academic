@@ -21,8 +21,8 @@ organizations:
 bio: 
 
 interests:
+- Quantum Information, Statistics & Learning Theory
 - AI for Science, especially Physics & Astrophysics
-- Quantum Information, Algorithms & Machine Learning
 - Quantum Many-body Physics
 - Generative Learning
 
@@ -34,6 +34,9 @@ education:
   - course: Exchange
     institution: Physics, EPFL
     year: 2022 Fall
+  - course: Undergrad Research Fellow
+    institution: IQIM, Caltech
+    year: 2023 
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
