@@ -40,7 +40,7 @@ date_format = "Jan 2006"
   date_end = "2022-06-20"
   description = """
   Introduced U-Net and neural controlled differential equations to parameter estimation of microlensing. 
-  Developed a machine learning framework for irregular astronomical time series, listed on [https://emac.gsfc.nasa.gov?cid=2306-004](NASA EMAC).
+  Developed a machine learning framework for irregular astronomical time series, listed on NASA EMAC.
   Accelerate microlensing analysis by 5 orders of magnitude and successfully applied to real events for the first time.
   """
 
