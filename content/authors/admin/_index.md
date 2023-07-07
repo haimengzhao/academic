@@ -31,12 +31,12 @@ education:
   - course: Undergraduate
     institution: Physics, Tsinghua University
     year: 2020 - 2024(expected)
-  - course: Exchange
-    institution: Physics, EPFL
-    year: 2022 Fall
   - course: Undergrad Research Fellow
     institution: IQIM, Caltech
     year: 2023 
+  - course: Exchange
+    institution: Physics, EPFL
+    year: 2022 Fall
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
