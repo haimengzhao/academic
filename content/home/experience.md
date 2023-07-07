@@ -26,9 +26,9 @@ date_format = "Jan 2006"
   date_start = "2022-8-01"
   date_end = "2023-07-01"
   description = """
-  - Introduced control variates to control gradient variance and significantly reduce sample complexity.
-  - Conducted extensive numerical & theoretical studies to understand different sample complexity behavior.
-  - Benchmarked different tomography methods and propose to design quantum-resource-efficient NQSs.
+  Introduced control variates to control gradient variance and significantly reduce sample complexity.
+  Conducted extensive numerical & theoretical studies to understand different sample complexity behavior.
+  Benchmarked different tomography methods and propose to design quantum-resource-efficient NQSs.
   """
 
 [[experience]]
@@ -39,9 +39,9 @@ date_format = "Jan 2006"
   date_start = "2021-10-01"
   date_end = "2022-06-20"
   description = """
-  - Introduced U-Net and neural controlled differential equations to parameter estimation of microlensing. 
-  - Developed a machine learning framework for irregular astronomical time series, listed on [https://emac.gsfc.nasa.gov?cid=2306-004](NASA EMAC).
-  - Accelerate microlensing analysis by 5 orders of magnitude and successfully applied to real events for the first time.
+  Introduced U-Net and neural controlled differential equations to parameter estimation of microlensing. 
+  Developed a machine learning framework for irregular astronomical time series, listed on [https://emac.gsfc.nasa.gov?cid=2306-004](NASA EMAC).
+  Accelerate microlensing analysis by 5 orders of magnitude and successfully applied to real events for the first time.
   """
 
 [[experience]]
@@ -63,8 +63,8 @@ date_format = "Jan 2006"
   date_start = "2021-07-01"
   date_end = "2022-09-01"
   description = """
-  - Proposed and studied the non-IID quagmire in quantum federated learning, theoretically and numerically.
-  - Extended Liu et al. to a quantum algorithm. Conducted extensive numerics to show its robustness and efficiency.  
+  Proposed and studied the non-IID quagmire in quantum federated learning, theoretically and numerically.
+  Extended Liu et al. to a quantum algorithm. Conducted extensive numerics to show its robustness and efficiency.  
   """
 
 [[experience]]
