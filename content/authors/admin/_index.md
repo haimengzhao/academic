@@ -31,12 +31,6 @@ education:
   - course: Undergraduate
     institution: Physics, Tsinghua University
     year: 2020 - 2024(expected)
-  - course: Undergrad Research Fellow
-    institution: IQIM, Caltech
-    year: 2023 
-  - course: Exchange
-    institution: Physics, EPFL
-    year: 2022 Fall
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
@@ -88,3 +82,5 @@ Specifically, my interest comes in two folds:
 
 - the foundation, application and interplay of quantum physics, information theory and statistics;
 - (quantum) machine learning for physics and physics for machine learning.
+
+I'm currently an undergrad research fellow in [John Preskill's group](http://theory.caltech.edu/~preskill/) at [IQIM, Caltech](https://iqim.caltech.edu). Before that I was an exchange student at [EPFL, Switzerland](https://www.epfl.ch/en/), where I worked with [Giuseppe Carleo](https://people.epfl.ch/giuseppe.carleo?lang=en) and [Filippo Vicentini](https://filippovicentini.com) on neural quantum states. In my sophomore year, I worked on AI for Astronomy with [Wei Zhu](http://i.astro.tsinghua.edu.cn/~wzhu/) at Tsinghua.
