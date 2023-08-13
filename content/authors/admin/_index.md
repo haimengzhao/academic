@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Undergraduate of Physics
+role: Undergraduate of Physics and Maths
 
 # Organizations/Affiliations
 organizations:
@@ -74,7 +74,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of Physics at [Zhili College, Tsinghua University](https://www.zlc.tsinghua.edu.cn).
+Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of Physics and Mathematics at [Zhili College, Tsinghua University](https://www.zlc.tsinghua.edu.cn).
 I'm deeply fascinated by how the universe works and how we can possibly understand it.
 So I started working in the intersection of Physics and Artificial Intelligence.
 
