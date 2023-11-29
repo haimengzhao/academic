@@ -8,5 +8,10 @@ featured: true
 publication: "Quantum Machine Intelligence, 5(1), 3"
 url_pdf: "https://arxiv.org/pdf/2209.00768"
 url_code: "https://github.com/JasonZHM/quantum-fed-infer"
+links:
+- name: Conf
+  url: 'https://qtml-2023.web.cern.ch'
+- name: Talk
+  url: 'https://indico.cern.ch/event/1288979/contributions/5640057/attachments/2755022/4796785/qtml_haimeng.pdf'
 ---
 
