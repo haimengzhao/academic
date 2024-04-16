@@ -84,3 +84,5 @@ Specifically, my interest comes in two folds:
 - (quantum) machine learning for physics and physics for machine learning.
 
 I'm currently an undergrad research fellow in [John Preskill's group](http://theory.caltech.edu/~preskill/) at [IQIM, Caltech](https://iqim.caltech.edu). Before that I was an exchange student at [EPFL, Switzerland](https://www.epfl.ch/en/), where I worked with [Giuseppe Carleo](https://people.epfl.ch/giuseppe.carleo?lang=en) and [Filippo Vicentini](https://filippovicentini.com) on neural quantum states. In my sophomore year, I worked on AI for Astronomy with [Wei Zhu](http://i.astro.tsinghua.edu.cn/~wzhu/) at Tsinghua.
+
+**I am joining Caltech as a Physics graduate student in 2024 Fall!**
