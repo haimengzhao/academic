@@ -21,16 +21,18 @@ organizations:
 bio: 
 
 interests:
+- Quantum Many-body Physics
 - Quantum Information, Statistics & Learning Theory
 - AI for Science, especially Physics & Astrophysics
-- Quantum Many-body Physics
 - Generative Learning
 
 education:
   courses:
-  - course: Undergraduate
-    institution: Physics, Tsinghua University
-    year: 2020 - 2024(expected)
+  - course: PhD Student in Physics
+    institution: Caltech
+  - course: BS in Mathematics and Physics
+    institution: Tsinghua University
+    year: 2024
   - course: Outstanding Graduate
     institution: Shanghai High School
     year: 2020
@@ -54,7 +56,7 @@ social:
 #   link: https://orcid.org/0000-0001-6675-1489
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/haimengzhao
+  link: https://x.com/haimengzhao
 - icon: zhihu
   icon_pack: fab
   link: https://www.zhihu.com/people/jasonzhm-29
@@ -74,15 +76,10 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I am Haimeng Zhao (赵海萌), an undergraduate of Physics and Mathematics at [Zhili College, Tsinghua University](https://www.zlc.tsinghua.edu.cn).
+Hello ~ I'm Haimeng Zhao (赵海萌), a PhD student in Physics at Caltech.
 I'm deeply fascinated by how the universe works and how we can possibly understand it.
 So I started working in the intersection of Physics and Artificial Intelligence.
 
-Specifically, my interest comes in two folds:
+In particular, I'm interested in the foundation, applications and interplay of quantum physics, information theory and high-dimensional statistics. The emerging, unifying theme among quantum information, condensed matter and high energy physics also excites me.
 
-- the foundation, application and interplay of quantum physics, information theory and statistics;
-- (quantum) machine learning for physics and physics for machine learning.
-
-I'm currently an undergrad research fellow in [John Preskill's group](http://theory.caltech.edu/~preskill/) at [IQIM, Caltech](https://iqim.caltech.edu). Before that I was an exchange student at [EPFL, Switzerland](https://www.epfl.ch/en/), where I worked with [Giuseppe Carleo](https://people.epfl.ch/giuseppe.carleo?lang=en) and [Filippo Vicentini](https://filippovicentini.com) on neural quantum states. In my sophomore year, I worked on AI for Astronomy with [Wei Zhu](http://i.astro.tsinghua.edu.cn/~wzhu/) at Tsinghua.
-
-**I am joining Caltech as a Physics graduate student in 2024 Fall!**
+Before Caltech, I received my Bachelor's degree in Mathematics and Physics with Honours from [Tsinghua University](https://www.tsinghua.edu.cn/en/). I was an undergrad research fellow in [John Preskill's group](http://theory.caltech.edu/~preskill/) at [IQIM, Caltech](https://iqim.caltech.edu) and an exchange student in [Giuseppe Carleo's group](https://people.epfl.ch/giuseppe.carleo?lang=en) at [EPFL](https://www.epfl.ch/en/) in Switzerland. Before that, I worked on AI for Astronomy with [Wei Zhu](http://i.astro.tsinghua.edu.cn/~wzhu/) at Tsinghua.
