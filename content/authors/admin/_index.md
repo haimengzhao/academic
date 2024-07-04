@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Undergraduate of Physics and Maths
+role: PhD Student in Physics
 
 # Organizations/Affiliations
 organizations:
-- name: Tsinghua University
-  url: "https://www.tsinghua.edu.cn"
+- name: Caltech
+  url: "https://www.caltech.edu"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
