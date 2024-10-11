@@ -8,5 +8,9 @@ abstract: "While quantum state tomography is notoriously hard, most states hold 
 featured: true
 publication: ""
 url_pdf: "https://arxiv.org/pdf/2310.19882"
+url_code: "https://github.com/haimengzhao/bounded-gate-tomography"
+links:
+- name: Talk
+  url: 'https://hmzhao.me/files/learning-bounded-complexity.pdf'
 ---
 
