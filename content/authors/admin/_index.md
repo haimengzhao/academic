@@ -75,7 +75,7 @@ user_groups:
 - Researchers
 - Visitors
 ---
-Hello ~ I'm Haimeng Zhao /haɪ məŋ dʒaʊ/ (赵海萌), a PhD student in Physics at Caltech.
+Hello ~ I'm Haimeng Zhao /haɪ məŋ dʒaʊ/ (赵海萌), a PhD student in Physics at Caltech, advised by [John Preskill](https://www.preskill.caltech.edu) and [Hsin-Yuan Huang](https://hsinyuan-huang.github.io).
 I'm deeply fascinated by how the universe works and how we can possibly understand it.
 So I started working in the intersection of Physics and Artificial Intelligence.
 
