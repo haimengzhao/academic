@@ -9,5 +9,8 @@ featured: true
 publication: ""
 url_pdf: "https://arxiv.org/pdf/2410.03094"
 url_code: "https://github.com/haimengzhao/qml-advantage"
+links:
+- name: Talk
+  url: 'https://hmzhao.me/files/entanglement-ml-advantage.pdf'
 ---
 

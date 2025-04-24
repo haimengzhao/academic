@@ -8,5 +8,8 @@ abstract: "The energy cost of erasing quantum states depends on our knowledge of
 featured: true
 publication: ""
 url_pdf: "https://arxiv.org/pdf/2504.07341"
+links:
+- name: Talk
+  url: 'https://hmzhao.me/files/learning-to-erase.pdf'
 ---
 
