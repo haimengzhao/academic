@@ -10,6 +10,8 @@ publication: "PRX Quantum, 5(4), 040306. Featured on the [cover](https://journal
 url_pdf: "https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.5.040306"
 url_code: "https://github.com/haimengzhao/bounded-gate-tomography"
 links:
+- name: arXiv
+  url: 'https://arxiv.org/abs/2310.19882'
 - name: Talk
   url: 'https://hmzhao.me/files/learning-bounded-complexity.pdf'
 ---

@@ -8,5 +8,8 @@ featured: true
 publication: "Quantum 8, 1358"
 url_pdf: "https://doi.org/10.22331/q-2024-05-23-1358"
 url_code: "https://netket.readthedocs.io/en/latest/api/_generated/experimental/qsr/netket.experimental.QSR.html"
+links:
+- name: arXiv
+  url: 'https://arxiv.org/abs/2307.01840'
 ---
 

@@ -9,6 +9,8 @@ publication: "The Astronomical Journal, 164(5), 192"
 url_pdf: "https://iopscience.iop.org/article/10.3847/1538-3881/ac9230/pdf"
 url_code: "https://github.com/JasonZHM/magic-microlensing"
 links:
+- name: arXiv
+  url: 'https://arxiv.org/abs/2206.08199'
 - name: Conf
   url: 'https://ml4astro.github.io/icml2022/assets/6.pdf'
 - name: Talk
