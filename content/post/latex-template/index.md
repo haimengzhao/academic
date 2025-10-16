@@ -3,7 +3,7 @@ title: "LaTeX Template for Research Papers"
 subtitle: 
 date: "2025-10-15"
 summary: >
-  This is a RevTeX template for research papers with appendix-only table of contents and correct bookmarks.
+  This is a RevTeX template with appendix-only table of contents and correct bookmarks.
 draft: false
 featured: true
 categories: ["Tech"]
