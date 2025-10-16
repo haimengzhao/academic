@@ -6,7 +6,7 @@ summary: >
   This is a RevTeX template for research papers with appendix-only table of contents and correct bookmarks.
 draft: false
 featured: true
-authors: ["Haimeng Zhao"]
+tags: ["Tech"]
 ---
 
 Below is a copy‑pasteable LaTeX template (RevTeX 4.2) with an appendix‑only table of contents and correct PDF bookmarks.
