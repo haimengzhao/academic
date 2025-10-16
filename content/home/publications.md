@@ -2,7 +2,7 @@
 # A Recent Publications section created with the Pages widget.
 # This section displays recent blog posts from `content/publication/`.
 
-widget = "featured"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "publication"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 35  # Order that this section will appear.
@@ -26,7 +26,7 @@ subtitle = ""
   # Filter posts by a taxonomy term.
   [content.filters]
     tag = ""
-    category = ""
+    category = ["quantum", "astro"]
     publication_type = ""
     author = ""
     exclude_featured = false
