@@ -6,13 +6,13 @@ summary: >
   This is a RevTeX template for research papers with appendix-only table of contents and correct bookmarks.
 draft: false
 featured: true
-tags: ["Tech"]
+categories: ["Tech"]
 ---
 
 Below is a copy‑pasteable LaTeX template (RevTeX 4.2) with an appendix‑only table of contents and correct PDF bookmarks.
 All warnings are fixed.
 
-```tex
+```latex
 % ****** Start of file apssamp.tex ******
 %
 %   This file is part of the APS files in the REVTeX 4.2 distribution.
