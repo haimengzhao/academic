@@ -19,33 +19,13 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
   
 [[item]]
-  organization = "Stanford@Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Machine Learning"
-  url = "https://www.coursera.org/learn/machine-learning/"
-  certificate_url = "http://coursera.org/verify/LYWFLMT3XAA2"
-  date_start = "2017-05-07"
+  organization = ""
+  organization_url = ""
+  title = ""
+  url = ""
+  certificate_url = ""
+  date_start = ""
   date_end = ""
   description = ""
-
-[[item]]
-  organization = "Carnegie Mellon University"
-  organization_url = ""
-  title = "15-251 Great Theoretical Ideas in Computer Science"
-  url = "https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22bcf8243e-cf18-481f-960f-3c5b26fbb69b%22"
-  certificate_url = ""
-  date_start = "2020-08-22"
-  date_end = "2020-09-23"
-  description = "2020-09-23: Done!"
-  
-[[item]]
-  organization = "Sadri Hassani"
-  organization_url = ""
-  title = "Mathematical Physics: A Modern Introduction to Its Foundations"
-  url = "https://www.springer.com/gp/book/9783319011943"
-  certificate_url = ""
-  date_start = "2020-08-01"
-  date_end = ""
-  description = "In Progress"
 
 +++
