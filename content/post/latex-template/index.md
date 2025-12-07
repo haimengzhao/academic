@@ -3,13 +3,16 @@ title: "LaTeX Template for Research Papers"
 subtitle: 
 date: "2025-10-15"
 summary: >
-  This is a RevTeX template with appendix-only table of contents and correct bookmarks.
+  This is a RevTeX template with designs to help navigating in super long appendices.
 draft: false
 featured: true
 categories: ["Tech"]
 ---
 
-Below is a copy‑pasteable LaTeX template (RevTeX 4.2) with an appendix‑only table of contents and correct PDF bookmarks.
+Below is a copy‑pasteable LaTeX template based on RevTeX 4.2.
+It has an appendix‑only table of contents and correct PDF bookmarks.
+To help navigate in super long appendices, the pagenumber in appendices are designed to be clickable: clicking it will bring you back to the table of contents.
+A new environment eqsplit is introduced, which is a shorthand for equation + split that gives you multiline equations with a single numbering.
 All warnings are fixed.
 
 ```latex
@@ -56,9 +59,18 @@ All warnings are fixed.
 10pt,
 ]{revtex4-2}
 
-% ignore \label warning
 \usepackage{silence}
 \WarningFilter{nameref}{The definition of \label has changed}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt} % prevent headheight warnings/loops
+
+% Define your fancy style once
+\fancypagestyle{header}{
+  \fancyhf{}%
+  \fancyhead[R]{\hyperref[toc]{\thepage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
 
 \usepackage{cmap} % Load before fontenc 
 \usepackage[utf8]{inputenc}
@@ -75,7 +87,7 @@ All warnings are fixed.
 \definecolor{webgreen}{rgb}{0,.5,0}
 \definecolor{webbrown}{rgb}{.6,0,0}
 \usepackage[pdftex,
-  bookmarks=true,
+  bookmarks=false,
   colorlinks=true,
   urlcolor=webbrown,
   linkcolor=blueviolet, 
@@ -85,6 +97,40 @@ All warnings are fixed.
   bookmarksopen=false
   ]{hyperref}
 \usepackage{cleveref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{task}[theorem]{Task}
+
+\renewcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\bit}{\{0, 1\}}
+\newcommand{\unif}{\mathrm{Uniform}}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\dtv}{d_{\mathrm{TV}}}
+\newcommand{\argmax}{\mathrm{argmax}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\sgn}{\mathrm{sgn}}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+
+\NewDocumentEnvironment{eqsplit}{b}{%
+    \begin{equation}%
+    \begin{split}%
+        #1
+    \end{split}%
+    \end{equation}%
+}{}
 
 % --- 1) Mark the start of appendices *in the .toc* ---
 \makeatletter
@@ -118,12 +164,6 @@ All warnings are fixed.
 }
 \makeatother
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
-\newtheorem{definition}{Definition}
-\newtheorem{remark}{Remark}
-
 \bibliographystyle{apsrev4-2}
 
 \begin{document}
@@ -153,7 +193,11 @@ Acknowledgments.
 \renewcommand*\appendixpagename{Supplementary Information}
 \appendix
 \appendixpage
+
+\pagestyle{header}
+
 \appendixtableofcontents
+\label{toc}
 
 \section{Appendixes}
 
