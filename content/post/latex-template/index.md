@@ -3,13 +3,16 @@ title: "LaTeX Template for Research Papers"
 subtitle: 
 date: "2025-10-15"
 summary: >
-  This is a RevTeX template with appendix-only table of contents and correct bookmarks.
+  This is a RevTeX template for reader-friendly long appendices.
 draft: false
 featured: true
 categories: ["Tech"]
 ---
 
-Below is a copy‑pasteable LaTeX template (RevTeX 4.2) with an appendix‑only table of contents and correct PDF bookmarks.
+Below is a copy‑pasteable LaTeX template (RevTeX 4.2) for reader-friendly long appendices.
+
+It has an appendix‑only table of contents, correct PDF bookmarks, and clickable page numbers that will bring the readers back to the contents.
+
 All warnings are fixed.
 
 ```latex
@@ -56,9 +59,18 @@ All warnings are fixed.
 10pt,
 ]{revtex4-2}
 
-% ignore \label warning
 \usepackage{silence}
 \WarningFilter{nameref}{The definition of \label has changed}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt} % prevent headheight warnings/loops
+
+% Define your fancy style once
+\fancypagestyle{header}{
+  \fancyhf{}%
+  \fancyhead[R]{\hyperref[toc]{\thepage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
 
 \usepackage{cmap} % Load before fontenc 
 \usepackage[utf8]{inputenc}
@@ -75,7 +87,7 @@ All warnings are fixed.
 \definecolor{webgreen}{rgb}{0,.5,0}
 \definecolor{webbrown}{rgb}{.6,0,0}
 \usepackage[pdftex,
-  bookmarks=true,
+  bookmarks=false,
   colorlinks=true,
   urlcolor=webbrown,
   linkcolor=blueviolet, 
@@ -86,45 +98,84 @@ All warnings are fixed.
   ]{hyperref}
 \usepackage{cleveref}
 
-% --- 1) Mark the start of appendices *in the .toc* ---
-\makeatletter
-\pretocmd{\appendix}{\addtocontents{toc}{\protect\appsectionstart}}{}{}
-\makeatother
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{task}[theorem]{Task}
 
-% --- 2) A TOC printer that shows entries only *after* that marker ---
+\renewcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\bit}{\{0, 1\}}
+\newcommand{\unif}{\mathrm{Uniform}}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\dtv}{d_{\mathrm{TV}}}
+\newcommand{\argmax}{\mathrm{argmax}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\sgn}{\mathrm{sgn}}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+
+\NewDocumentEnvironment{eqsplit}{b}{%
+    \begin{equation}%
+    \begin{split}%
+        #1
+    \end{split}%
+    \end{equation}%
+}{}
+
 \makeatletter
+
+% 1. Define the appendix-only TOC file extension
+\newcommand{\apptocfile}{atoc}
+
+% 2. Hook \appendix
+\let\apptoc@orig@appendix\appendix
+\renewcommand{\appendix}{%
+  % Call the original appendix command to handle counters/formatting
+  \apptoc@orig@appendix
+  % Redefine \addtocontents instead of \addcontentsline.
+  % This allows hyperref to see 'toc' (triggering the bookmark write)
+  % but intercepts the actual file write to redirect it to .atoc.
+  \let\apptoc@orig@addtocontents\addtocontents
+  \long\def\addtocontents##1##2{%
+    \def\apptoc@ext{##1}%
+    \def\apptoc@toc{toc}%
+    \ifx\apptoc@ext\apptoc@toc
+      \apptoc@orig@addtocontents{\apptocfile}{##2}%
+    \else
+      \apptoc@orig@addtocontents{##1}{##2}%
+    \fi
+  }%
+}
+
+% 3. Print appendix-only TOC
 \newcommand{\appendixtableofcontents}{%
   \begingroup
-    \newif\ifapptoc \apptocfalse
-    \let\rev@l@section\l@section
-    \let\rev@l@subsection\l@subsection
-    \let\rev@l@subsubsection\l@subsubsection
-    \def\appsectionstart{\global\apptoctrue}
-    \def\l@section##1##2{\ifapptoc\rev@l@section{##1}{##2}\fi}
-    \def\l@subsection##1##2{\ifapptoc\rev@l@subsection{##1}{##2}\fi}
-    \def\l@subsubsection##1##2{\ifapptoc\rev@l@subsubsection{##1}{##2}\fi}
-
-    \setcounter{tocdepth}{2}%
+    \setcounter{tocdepth}{3}%
     \phantomsection
-    {%
-      % swallow any \addcontentsline from the heading itself
-      \let\addcontentsline\@gobblethree
-      \section*{Contents}%
-    }%
-    \pdfbookmark[1]{Supplementary Information Contents}{apxcontents}
-
-    \@starttoc{toc}%
+    % Swallow any \addcontentsline from the heading itself to prevent
+    % the "Contents" header from appearing in the TOC recursively.
+    \let\addcontentsline\@gobblethree
+    \section*{Contents \& Roadmap}%
+    % Add a bookmark for the Appendix TOC itself
+    \pdfbookmark[1]{Appendices}{apxcontents}%
+    % Read the .atoc file
+    \@starttoc{\apptocfile}%
   \endgroup
 }
+
 \makeatother
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
-\newtheorem{definition}{Definition}
-\newtheorem{remark}{Remark}
-
-\bibliographystyle{apsrev4-2}
+\bibliographystyle{unsrt}
 
 \begin{document}
 
@@ -150,10 +201,14 @@ Acknowledgments.
 
 \clearpage
 \onecolumngrid
-\renewcommand*\appendixpagename{Supplementary Information}
+\renewcommand*\appendixpagename{Appendices}
 \appendix
 \appendixpage
+
+\pagestyle{header}
+
 \appendixtableofcontents
+\label{toc}
 
 \section{Appendixes}
 
