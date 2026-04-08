@@ -77,10 +77,10 @@ user_groups:
 ---
 Hello ~ I'm Haimeng Zhao /haɪ məŋ dʒaʊ/ (赵海萌), a PhD student in Physics at Caltech, advised by [John Preskill](https://www.preskill.caltech.edu) and [Hsin-Yuan Huang](https://hsinyuan-huang.github.io).
 I'm deeply fascinated by how the universe works and how we can possibly understand it.
-So I started working in the intersection of Physics, Intelligence, and Quantum Information.
+So I started working in the intersection of Physics and Intelligence.
 
 In particular, I'm interested in the physical nature of learning and computation.
-Three overarching questions motive my work:
+Three overarching questions motivate my work:
 1. How do physical laws impact our ability to learn and how to harness them?
 2. How does our (in)ability to learn impact our perception of the physical reality?
 3. What is the ultimate physical limit of learning and computation?
