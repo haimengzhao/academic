@@ -81,9 +81,10 @@ So I started working in the intersection of Physics, Intelligence, and Quantum I
 
 In particular, I'm interested in the physical nature of learning and computation.
 Three overarching questions motive my work:
-1. How does physical laws impact our ability to learn?
+1. How do physical laws impact our ability to learn and how to harness them?
 2. How does our (in)ability to learn impact our perception of the physical reality?
-3. What is the ultimate physical limits of learning?
+3. What is the ultimate physical limit of learning and computation?
+
 I draw tools from theoretical physics, computer science, and machine learning to answer these questions.
 
 I also worked as a Student Researcher at [Google Quantum AI](https://quantumai.google) in 2025 Summer. Before Caltech, I received my Bachelor's degree in Mathematics and Physics with Honours from [Tsinghua University](https://www.tsinghua.edu.cn/en/). I was an undergrad research fellow in [John Preskill's group](http://theory.caltech.edu/~preskill/) at [IQIM, Caltech](https://iqim.caltech.edu) and an exchange student in [Giuseppe Carleo's group](https://people.epfl.ch/giuseppe.carleo?lang=en) at [EPFL](https://www.epfl.ch/en/) in Switzerland. At Tsinghua, I worked on quantum information in [Dong-Ling Deng's group](https://iiis.tsinghua.edu.cn/en/dengdl/) at [IIIS](https://iiis.tsinghua.edu.cn/en/) and AI for Astronomy with [Wei Zhu](http://i.astro.tsinghua.edu.cn/~wzhu/).
