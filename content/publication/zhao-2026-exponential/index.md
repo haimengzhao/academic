@@ -11,6 +11,8 @@ publication: ""
 url_pdf: "https://arxiv.org/pdf/2604.07639"
 url_code: "https://github.com/haimengzhao/quantum-oracle-sketching"
 links:
+- name: Blog
+  url: 'https://quantumfrontiers.com/2026/04/09/unleashing-the-advantage-of-quantum-ai/'
 - name: Talk
   url: 'https://hmzhao.me/files/memory-advantage.pdf'
 ---
