@@ -1,0 +1,61 @@
+{{- $page := .Page -}}
+{{- $resource := .Page.Resources.GetMatch "bilingual.json" -}}
+{{- if not $resource -}}{{ errorf "Missing bilingual.json for %s" .Page.File.Path }}{{- end -}}
+{{- $review := $resource.Content | transform.Unmarshal -}}
+<div class="bilingual-review" data-mode="parallel">
+  <details class="book-review-toc">
+    <summary>Contents</summary>
+    <ol>
+      {{ range $review.blocks }}
+        {{ if or (in (slice "h2" "h3") .kind) (hasPrefix .zh "<ul><li>") }}
+          <li><a href="#{{ .id }}"><span lang="zh-Hans">{{ .zh | plainify }}</span><span lang="en">{{ .en | plainify }}</span></a></li>
+        {{ end }}
+      {{ end }}
+    </ol>
+  </details>
+  <div class="reading-toolbar" hidden>
+    <span class="reading-toolbar-label" id="reading-mode-label">View</span>
+    <div role="group" aria-labelledby="reading-mode-label">
+      <button type="button" data-reading-mode="parallel" aria-pressed="true">Parallel</button>
+      <button type="button" data-reading-mode="zh" aria-pressed="false">Chinese</button>
+      <button type="button" data-reading-mode="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+  <div class="parallel-headings" aria-hidden="true"><span lang="en" data-column="zh">{{ if eq $review.source_language "en" }}Chinese translation{{ else }}Chinese original{{ end }}</span><span lang="en" data-column="en">{{ if eq $review.source_language "en" }}English original{{ else }}English translation{{ end }}</span></div>
+  <div class="parallel-content">
+  {{ range $review.blocks }}
+    {{ if eq .kind "rule" }}
+      <hr class="parallel-rule" id="{{ .id }}">
+    {{ else }}
+      <div class="parallel-row parallel-{{ .kind }}" id="{{ .id }}">
+        {{ $block := . }}
+        {{ range (slice "zh" "en") }}
+          {{ $lang := cond (eq . "zh") "zh-Hans" "en" }}
+          {{ $html := index $block . }}
+          {{/* Keep footnote targets distinct in each language column. */}}
+          {{ $html = replaceRE `id="(ref_[^"]+)"` (printf `id="$1-%s"` .) $html }}
+          {{ $html = replaceRE `href="#(ref_[^"]+)"` (printf `href="#$1-%s"` .) $html }}
+          <div class="parallel-cell" lang="{{ $lang }}" data-label="{{ if eq . "zh" }}{{ if eq $review.source_language "en" }}Chinese translation{{ else }}Chinese original{{ end }}{{ else }}{{ if eq $review.source_language "en" }}English original{{ else }}English translation{{ end }}{{ end }}">
+            {{ if eq $block.kind "h2" }}
+              <h2>{{ $html | safeHTML }}</h2>
+            {{ else if eq $block.kind "h3" }}
+              <h3>{{ $html | safeHTML }}</h3>
+            {{ else if eq $block.kind "figure" }}
+              {{ $image := $page.Resources.GetMatch $block.image }}
+              {{ if not $image }}{{ errorf "Missing image %s in %s" $block.image $page.File.Path }}{{ end }}
+              <figure>
+                <a href="{{ $image.RelPermalink }}" target="_blank" rel="noopener" aria-label="{{ cond (eq . "zh") "查看原图" "View full-size image" }}"><img src="{{ $image.RelPermalink }}" alt="{{ $html | plainify }}" width="{{ $image.Width }}" height="{{ $image.Height }}" loading="lazy"></a>
+                {{ with $html }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end }}
+              </figure>
+            {{ else if eq $block.kind "quote" }}
+              <blockquote>{{ $html | safeHTML }}</blockquote>
+            {{ else }}
+              {{ $html | safeHTML }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+  </div>
+</div>

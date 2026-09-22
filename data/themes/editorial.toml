@@ -1,0 +1,9 @@
+name = "Editorial"
+light = true
+primary = "#17685e"
+menu_primary = "#faf9f6"
+menu_text = "#454945"
+menu_text_active = "#17685e"
+menu_title = "#202924"
+home_section_odd = "#faf9f6"
+home_section_even = "#faf9f6"

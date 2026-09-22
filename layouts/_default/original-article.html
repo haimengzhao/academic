@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="article original-article" lang="en">
+  <header class="article-container">
+    <a class="book-review-back" href="{{ "/post/" | relURL }}">← Posts</a>
+    <h1>{{ .Title }}</h1>
+    <div class="book-review-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <span aria-hidden="true"> · </span>
+      <a href="{{ .Params.original_url }}" rel="noopener">{{ .Params.original_site }} · Original post</a>
+    </div>
+  </header>
+  <div class="article-container article-style">{{ .Content }}</div>
+</article>
+{{ end }}

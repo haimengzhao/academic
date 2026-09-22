@@ -1,0 +1,220 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/550923432",
+  "slug": "maths-physics-book-reviews-2022-fall",
+  "captured": "2026-09-21",
+  "source_body_sha256": "b16db6830c3c5cc49af1897f0d95b1232b0699fc70fa7e65773207ca23ca12ed",
+  "excluded": [
+    {
+      "type": "platform-commerce-ui",
+      "count": 2,
+      "details": "Book-card titles and original links retained; live prices, buy buttons, ad badges, and shopping thumbnails not copied."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "text",
+      "zh": "<p>上一篇：<a href=\"/post/maths-physics-book-reviews-2021-spring/\">HM Zhao：数理教材阅读进度及读后简评（大一春夏）</a></p>"
+    },
+    {
+      "id": "b002",
+      "kind": "text",
+      "zh": "<p>最近一年都没有更新这一系列的文章了。主要的原因有两方面：一是没有时间，感觉到了目前这个阶段，空闲的时间往往有比写文章更重要的事情要做，多读一篇短文总比写一些不着边际的话要好，虽然细碎的时间最后大多还是被浪费了；二是学习的材料过于细碎，在四大力学之后，学习的路径有非常大的任意性，使用的材料也千奇百怪，很难系统地做一总结，所以迟迟无法动笔。但最后还是决定粗略地给大二学年做一个总结，大致地勾勒一下目前的状态，既不完整，又难免散乱，因此本文的标题或许也有些名不副实了。</p>"
+    },
+    {
+      "id": "b003",
+      "kind": "h2",
+      "zh": "大二秋季"
+    },
+    {
+      "id": "b004",
+      "kind": "text",
+      "zh": "<p>大一花了一年的时间仔细学了一遍四大力学，相对还是比较扎实的。但过了这个门槛之后，我的第一感觉是很多方向都可以着手学习，但却不知道究竟应该往哪个方向走。某种意义上，找到自己究竟想做什么，成了大二一年的主旋律。坦白地说，到目前为止我依然没有一个明确的答案。但至少从大二秋季的一开始，我在三条主线上做了一定的探索。</p>"
+    },
+    {
+      "id": "b005",
+      "kind": "h3",
+      "zh": "统计"
+    },
+    {
+      "id": "b006",
+      "kind": "text",
+      "zh": "<p>第一条主线是概率论、统计推断与机器学习。这在某种意义上是我的老本行，因为在高中的时候研究过一段时间计算机视觉的东西。但其实直到这时候我才开始系统地学习概率论和统计推断。从结果来看，统计的学习让我对机器学习的认识上升了一个层级，并且与物理的学习有机地融合在了一起。其中比较有意思的几个点（目前我能回忆起的）如下：</p>"
+    },
+    {
+      "id": "b007",
+      "kind": "text",
+      "zh": "<p>1. 条件概率在某种意义上是函数的推广。函数的对应关系是确定性的，但如果要刻画不确定的对应关系，使用的工具是条件概率。所以机器学习，不只是生成式学习，很大程度上都是对概率分布的建模。</p>"
+    },
+    {
+      "id": "b008",
+      "kind": "text",
+      "zh": "<p>2. 函数拟合是统计推断。在机器学习中大量使用的各种Loss都是有一定的统计背景的，而不仅仅是直觉。</p>"
+    },
+    {
+      "id": "b009",
+      "kind": "text",
+      "zh": "<p>比如想要对一组数据 \\((x_i, y_i)\\) 做拟合，曾经我会认为，目标就是假设关系是 \\(y=f(x)\\) ，寻找一个 \\(f\\) 使得拟合的效果最好，比如最小化MSE= \\(\\sum_i (y_i-f(x_i))^2\\) ，而我会觉得MSE如此定义的原因就是为了防止正负的误差抵消。</p>"
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>但现在我会觉得，假设 \\(y=f(x)\\) 只能应对很少的一部分情形，也就是一个自变量只能对应一个因变量，而不能对应多个。更一般的拟合的目标其实是对条件概率 \\(p(Y|X)\\) 建模。而Loss的形式则是来源于对误差概率分布的建模，例如假设误差 \\(\\epsilon = Y-f(X)\\) 服从高斯分布 \\(p(\\epsilon)=Z^{-1} e^{-\\frac{1}{2\\sigma^2}\\epsilon^2}\\) ，那么在观测到这些数据的概率就是 \\(p_f(\\{\\epsilon_i\\}) = Z^{-n}\\prod_i e^{-\\frac{1}{2\\sigma^2}\\epsilon_i^2}=Z^{-n}e^{-\\frac{1}{2\\sigma^2}\\sum_i\\epsilon_i^2}\\) ，那么最有可能（概率最大）的函数 \\(f\\) 就满足（其实就是MLE） \\(\\min_f \\epsilon^2 = \\min_f \\sum_i (y_i-f(x_i))^2\\) ，这就是MSE的来源。（进一步这也是VAE比GAN模糊的原因）</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "text",
+      "zh": "<p>3. 采样是一种优化。</p>"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<p>这个就不细说了，跟统计力学、机器学习都有很大关系。核心思想就是在概率测度的空间中，可以用KL散度度量概率分布之间的距离，最小化KL散度的优化问题给出了Gradient Flow，从起始的概率分布流向目标的概率分布，这样只需要按某个起始概率分布采样，然后沿着Flow走就可以得到目标概率分布，完成采样的目的。因此优化的语言和采样的语言是相互对应的，比如gradient descent对应Langevin Monte Carlo，类似的natural gradient descent也对应Langevin里加一个Hessian，等等。当然从统计力学的角度看，这些粒子在势场中最后稳定的分布，就是热平衡的玻尔兹曼分布。</p>"
+    },
+    {
+      "id": "b013",
+      "kind": "text",
+      "zh": "<p>具体学习的层面上，概率论用的是自编讲义，统计推断用的是韦来生的数理统计，都中规中矩。比较有意思的是从统计推断和逻辑的角度出发的Jaynes的书</p>"
+    },
+    {
+      "id": "b014",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.cambridge.org/core/books/probability-theory/9CA08E224FF30123304E6D8935CF1A99\">Probability Theory: The Logic of Science</a>"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<p>这方面的前沿，我感觉统计学和计算机两个出发点在越走越近，融合地越来越深入，所以或许多去ICML, NeurIPS, ICLR之类的看看比较好，每次看Tutorial和Workshop都能学到不少东西。另外除了统计学和计算机两种视角，其实还有第三种看待机器学习的视角：计算复杂度。简而言之就是机器学习的复杂类其实比一般的随机算法BPP还要大，关键就在于有训练数据，而训练数据其实是一种特殊的advice。因此类似配备多项式advice的复杂类BPP/poly，机器学习其实属于某种BPP/data的复杂度类。这个想法是从Robert Huang和Preskill的与classical shadow tomography相关的一系列工作那听来的，特别是<a href=\"https://www.nature.com/articles/s41467-021-22539-9\">Power of data in quantum machine learning - Nature Communication</a>。</p>"
+    },
+    {
+      "id": "b016",
+      "kind": "h3",
+      "zh": "量子与计算"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>第二条主线是和量子与计算都有关系，一方面是计算量子力学，特别是强关联的多体问题等，不包括DFT，另一方面是利用量子优势的计算方法，比如量子计算、量子机器学习等。这部分的知识也非常零碎，主要是用论文堆砌起来的，只能大概列个提纲（报菜名），总结一下学习过的topic。</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<p>计算量子力学部分，主要学了精确对角化、DMRG、MPS、iTEBD、量子蒙卡和张量网络。这部分内容是选了一门研究生课学的，老师讲的还是挺清楚的，但由于课时所限，很多内容没有细节，主要还是自己看论文，所以最后大概也就对做过的作业比较熟悉，很多东西都停留在听过的层面。个人感觉到这个阶段因为可以学的东西太多了，但每个东西又都没有必要学，学了也不一定能咋样，所以很多时候就只能边做边学，对不常用的东西就只能浅尝辄止了。作业里实现的一些小玩意都放在GitHub上了，最后课程大作业做了一个normalizing flow解lattice phi^4。</p>"
+    },
+    {
+      "id": "b019",
+      "kind": "reference",
+      "zh": "<a href=\"https://github.com/JasonZHM/computational-qm\">GitHub - JasonZHM/computational-qm: code for a course on computational quantum mechanics: ED, DMRG, MPS, iTEBD, MCMC &amp; Normalizing Flow</a>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>量子机器学习部分，先学了PAC learning theory和一些quantum complexity，然后就开始HHL, QRAM, QPCA, 一堆分类器QSVM, variational的classifier, 然后是一些生成式的模型quantum autoencoder, QGM, QGAN, 以及barren plateau之类的现象，最后学了一些ML在quantum many-body里的应用，比如相分类、分析RBM neural network state的entanglement之类的。这部分主要就是一篇一篇文章看下来，全部走一遭基本对这个领域就有一定了解了。最后课程的大作业做了一个量子生成式模型的东西。这里面PAC learning theory主要参考了<a href=\"https://mitpress.mit.edu/books/foundations-machine-learning\">Mohri et al. Foundations of Machine Learning</a>和<a href=\"https://www-m5.ma.tum.de/foswiki/pub/M5/Allgemeines/MA4801_2021S/ML.pdf\">Wolf的Lecture Notes on Mathematical Foundations of Supervised Learning</a>, 其他的主要就是读对应的文章。</p>"
+    },
+    {
+      "id": "b021",
+      "kind": "h3",
+      "zh": "物理"
+    },
+    {
+      "id": "b022",
+      "kind": "text",
+      "zh": "<p>第三条主线就比较偏向传统的物理学了，主要是进一步学习量子场论，以及各个物理方向的导论课程。大二秋季主要就是着手了解了一些场论，并且学了一点AMO的基础知识。</p>"
+    },
+    {
+      "id": "b023",
+      "kind": "h3",
+      "zh": "场论"
+    },
+    {
+      "id": "b024",
+      "kind": "text",
+      "zh": "<p>场论部分我个人一直学的不是很扎实，目前还处于名词党的阶段。之前和同学一起搞过一个讨论班，读的书主要是Sidney Coleman的<a href=\"https://www.worldscientific.com/worldscibooks/10.1142/9371\">Lectures of Sidney Coleman on Quantum Field Theory</a>。对这本书感兴趣的读者可以去看 <a href=\"https://www.zhihu.com/people/6df21486fa9c818dce046f2321bd4ea2\">@TOAA</a> 写的总结<a href=\"https://zhuanlan.zhihu.com/p/550906831\">TOAA：第一本量子场论：Lectures of Sidney Coleman</a>。除了高能这一侧的场论，还有凝聚态一侧的，之前试图读过Fetter和Altland&amp;Simons，但也因为没时间而没坚持下来，如果以后有机会的话再学。这方面还上了一门研究生课，讲格点规范场论，按老师的话说原则上只需要会加减乘除就能学。主要参考的材料是Kogut的Rev Mod Phys <a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.51.659\">An introduction to lattice gauge theory and spin systems</a>和Polyakov的<a href=\"https://www.taylorfrancis.com/books/oa-mono/10.1201/9780203755082/gauge-fields-strings-polyakov\">Gauge Fields and Strings</a>。学的时候既不会凝聚态也不会高能，就只会一些基本的统计和量子，不过多亏了老师讲得好，也能顺利学下来，但现在看来也用不上，只是学得好玩。</p>"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<p>对于场论，我目前的感想是可以学的东西太多了，而且出发点不同，学到的东西可能完全不一样，同时可能永远也无法学完，给人一种陷入泥潭之感。所以目前处于搁置的状态，以后如果要用到再速成。其实我也很好奇大家是怎么学下来的。</p>"
+    },
+    {
+      "id": "b026",
+      "kind": "h3",
+      "zh": "AMO"
+    },
+    {
+      "id": "b027",
+      "kind": "text",
+      "zh": "<p>这部分主要是上了一门课，既是培养方案的要求，也是一门传统的物理分支的导论课。主要内容就是原子分子和光物理，参考的教材是Foot的<a href=\"https://global.oup.com/academic/product/atomic-physics-9780198506966?cc=us&amp;lang=en\">Atomic Physics</a>，有影印版</p>"
+    },
+    {
+      "id": "book001",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1543984704931794945-0-1&amp;p=JF8BAQMJK1olXDYCV15bAEkfBl9MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksUA2kAGVMQQl9HCANtEgpqYxYNQi11XV5EKFgtfgpUZyZ4XVcZbQYLVFxVCUoXBGw4G1oUXQIHV11bCXsnA2o4TTUVXAcDVV9ZDk4WM244G1wSXA8KUVlfAE8UBF8IE18li6iWgdbi0fuy1cWmztaliI-pgODbOHsnAF9TTg9cGBoCUFtfAEISBW4NE1kVWw4HXFtZFEoLA18IGloWXAcLXVhUZkp5A2cKGF8UVAMDUG5dOEgnXQEJSFwQVQcLBzAADkoTQWdKRDUWVAQFVlxVCXsVAm4KGWsl\">原子物理学</a>"
+    },
+    {
+      "id": "b028",
+      "kind": "text",
+      "zh": "<p>，学了原子与光的相互作用（选择定则、Rabi振荡、怎么在各种态之间跳来跳去、Bloch方程、Stark shift之类的），然后是单电子原子、多电子原子、分子的光谱结构（精细结构、超精细结构、Hartree-Fock之类的怎么算、怎么看懂那些光谱记号），最后是散射（散射长度、分波法之类的基本概念、冷原子主要关注的s波散射、以及Feshbach共振等等）。这门课老师讲的超好，节奏很恰当，对物理图像非常关注，感觉学会了很多半经典的物理图像，也对AMO有了一些初步的认识。感觉整体思路接近MIT OCW上诺奖得主Wolfgang Ketterle的AMO课了。</p>"
+    },
+    {
+      "id": "b029",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.bilibili.com/video/BV1EE411G7W2\">【MIT公开课】8.421 原子与光学物理 I（完结·英文字幕）_哔哩哔哩_bilibili</a>"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p>不过目前还是没有做实验的打算x</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "h3",
+      "zh": "数学物理方程"
+    },
+    {
+      "id": "b032",
+      "kind": "text",
+      "zh": "<p>这部分就是中规中矩的课了，基本就是把吴崇试的数学物理方法过了一遍。这书网上有答案<a href=\"https://www.docin.com/p-1045354253.html\">数学物理方法+吴崇试+习题解答</a>，就非常好。不过我个人感觉吴崇试有很多东西没有细节，这里顾樵的书</p>"
+    },
+    {
+      "id": "book002",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1543983521982742528-0-1&amp;p=JF8BAb8JK1olXQ8CXFxUDkgQAl8IGloXXwEDXFtcDUkSAF9MRANLAjZbERscSkAJHTRQRA1CCVkdDwtCWhVLHTdNTwcKBENeCVAfUg8bA24JGVkSXA4HVVtfDUgAQ2N8YitwKk9pCio0UiJgcBhNbDJtBWJmPBgpUBZkYW5oXThgLWZlDi4UfikWUw0JSRt1FVt7Nl8hTih-VQh_eCBCK296MSkECAlgATVQfwFlG2VgMz0JCzdpczBweDtmOkF1JikraxFjBBlhezlhLgcWVykqaiN-YG5gEyxnPWFiDiJJCzx3cQtbYDgVA3JdPDspQQJQdRt8D1lgbRgEAVc5VQxnYxxMUAJ8O1tkMBgicCsbD18IElsXVQcDVFleOEsWAm8MHlgWWwcyZF5YOAp5A24IGl4QXgAyVW5dD0wWCmcNGV8TWQYAZF5VDHvBrfvdk-TM7aPU_vCIhfvCisTcpd0lbTYBZAUIXAJSH28MHlkdVAQGV15VAUgRBmwMGFIJXBoCZF5cCUgWAmYBHVJ7XGgCXFxeDEoeBm4MK1sWbQUyCjBcW00UB2wKEzVIWwcGCFdaXiUeCmYMHFwXbQQDVVxfOHs\">数学物理方法 顾樵</a>"
+    },
+    {
+      "id": "b033",
+      "kind": "text",
+      "zh": "<p>就做得很好，推导什么的都很详细，而且考试要背的结论上面都有写，所以搭配着看可能比较好。走这个传统路子学数学物理方法，给我最大的收获就是面对各种特殊函数不再发憷了，虽然现在基本都忘光了……当然数学物理方法完全还有另一种现代的路子学，就是从李群李代数的角度出发，可以把这些特殊函数都自然地推出来，感兴趣的读者可以看Hassani的<a href=\"https://www.amazon.com/Mathematical-Physics-Modern-Introduction-Foundations/dp/3319011944\">Mathematical Physics: A Modern Introduction to Its Foundations</a>，以及万老师的讲义：<a href=\"https://www.zhihu.com/question/383543500/answer/1344305932\">如何看待复旦大学物理系2019学年第二学期开设的数学物理方法课程？</a>。不过我目前对这类先打好数学基础，再去学物理的思路持怀疑态度，毕竟仅仅物理就足够丰富了。</p>"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p><br></p>"
+    },
+    {
+      "id": "b035",
+      "kind": "h2",
+      "zh": "大二冬季"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<p>大二冬季主要做的事有两件：一是看书，把秋季遗留下来的一些需要大块时间的材料系统性地阅读一下；二是做研究，秋季学期在天文系老师的指导下，我开始研究如何用机器学习加速微引力透镜的分析。</p>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<p>最后把前面提到的Coleman的场论书读了一半，到矢量场为止。另外因为一直感觉量子计算的基本功不太扎实，但又懒得完整读一遍Nielsen&amp;Chuang，于是就把Kitaev的<a href=\"https://www.ams.org/books/gsm/047/\">Classical and Quantum Computation</a>读了一下，一开始还是认认真真往下做，后来发现还是有些困难（虽然人家都给提示了orz），而且又感觉没那么必要抠细节，最后就变成草草阅读了。感觉这本书的思路比较偏Theory &amp; Complexity，虽然短但是不好读。不过草草读下来倒也了解了不少东西。</p>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>研究方面，因为问题很明确，解决方案也是我比较熟悉的，所以其实秋季学期两三个月项目主体就已经搞定了。结果寒假的时候发生了小转折，有两个时间参数怎么都估计不好：一个相当于事件发生的时间点，一个相当于事件的时间尺度。最后花了一整个寒假的试错，终于想到或许不应该直接进行参数估计，而是可以把问题转化成语义分割的任务，切割出一段特征长度，用它的中心位置来估计时间点，用它的长度来估计时间尺度，最终用U-Net解决了这个问题。</p>"
+    },
+    {
+      "id": "b039",
+      "kind": "text",
+      "zh": "<p>大二秋冬的内容看起来已经不少了，知乎编辑器都开始卡了，春夏的内容还是另开一篇好了。</p>"
+    }
+  ]
+}

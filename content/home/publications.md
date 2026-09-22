@@ -31,6 +31,10 @@ subtitle = ""
     author = ""
     exclude_featured = false
   
+[content.archive]
+  enable = true
+  link = "/publication/"
+
 [design]
   # Toggle between the various page layout types.
   #   1 = List

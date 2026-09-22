@@ -1,0 +1,1371 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/109529158",
+  "slug": "eigenvalues-of-sequences-matrices-and-odes",
+  "captured": "2026-09-21",
+  "source_body_sha256": "e35477911f69c214bfae261909918c8b34356e23e791f901ecef0244c82264bb",
+  "cover": "cover.jpg",
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "h2",
+      "zh": "一、缘起",
+      "en": "I. How This Started"
+    },
+    {
+      "id": "b002",
+      "kind": "text",
+      "zh": "<p>初中临近毕业，准备高中自招，误打误撞买了本高考自招指南。第一次见到了<b>线性递推数列的特征根解法</b>。后来学习物理竞赛，学解微分方程，在线性常系数常<b>微分方程的解法</b>中了解到了特征根解法。学线代的时候又接触到了<b>矩阵的特征值</b>。在数列、微分方程、矩阵三个不同的领域中都见到了“<b>特征值</b>”这个名字，难道仅仅是因为他们都刻画了问题的特征吗？当时我想，一定不是的。或许这些特征值是同一个特征值。</p>",
+      "en": "<p>As I was finishing middle school and preparing for high schools' own entrance exams, I accidentally picked up a prep book for the gaokao and universities' own admissions tests instead. That was where I first encountered the <b>characteristic-root method for linear recurrence sequences</b>. Later, while studying differential equations for physics Olympiads, I met the characteristic-root method again, this time for <b>linear ordinary differential equations with constant coefficients</b>. Then linear algebra brought me <b>matrix eigenvalues</b>. Sequences, differential equations, matrices: three different subjects, all using this name, <b>“eigenvalue.”</b> Was it just because they all characterize something about the problem? I thought it had to be more than that. Perhaps these were actually the same eigenvalues.</p>"
+    },
+    {
+      "id": "b003",
+      "kind": "text",
+      "zh": "<p>因为本人水平较低，这个问题断断续续地想了好几年，逐渐从各个角度撺出了一些头绪。本文对这些想法做一个介绍和总结，试图一窥这些特征值之间的关系。下文中很多内容是常见的数学基础知识，在各种教材中都可以见到，在此一并做一个回顾，故本文只需一点点微积分和线代基础即可阅读；另一些想法和关联是我自己<b>凭空捏造</b>出来的，完全有可能是瞎掰，望读者不吝指正。或许还有一些显而易见、呼之欲出的关联，因本人知识水平有限，无法注意到，望读者提点。</p>",
+      "en": "<p>Since I am not particularly good at this, I spent several years thinking about the question on and off, gradually piecing together a few ideas from different directions. This article introduces and collects those ideas, in the hope of getting a glimpse of how these eigenvalues are related. Much of what follows is standard basic mathematics, found in all sorts of textbooks; I review it here too, so you only need a little calculus and linear algebra. Some of the other ideas and connections are things I <b>made up out of thin air</b> and could be complete nonsense. Please do point out any mistakes. There may also be obvious connections staring me in the face that I simply do not know enough to notice. Do enlighten me.</p>"
+    },
+    {
+      "id": "b004",
+      "kind": "text",
+      "zh": "<p>我会先介绍预备知识引入，如果你已经会了的话请放心跳过。然后会探究数列、矩阵和微分方程中的特征值的关系。</p>",
+      "en": "<p>I will start with the background. If you already know it, feel free to skip ahead. Then we will explore the relationship between eigenvalues in sequences, matrices, and differential equations.</p>"
+    },
+    {
+      "id": "b005",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b006",
+      "kind": "h2",
+      "zh": "二、预备",
+      "en": "II. Background"
+    },
+    {
+      "id": "b007",
+      "kind": "h2",
+      "zh": "1、数列的特征值解法（来自高考学）",
+      "en": "1. The Characteristic-Root Method for Sequences (from Gaokao Prep)"
+    },
+    {
+      "id": "b008",
+      "kind": "text",
+      "zh": "<p>相信高中学过数列的朋友们都听说过数列的特征根解法，下面我们以二阶齐次线性递推数列的特征根解法为例，做一个简单的介绍。<b>高阶的版本同理。</b></p>",
+      "en": "<p>If you studied sequences in high school, you have probably heard of the characteristic-root method. Here is a brief introduction using a second-order homogeneous linear recurrence. <b>The higher-order case works the same way.</b></p>"
+    },
+    {
+      "id": "b009",
+      "kind": "quote",
+      "zh": "<b>数列的特征根解法</b><br>假设我们有一个二阶线性递推数列 \\(a_{n+2}+pa_{n+1}+qa_n=0,\\) 我们将其中的 \\(a_{n+k}\\) 替换为 \\(\\lambda^k,\\) 得到一个方程 \\(\\lambda^2+p\\lambda+q=0,\\) 我们将这个方程称为该递推式的<b>特征方程</b>。<br>记该方程有两个根为 \\(\\lambda_1, \\lambda_2\\in\\mathbb{C},\\) <br>若 \\(\\lambda_1\\ne\\lambda_2,\\) 则数列的通项为 \\(a_n=C_1\\lambda_1^n+C_2\\lambda_2^n\\) ，其中 \\(C_1,C_2\\) 由初项确定。<br>若 \\(\\lambda_1=\\lambda_2=\\lambda\\) ，则数列的通项为 \\(a_n=(C_1+C_2n)\\lambda^n\\) 。",
+      "en": "<b>The characteristic-root method for sequences</b><br>Suppose we have a second-order linear recurrence \\(a_{n+2}+pa_{n+1}+qa_n=0,\\). Replace \\(a_{n+k}\\) with \\(\\lambda^k,\\) to get the equation \\(\\lambda^2+p\\lambda+q=0,\\), which we call the <b>characteristic equation</b> of the recurrence.<br>Let its two roots be \\(\\lambda_1, \\lambda_2\\in\\mathbb{C},\\).<br>If \\(\\lambda_1\\ne\\lambda_2,\\), the general term of the sequence is \\(a_n=C_1\\lambda_1^n+C_2\\lambda_2^n\\), where \\(C_1,C_2\\) are determined by the initial terms.<br>If \\(\\lambda_1=\\lambda_2=\\lambda\\), the general term is \\(a_n=(C_1+C_2n)\\lambda^n\\)."
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>聪明的你或许已经注意到了我放着简单的x不用，偏要用TeX代码好长的\\lambda，打得我累死了。以及特征根可以为复数，想一想，复数时会怎样？</p>",
+      "en": "<p>You may already have noticed that I passed over the perfectly simple x and insisted on \\lambda, with its annoyingly long TeX command. My fingers are exhausted. Also, the characteristic roots can be complex. Have a think: what happens then?</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "quote",
+      "zh": "<b>来自高考学的证明</b>",
+      "en": "<b>The gaokao-prep proof</b>"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<p>下面我们来做个简单的证明，这一证明常见于各种高考学教材，大家会注意到这一方法基本完全没有intuition指导，乍看起来<b>莫名其妙，非常具有技巧性，让人好奇是怎么拍脑袋想出来的。</b></p>",
+      "en": "<p>Let us give a quick proof, the sort found in all kinds of gaokao-prep books. You will notice that there is basically no intuition guiding it. At first sight it is <b>baffling, full of tricks, and makes you wonder how anyone pulled it out of a hat.</b></p>"
+    },
+    {
+      "id": "b013",
+      "kind": "text",
+      "zh": "<p>有韦达定理可知 \\(p=-\\lambda_1-\\lambda_2, q=\\lambda_1\\lambda_2\\) ，代入递推式得到</p>",
+      "en": "<p>By Vieta’s formulas, \\(p=-\\lambda_1-\\lambda_2, q=\\lambda_1\\lambda_2\\). Substitute into the recurrence to get</p>"
+    },
+    {
+      "id": "b014",
+      "kind": "text",
+      "zh": "<p>\\[a_{n+2}-(\\lambda_1+\\lambda_2)a_{n+1}+\\lambda_1\\lambda_2a_n=0，\\\\\\] </p>",
+      "en": "<p>\\[a_{n+2}-(\\lambda_1+\\lambda_2)a_{n+1}+\\lambda_1\\lambda_2a_n=0，\\\\\\] </p>"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<p>接下来神来之笔地移项，得到</p>",
+      "en": "<p>Now, with a stroke of inspiration, rearrange the terms:</p>"
+    },
+    {
+      "id": "b016",
+      "kind": "text",
+      "zh": "<p>\\[a_{n+2}-\\lambda_1a_{n+1}=\\lambda_2(a_{n+1}-\\lambda_1a_{n})，\\\\\\] </p>",
+      "en": "<p>\\[a_{n+2}-\\lambda_1a_{n+1}=\\lambda_2(a_{n+1}-\\lambda_1a_{n})，\\\\\\] </p>"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>可见莫名其妙得到了一个等比数列，解之，得</p>",
+      "en": "<p>Somehow a geometric sequence has appeared out of nowhere. Solve it to get</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<p>\\[a_{n+1}-\\lambda_1a_n=C\\lambda_2^{n+1},\\\\\\] </p>",
+      "en": "<p>\\[a_{n+1}-\\lambda_1a_n=C\\lambda_2^{n+1},\\\\\\] </p>"
+    },
+    {
+      "id": "b019",
+      "kind": "text",
+      "zh": "<p>然后凑一凑，</p>",
+      "en": "<p>Then fiddle with it a little,</p>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>\\[\\frac{a_{n+1}}{\\lambda_1^{n+1}}-\\frac{a_n}{{\\lambda_1^{n}}}=C\\frac{\\lambda_2^{n+1}}{{\\lambda_1^{n+1}}},\\\\\\] </p>",
+      "en": "<p>\\[\\frac{a_{n+1}}{\\lambda_1^{n+1}}-\\frac{a_n}{{\\lambda_1^{n}}}=C\\frac{\\lambda_2^{n+1}}{{\\lambda_1^{n+1}}},\\\\\\] </p>"
+    },
+    {
+      "id": "b021",
+      "kind": "text",
+      "zh": "<p>再累加，这时由于要求右侧等比数列的和，需要对公比是否等于1分类，</p>",
+      "en": "<p>and sum. Since we need the sum of the geometric sequence on the right, we have to split into cases according to whether the common ratio is 1.</p>"
+    },
+    {
+      "id": "b022",
+      "kind": "text",
+      "zh": "<p>若 \\(\\lambda_1=\\lambda_2=\\lambda\\) ，则</p>",
+      "en": "<p>If \\(\\lambda_1=\\lambda_2=\\lambda\\), then</p>"
+    },
+    {
+      "id": "b023",
+      "kind": "text",
+      "zh": "<p>\\[\\frac{a_n}{{\\lambda^{n}}}=C_1n+C_2,\\\\\\] </p>",
+      "en": "<p>\\[\\frac{a_n}{{\\lambda^{n}}}=C_1n+C_2,\\\\\\] </p>"
+    },
+    {
+      "id": "b024",
+      "kind": "text",
+      "zh": "<p>若 \\(\\lambda_1\\ne\\lambda_2\\) ，应用等比数列求和公式可得</p>",
+      "en": "<p>If \\(\\lambda_1\\ne\\lambda_2\\), the geometric-series formula gives</p>"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<p>\\[\\frac{a_n}{{\\lambda_1^{n}}}=C_1+C_2\\frac{\\lambda_2^n}{\\lambda_1^n}.{\\blacksquare}\\\\\\] </p>",
+      "en": "<p>\\[\\frac{a_n}{{\\lambda_1^{n}}}=C_1+C_2\\frac{\\lambda_2^n}{\\lambda_1^n}.{\\blacksquare}\\\\\\] </p>"
+    },
+    {
+      "id": "b026",
+      "kind": "text",
+      "zh": "<p>希望你还没有因为枯燥的技巧性证明离开。</p>",
+      "en": "<p>I hope you have not left because of this dry, trick-laden proof.</p>"
+    },
+    {
+      "id": "b027",
+      "kind": "h2",
+      "zh": "2、矩阵的特征值（来自线性代数）",
+      "en": "2. Matrix Eigenvalues (from Linear Algebra)"
+    },
+    {
+      "id": "b028",
+      "kind": "text",
+      "zh": "<p>先推荐3b1b的系列视频，学线代杀人越货必备。</p>",
+      "en": "<p>First, a recommendation: 3b1b’s video series. Essential kit for your linear-algebra exploits.</p>"
+    },
+    {
+      "id": "b029",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.bilibili.com/video/av6731067\">【官方双语/合集】线性代数的本质 - 系列合集_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a>",
+      "en": "<a href=\"https://www.bilibili.com/video/av6731067\">[Official bilingual collection] Essence of Linear Algebra — full series on Bilibili (゜-゜)つロ Cheers~</a>"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p>下面来简单介绍一下特征值。下列论述中若有不理解请直接到3b1b的视频里找对应章节。</p>",
+      "en": "<p>Here is a quick introduction to eigenvalues. If anything below is unclear, go straight to the corresponding episode of 3b1b’s series.</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "text",
+      "zh": "<p>首先，<b>矩阵描述了线性变换</b>，一种理解是<b>对基的变换</b>，即将向量在一组基下的分量表示，变换到另一组基下的分量表示；另一种理解是<b>对向量的变换</b>，即将一个向量变换为另一个向量。</p>",
+      "en": "<p>First, <b>matrices describe linear transformations</b>. One way to understand this is as a <b>change of basis</b>: converting the components of a vector in one basis into its components in another. Another is as a <b>transformation of vectors</b>: taking one vector to another.</p>"
+    },
+    {
+      "id": "b032",
+      "kind": "text",
+      "zh": "<p>我们先取<b>后一种理解</b>。</p>",
+      "en": "<p>Let us use <b>the second interpretation</b> for now.</p>"
+    },
+    {
+      "id": "b033",
+      "kind": "quote",
+      "zh": "<b>矩阵的特征值与特征向量</b>",
+      "en": "<b>Matrix eigenvalues and eigenvectors</b>"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p>那么对一个线性变换 \\(A\\) ，可能存在一些向量 \\(x\\) ，在这个变换下<b>方向不变</b>。用数学的语言，即 \\(Ax=\\lambda x\\) 。我们把这种向量称为 \\(A\\) 的<b>特征向量</b>，对应的常数 \\(\\lambda\\) 称为对应的<b>特征值</b>。</p>",
+      "en": "<p>For a linear transformation \\(A\\), there may be vectors \\(x\\) whose <b>direction does not change</b> under the transformation. Mathematically, \\(Ax=\\lambda x\\). We call such vectors <b>eigenvectors</b> of \\(A\\), and the corresponding constant \\(\\lambda\\) the <b>eigenvalue</b>.</p>"
+    },
+    {
+      "id": "b035",
+      "kind": "text",
+      "zh": "<p><b>为什么特征值值得我们研究？</b></p>",
+      "en": "<p><b>Why are eigenvalues worth studying?</b></p>"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<p>依我看，是因为它把<b>矩阵的乘法变成了常数的乘法</b>，在许多场合可以大大简化计算。</p>",
+      "en": "<p>To me, it is because they turn <b>matrix multiplication into multiplication by a constant</b>, which can make calculations much simpler.</p>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<p>最基本的<b>求矩阵特征值的方法</b>便是从定义 \\(Ax=\\lambda x\\) 出发，我们做移项，得</p>",
+      "en": "<p>The most basic <b>way to find matrix eigenvalues</b> starts from the definition \\(Ax=\\lambda x\\). Rearrange to get</p>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>\\[(A-\\lambda I)x=0,\\\\\\] </p>",
+      "en": "<p>\\[(A-\\lambda I)x=0,\\\\\\] </p>"
+    },
+    {
+      "id": "b039",
+      "kind": "text",
+      "zh": "<p>其中 \\(I\\) 代表单位矩阵。为了得到非平凡解（ \\(x\\ne 0\\) ），必须要求前面的矩阵的行列式为零：</p>",
+      "en": "<p>Here \\(I\\) is the identity matrix. For a nontrivial solution, \\(x\\ne 0\\), the determinant of the matrix in front must vanish:</p>"
+    },
+    {
+      "id": "b040",
+      "kind": "text",
+      "zh": "<p>\\[|A-\\lambda I|=0，\\\\\\] </p>",
+      "en": "<p>\\[|A-\\lambda I|=0，\\\\\\] </p>"
+    },
+    {
+      "id": "b041",
+      "kind": "text",
+      "zh": "<p>该方程称为矩阵 \\(A\\) 的<b>特征方程</b>。</p>",
+      "en": "<p>This is called the <b>characteristic equation</b> of the matrix \\(A\\).</p>"
+    },
+    {
+      "id": "b042",
+      "kind": "quote",
+      "zh": "<b>举个例子</b>",
+      "en": "<b>An example</b>"
+    },
+    {
+      "id": "b043",
+      "kind": "text",
+      "zh": "<p>我们举一个例子 \\(A=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}\\) （为什么我们要举这个例子？），</p>",
+      "en": "<p>Take the example \\(A=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}\\). Why this example, I wonder?</p>"
+    },
+    {
+      "id": "b044",
+      "kind": "text",
+      "zh": "<p>特征方程就是 \\[\\begin{vmatrix} -p-\\lambda &amp; -q \\\\ 1 &amp; -\\lambda \\end{vmatrix}=0,\\\\\\] </p>",
+      "en": "<p>Its characteristic equation is \\[\\begin{vmatrix} -p-\\lambda &amp; -q \\\\ 1 &amp; -\\lambda \\end{vmatrix}=0,\\\\\\].</p>"
+    },
+    {
+      "id": "b045",
+      "kind": "text",
+      "zh": "<p>展开得到</p>",
+      "en": "<p>Expanding gives</p>"
+    },
+    {
+      "id": "b046",
+      "kind": "text",
+      "zh": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>",
+      "en": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b047",
+      "kind": "text",
+      "zh": "<p>上式的两个根即为该矩阵的两个特征值。再代入定义式便可得到对应的特征向量。</p>",
+      "en": "<p>The two roots are the matrix’s two eigenvalues. Substitute them back into the defining equation to find the corresponding eigenvectors.</p>"
+    },
+    {
+      "id": "b048",
+      "kind": "quote",
+      "zh": "另外多提一件事：<br><b>线性方程组的叠加原理：</b>线性齐次方程的解的叠加还是解。",
+      "en": "One more thing:<br><b>The superposition principle for systems of linear equations:</b> a superposition of solutions to a homogeneous linear equation is also a solution."
+    },
+    {
+      "id": "b049",
+      "kind": "text",
+      "zh": "<p>比如方程 \\(Ax=0\\) 有两个解 \\(x_1,x_2,\\) 那么他们的线性叠加 \\(C_1x_1+C_2x_2\\) 也是解。</p>",
+      "en": "<p>For example, if \\(Ax=0\\) has two solutions \\(x_1,x_2,\\), their linear combination \\(C_1x_1+C_2x_2\\) is also a solution.</p>"
+    },
+    {
+      "id": "b050",
+      "kind": "h2",
+      "zh": "3、微分方程的特征值解法（来自微积分）",
+      "en": "3. The Characteristic-Root Method for Differential Equations (from Calculus)"
+    },
+    {
+      "id": "b051",
+      "kind": "text",
+      "zh": "<p>学物理的同学可能经常会遇到<b>线性微分方程</b>，比如单摆的运动方程 \\(\\ddot{\\theta}+\\frac{g}{l}\\theta=0\\) 。</p>",
+      "en": "<p>Physics students often run into <b>linear differential equations</b>, such as the equation of motion of a simple pendulum, \\(\\ddot{\\theta}+\\frac{g}{l}\\theta=0\\).</p>"
+    },
+    {
+      "id": "b052",
+      "kind": "quote",
+      "zh": "<b>猜解</b>",
+      "en": "<b>Guessing a solution</b>"
+    },
+    {
+      "id": "b053",
+      "kind": "text",
+      "zh": "<p>解得时候老师经常会用“<b>猜解</b>”这种说辞糊弄人，我们拿二阶的方程做个例子。<b>高阶同理。</b></p>",
+      "en": "<p>When solving these, instructors often fob us off with “<b>guess a solution</b>.” Let us take a second-order equation as an example. <b>Higher orders work the same way.</b></p>"
+    },
+    {
+      "id": "b054",
+      "kind": "text",
+      "zh": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0\\\\\\] </p>",
+      "en": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0\\\\\\] </p>"
+    },
+    {
+      "id": "b055",
+      "kind": "text",
+      "zh": "<p>（以后我们在函数上打点即表示对时间 \\(t\\) 的导数，两个点就是二阶导，以此类推。同时我们有时将求导这件事写成一个算符 \\(D\\) 的形式，比如 \\(Dx=\\dot{x}\\) 。想一下，为什么要写成这种难看的形式？）</p>",
+      "en": "<p>(From here on, a dot over a function means differentiation with respect to time \\(t\\); two dots mean a second derivative, and so on. Sometimes we will also write differentiation as an operator \\(D\\), for example \\(Dx=\\dot{x}\\). Have a think: why write it in this ugly form?)</p>"
+    },
+    {
+      "id": "b056",
+      "kind": "text",
+      "zh": "<p>猜 \\(x=Ce^{\\lambda t}\\) ，代入方程，由于我们知道 \\(De^{\\lambda t}=\\lambda e^{\\lambda t}\\) （<b>有没有联想到什么？</b>）,约去指数部分，可得</p>",
+      "en": "<p>Guess \\(x=Ce^{\\lambda t}\\) and substitute. Since we know \\(De^{\\lambda t}=\\lambda e^{\\lambda t}\\)—<b>does that remind you of anything?</b>—we can cancel the exponential part to get</p>"
+    },
+    {
+      "id": "b057",
+      "kind": "text",
+      "zh": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>",
+      "en": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b058",
+      "kind": "text",
+      "zh": "<p>上式称为该微分方程的<b>特征方程</b>。解出来两个根 \\(\\lambda_1,\\lambda_2\\in\\mathbb{C},\\) </p>",
+      "en": "<p>This is the differential equation’s <b>characteristic equation</b>. Solving it gives two roots, \\(\\lambda_1,\\lambda_2\\in\\mathbb{C},\\).</p>"
+    },
+    {
+      "id": "b059",
+      "kind": "text",
+      "zh": "<p>如果 \\(\\lambda_1\\ne\\lambda_2,\\) 那么方程的通解为 \\(x=C_1e^{\\lambda_1 t}+C_2e^{\\lambda_2 t}\\) 。（老师说这叫叠加原理）</p>",
+      "en": "<p>If \\(\\lambda_1\\ne\\lambda_2,\\), the general solution is \\(x=C_1e^{\\lambda_1 t}+C_2e^{\\lambda_2 t}\\). (The instructor says this is the superposition principle.)</p>"
+    },
+    {
+      "id": "b060",
+      "kind": "text",
+      "zh": "<p>如果 \\(\\lambda_1=\\lambda_2=\\lambda,\\) 那么方程的通解为 \\(x=(C_1+C_2t)e^{\\lambda t}\\) 。（<b>有没有联想到什么？</b>）</p>",
+      "en": "<p>If \\(\\lambda_1=\\lambda_2=\\lambda,\\), the general solution is \\(x=(C_1+C_2t)e^{\\lambda t}\\). (<b>Does that remind you of anything?</b>)</p>"
+    },
+    {
+      "id": "b061",
+      "kind": "text",
+      "zh": "<p>以上这种“不证自明”的猜解方法又透露出了我们<b>在数列板块中熟悉的莫名其妙</b>。只是这次我打算把证明留到后面。在那里，我们将要引入<b>傅里叶变换及拉普拉斯变换</b>。</p>",
+      "en": "<p>This supposedly self-evident way of guessing a solution has <b>the same baffling quality we met with sequences</b>. This time, though, I will leave the proof for later, when we introduce <b>Fourier and Laplace transforms</b>.</p>"
+    },
+    {
+      "id": "b062",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b063",
+      "kind": "text",
+      "zh": "<p>相信到目前为止，你或许已经从<b>不同板块中的相似式子</b>里看出了一些端倪。年轻的我当时就是在这种好奇地驱使下开始思考其间的关系。以下我们将要开始对其中的关联做一些探究。</p>",
+      "en": "<p>By now you may have noticed something in the <b>similar-looking formulas from these different subjects</b>. That was the curiosity that got my younger self thinking about the connections. Now let us start exploring them.</p>"
+    },
+    {
+      "id": "b064",
+      "kind": "text",
+      "zh": "<p>如果你想要休息一下，现在是个好时候。</p>",
+      "en": "<p>If you would like a break, this is a good time.</p>"
+    },
+    {
+      "id": "b065",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b066",
+      "kind": "h2",
+      "zh": "三、关系",
+      "en": "III. Connections"
+    },
+    {
+      "id": "b067",
+      "kind": "h2",
+      "zh": "1、从数列到微分方程",
+      "en": "1. From Sequences to Differential Equations"
+    },
+    {
+      "id": "b068",
+      "kind": "text",
+      "zh": "<p><b>注意：以下内容是我在某个夜晚灵机一动捏造出来的，有可能是错的。</b></p>",
+      "en": "<p><b>Note: I made the following up in a flash of inspiration one night. It could be wrong.</b></p>"
+    },
+    {
+      "id": "b069",
+      "kind": "text",
+      "zh": "<p>让我们先来观察对比一下数列递推方程和微分方程（高阶同理）：</p>",
+      "en": "<p>First, compare the recurrence relation and the differential equation. Higher orders work the same way:</p>"
+    },
+    {
+      "id": "b070",
+      "kind": "text",
+      "zh": "<p>\\(a_{n+2}+pa_{n+1}+qa_n=0,\\\\ \\ddot{x}+p\\dot{x}+qx=0.\\) </p>",
+      "en": "<p>\\(a_{n+2}+pa_{n+1}+qa_n=0,\\\\ \\ddot{x}+p\\dot{x}+qx=0.\\) </p>"
+    },
+    {
+      "id": "b071",
+      "kind": "text",
+      "zh": "<p>特征方程均为</p>",
+      "en": "<p>The characteristic equation in both cases is</p>"
+    },
+    {
+      "id": "b072",
+      "kind": "text",
+      "zh": "<p>\\[\\lambda^2+p\\lambda+q=0\\\\\\] </p>",
+      "en": "<p>\\[\\lambda^2+p\\lambda+q=0\\\\\\] </p>"
+    },
+    {
+      "id": "b073",
+      "kind": "text",
+      "zh": "<p><b>你有没有突然觉得，数列每递推一项，就好像多求了一阶导数？</b></p>",
+      "en": "<p><b>Does it suddenly look as though advancing the recurrence by one term is like taking one more derivative?</b></p>"
+    },
+    {
+      "id": "b074",
+      "kind": "text",
+      "zh": "<p>基于这个重要的观察，我们或许可以<b>构造一个函数</b>出来，</p>",
+      "en": "<p>With that observation, perhaps we can <b>construct a function</b></p>"
+    },
+    {
+      "id": "b075",
+      "kind": "text",
+      "zh": "<p><b>让这个函数每多求一次导，就可以生产出数列的一项。</b></p>",
+      "en": "<p><b>that produces another term of the sequence each time we differentiate it.</b></p>"
+    },
+    {
+      "id": "b076",
+      "kind": "text",
+      "zh": "<p><b>函数有自变量，因此我们还要找一个自变量把数列的项给套出来。</b></p>",
+      "en": "<p><b>A function has an argument, so we also need a value of that argument at which to extract the sequence terms.</b></p>"
+    },
+    {
+      "id": "b077",
+      "kind": "text",
+      "zh": "<p><b>我想到了我们最熟悉的多项式函数，并且想不妨就用</b> \\(0\\) <b>把数列套出来，于是我们构造：</b></p>",
+      "en": "<p><b>I thought of the familiar polynomial functions, and figured we might as well use </b>\\(0\\)<b> to extract the sequence. So we construct:</b></p>"
+    },
+    {
+      "id": "b078",
+      "kind": "text",
+      "zh": "<p>\\[x=a_0+a_1t+\\frac{a_2}{2!}t^2+\\dots+\\frac{a_n}{n!}t^n+\\dots\\\\\\] </p>",
+      "en": "<p>\\[x=a_0+a_1t+\\frac{a_2}{2!}t^2+\\dots+\\frac{a_n}{n!}t^n+\\dots\\\\\\] </p>"
+    },
+    {
+      "id": "b079",
+      "kind": "text",
+      "zh": "<p>（是不是和泰勒展开很像？）</p>",
+      "en": "<p>(Looks rather like a Taylor expansion, doesn’t it?)</p>"
+    },
+    {
+      "id": "b080",
+      "kind": "text",
+      "zh": "<p>这样， \\(D^nx(0)=a_n\\) ，<b>我们便可以从函数中套出数列了。</b></p>",
+      "en": "<p>Now \\(D^nx(0)=a_n\\), and <b>we can extract the sequence from the function.</b></p>"
+    },
+    {
+      "id": "b081",
+      "kind": "text",
+      "zh": "<p>（事后证明，这与组合数学中的<b>母函数</b>思想类似，不过我不会组合数学，母函数这个名字还是从OI同学那听来的，便不多说了。）</p>",
+      "en": "<p>(It later turned out that this resembles the idea of a <b>generating function</b> in combinatorics. But I do not know combinatorics; I only heard the name from a friend who competed in informatics Olympiads, so I will leave it there.)</p>"
+    },
+    {
+      "id": "b082",
+      "kind": "text",
+      "zh": "<p>接着我们把这个函数代入数列递推式，得到</p>",
+      "en": "<p>Substitute this function into the recurrence relation:</p>"
+    },
+    {
+      "id": "b083",
+      "kind": "text",
+      "zh": "<p>\\[D^{n+2}x(0)+pD^{n+1}x(0)+qD^{n}x(0)=0.\\\\\\] </p>",
+      "en": "<p>\\[D^{n+2}x(0)+pD^{n+1}x(0)+qD^{n}x(0)=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b084",
+      "kind": "text",
+      "zh": "<p>为了让它更接近微分方程，我们不妨给这个函数多做点约束。原先递推方程只要求函数在 \\(t=0\\) 处满足，我们不妨让它在<b>处处均要满足</b>，来试一试。于是我们得到</p>",
+      "en": "<p>To make it look more like a differential equation, let us add a constraint. The recurrence only requires the equation to hold at \\(t=0\\). Why not try requiring it to hold <b>everywhere</b>? We get</p>"
+    },
+    {
+      "id": "b085",
+      "kind": "text",
+      "zh": "<p>\\[D^{n+2}x+pD^{n+1}x+qD^{n}x=0.\\\\\\] </p>",
+      "en": "<p>\\[D^{n+2}x+pD^{n+1}x+qD^{n}x=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b086",
+      "kind": "text",
+      "zh": "<p>这时，如果我们把函数 \\(D^nx\\) 看作一个整体，记作 \\(x_n\\) ，则 \\(x_n(0)=a_n\\) ，而且</p>",
+      "en": "<p>Now regard the function \\(D^nx\\) as a whole and call it \\(x_n\\). Then \\(x_n(0)=a_n\\), and</p>"
+    },
+    {
+      "id": "b087",
+      "kind": "text",
+      "zh": "<p>\\[\\ddot{x}_n+p\\dot{x}_n+qx_n=0.\\\\\\] </p>",
+      "en": "<p>\\[\\ddot{x}_n+p\\dot{x}_n+qx_n=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b088",
+      "kind": "text",
+      "zh": "<p><b><i>至此，我们成功把数列递推方程转化为了微分方程！！</i></b></p>",
+      "en": "<p><b><i>We have turned the recurrence relation into a differential equation!!</i></b></p>"
+    },
+    {
+      "id": "b089",
+      "kind": "quote",
+      "zh": "接下来我们尝试用解微分方程的方法解出这个数列，并在其中体会二者的一致性。",
+      "en": "Next, let us solve the sequence using differential-equation methods and see how the two agree."
+    },
+    {
+      "id": "b090",
+      "kind": "text",
+      "zh": "<p>我们取信息量最大（求导次数最少）的方程，即n=0，\\(x_0=x\\) ：</p>",
+      "en": "<p>Take the equation with the most information—the fewest derivatives—that is, n=0, \\(x_0=x\\):</p>"
+    },
+    {
+      "id": "b091",
+      "kind": "text",
+      "zh": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0.\\\\\\] </p>",
+      "en": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b092",
+      "kind": "text",
+      "zh": "<p>用二-3中已经推导的结论，我们得到 \\(x=C_1e^{\\lambda_1t}+C_2e^{\\lambda_2t}\\) 或 \\(x=(C_1+C_2t)e^{\\lambda t}\\) 。</p>",
+      "en": "<p>Using the result from II.3 gives \\(x=C_1e^{\\lambda_1t}+C_2e^{\\lambda_2t}\\) or \\(x=(C_1+C_2t)e^{\\lambda t}\\).</p>"
+    },
+    {
+      "id": "b093",
+      "kind": "text",
+      "zh": "<p>于是 \\(a_n=D^nx(0)=C_1\\lambda_1^ne^{\\lambda_1t}+C_2\\lambda_2^ne^{\\lambda_2t}|_{t=0}=C_1\\lambda_1^n+C_2\\lambda_2^n,\\) </p>",
+      "en": "<p>Thus \\(a_n=D^nx(0)=C_1\\lambda_1^ne^{\\lambda_1t}+C_2\\lambda_2^ne^{\\lambda_2t}|_{t=0}=C_1\\lambda_1^n+C_2\\lambda_2^n,\\)</p>"
+    },
+    {
+      "id": "b094",
+      "kind": "text",
+      "zh": "<p>或者 \\(a_n=D^nx(0)=C_1\\lambda^ne^{\\lambda t}+nC_2\\lambda^ne^{\\lambda t}|_{t=0}=(C_1+C_2n)\\lambda^n.\\) </p>",
+      "en": "<p>or \\(a_n=D^nx(0)=C_1\\lambda^ne^{\\lambda t}+nC_2\\lambda^ne^{\\lambda t}|_{t=0}=(C_1+C_2n)\\lambda^n.\\).</p>"
+    },
+    {
+      "id": "b095",
+      "kind": "text",
+      "zh": "<p>注意到这里推导的时候有两件事：</p>",
+      "en": "<p>Two things to note in this derivation:</p>"
+    },
+    {
+      "id": "b096",
+      "kind": "text",
+      "zh": "<ol><li>为了保持一致性，额外的系数被吸收进了 \\(C_1, C_2\\) 两个常数里；</li><li>第二种情况中，所有求导出含 \\(t\\) 的项都会因为 \\(t=0\\) 而消失，故略去不写，而反复应用乘积的求导法则，便会产生 \\(n\\) 。</li></ol>",
+      "en": "<ol><li>To keep the expressions consistent, extra coefficients have been absorbed into the two constants \\(C_1, C_2\\).</li><li>In the second case, every term containing \\(t\\) after differentiation vanishes because \\(t=0\\), so I have left those terms out. Repeated use of the product rule produces \\(n\\).</li></ol>"
+    },
+    {
+      "id": "b097",
+      "kind": "text",
+      "zh": "<p><b>由此，我们发现了数列特征根与微分方程特征根的一致性。</b></p>",
+      "en": "<p><b>So we have found that the characteristic roots of the sequence and the differential equation agree.</b></p>"
+    },
+    {
+      "id": "b098",
+      "kind": "text",
+      "zh": "<p><b>我们发现，竟然之前因为等比数列求和公比等于1的奇葩分类也能通过微分方程复现。</b></p>",
+      "en": "<p><b>Even that bizarre case split over whether the geometric-series ratio is 1 turns up again through the differential equation.</b></p>"
+    },
+    {
+      "id": "b099",
+      "kind": "text",
+      "zh": "<p><b>再次重申，上述过程是我拍脑袋想出来的，不保证正确性。</b></p>",
+      "en": "<p><b>Once again: I dreamed this up myself. No guarantee that it is correct.</b></p>"
+    },
+    {
+      "id": "b100",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b101",
+      "kind": "quote",
+      "zh": "<b>评论区dalao提示这和Z变换与拉普拉斯变换的关系一致。</b>",
+      "en": "<b>Someone knowledgeable in the comments pointed out that this agrees with the relationship between the Z-transform and the Laplace transform.</b>"
+    },
+    {
+      "id": "b102",
+      "kind": "h2",
+      "zh": "<b>2、从微分方程到矩阵</b>",
+      "en": "<b>2. From Differential Equations to Matrices</b>"
+    },
+    {
+      "id": "b103",
+      "kind": "text",
+      "zh": "<p>这一步的联系是我在学习量子力学的时候学到的，让我们一步一步地来。</p>",
+      "en": "<p>I learned this connection while studying quantum mechanics. Let us take it step by step.</p>"
+    },
+    {
+      "id": "b104",
+      "kind": "text",
+      "zh": "<p>首先，想要用线性代数的工具研究函数，我们就必须证明：</p>",
+      "en": "<p>First, if we want to study functions using linear algebra, we must show that</p>"
+    },
+    {
+      "id": "b105",
+      "kind": "quote",
+      "zh": "<b>函数是向量。</b>",
+      "en": "<b>functions are vectors.</b>"
+    },
+    {
+      "id": "b106",
+      "kind": "text",
+      "zh": "<p>我在初学时对这句话感到非常惊艳。</p>",
+      "en": "<p>This statement really blew me away when I first learned it.</p>"
+    },
+    {
+      "id": "b107",
+      "kind": "text",
+      "zh": "<p>我们先来回顾一下向量与线性空间的定义。</p>",
+      "en": "<p>Let us review the definitions of a vector and a linear space.</p>"
+    },
+    {
+      "id": "b108",
+      "kind": "text",
+      "zh": "<p>以下抄百度百科：</p>",
+      "en": "<p>The following is copied from Baidu Baike:</p>"
+    },
+    {
+      "id": "b109",
+      "kind": "quote",
+      "zh": "设V是一个非空集合，P是一个域，若：<br>1. （<b>加法的定义</b>）在V中定义了一种运算，称为加法，即对V中任意两个元素α与β都按某一法则对应于V内惟一确定的一个元素α+β，称为α与β的和。<br>2. （<b>数乘的定义</b>）在P与V的元素间定义了一种运算，称为纯量乘法(亦称数量乘法)，即对V中任意元素α和P中任意元素k，都按某一法则对应V内惟一确定的一个元素kα，称为k与α的积。<br>3.（<b>线性</b>）加法与纯量乘法满足以下条件：<br>1) α+β=β+α，对任意α，β∈V.<br>2) α+(β+γ)=(α+β)+γ，对任意α，β，γ∈V.<br>3) 存在一个元素0∈V，对一切α∈V有α+0=α，元素0称为V的零元.<br>4) 对任一α∈V，都存在β∈V使α+β=0，β称为α的负元素，记为-α.<br>5) 对P中单位元1，有1α=α(α∈V).<br>6) 对任意k，l∈P，α∈V有(kl)α=k(lα).<br>7) 对任意k，l∈P，α∈V有(k+l)α=kα+lα.<br>8) 对任意k∈P，α，β∈V有k(α+β)=kα+kβ.<br>则称V为域P上的一个<b>线性空间</b>，或向量空间。V中元素称为<b>向量</b>。",
+      "en": "Let V be a nonempty set and P a field. Suppose:<br>1. (<b>Definition of addition</b>) An operation called addition is defined on V: every pair of elements α and β in V is assigned, by a specified rule, a unique element α+β in V, called the sum of α and β.<br>2. (<b>Definition of scalar multiplication</b>) An operation called scalar multiplication is defined between elements of P and V: every element α in V and k in P is assigned, by a specified rule, a unique element kα in V, called the product of k and α.<br>3. (<b>Linearity</b>) Addition and scalar multiplication satisfy:<br>1) α+β=β+α for all α, β∈V.<br>2) α+(β+γ)=(α+β)+γ for all α, β, γ∈V.<br>3) There exists an element 0∈V such that α+0=α for every α∈V. This element 0 is called the zero element of V.<br>4) For every α∈V there exists β∈V such that α+β=0. The element β is called the additive inverse of α and is denoted by -α.<br>5) For the multiplicative identity 1 in P, 1α=α (α∈V).<br>6) For all k, l∈P and α∈V, (kl)α=k(lα).<br>7) For all k, l∈P and α∈V, (k+l)α=kα+lα.<br>8) For all k∈P and α, β∈V, k(α+β)=kα+kβ.<br>Then V is called a <b>linear space</b>, or vector space, over P. Its elements are called <b>vectors</b>."
+    },
+    {
+      "id": "b110",
+      "kind": "text",
+      "zh": "<p>接下来，如果我们定义函数之间的加法为自变量取值对应函数值直接相加，</p>",
+      "en": "<p>Now define addition of functions by simply adding their values at each argument.</p>"
+    },
+    {
+      "id": "b111",
+      "kind": "text",
+      "zh": "<p>比如 \\(f(x)=x, g(x)=x^2,\\) 那么 \\(\\alpha f(x)+\\beta g(x)=\\beta x^2+\\alpha x\\) ，显然后者也是函数。</p>",
+      "en": "<p>For example, if \\(f(x)=x, g(x)=x^2,\\), then \\(\\alpha f(x)+\\beta g(x)=\\beta x^2+\\alpha x\\), which is clearly also a function.</p>"
+    },
+    {
+      "id": "b112",
+      "kind": "text",
+      "zh": "<p>如此可以证明，函数空间也是一个线性空间，而每个<b>函数就是一个向量</b>。</p>",
+      "en": "<p>In this way we can show that a function space is a linear space, and each <b>function is a vector</b>.</p>"
+    },
+    {
+      "id": "b113",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b114",
+      "kind": "text",
+      "zh": "<p>接下来，我们便可以将平时在线代中发展出的工具应用到函数中。</p>",
+      "en": "<p>We can now apply our familiar tools from linear algebra to functions.</p>"
+    },
+    {
+      "id": "b115",
+      "kind": "text",
+      "zh": "<p>比如，我们可以定义<b>内积</b>。</p>",
+      "en": "<p>For example, we can define an <b>inner product</b>.</p>"
+    },
+    {
+      "id": "b116",
+      "kind": "quote",
+      "zh": "<b>函数的内积</b><br>理论上，只要给线性空间配备上任何一个满足一系列性质的映射（由两个向量映到一个数），得到的空间就被称作<b>内积空间</b>，如果再加上完备性的条件，则称作<b>希尔伯特空间，</b>这个映射被称为<b>内积。</b><br><b>我们这里采用一种量子力学当中的希尔伯特空间。</b><br>（以下内容半抄Shankar Principles of Quantum Mechanics）",
+      "en": "<b>Inner products of functions</b><br>In principle, equip a linear space with any map from pairs of vectors to scalars satisfying a certain list of properties, and the resulting space is called an <b>inner-product space</b>. Add completeness, and it is a <b>Hilbert space</b>. The map is called the <b>inner product</b>.<br><b>Here we use a Hilbert space from quantum mechanics.</b><br>(What follows is half copied from Shankar’s Principles of Quantum Mechanics.)"
+    },
+    {
+      "id": "b117",
+      "kind": "text",
+      "zh": "<p>接下来我们引入一组量子力学中的记号，狄拉克记号：</p>",
+      "en": "<p>Next, let us introduce some notation from quantum mechanics: Dirac notation.</p>"
+    },
+    {
+      "id": "b118",
+      "kind": "quote",
+      "zh": "我们把一个向量记作 \\(\\mathinner{|v\\rangle}\\) ，称为ket（braket的右半部分），把两个向量 \\(\\mathinner{|v\\rangle}\\mathinner{|w\\rangle}\\) 的内积记作 \\({\\langle v}|{w\\rangle}\\) 或 \\({\\langle w}|{v\\rangle}\\) ，其中 \\({\\langle v}|\\) 被称为bra（左半部分）。<br>既然我们已经发现函数也是向量，我们不妨将函数 \\(f\\) 记作 \\(|f\\rangle\\) 。<br>为了量子力学的需要，我们定义<b>函数间的内积</b>为（接下来会解释为什么这样定义）：<br> \\(\\langle f|g\\rangle=\\int_{-\\infty}^{+\\infty}f^*(x)g(x)dx\\) ，其中 \\(x^*\\) 表示 \\(x\\) 的复共轭。<br>需要注意这样定义的内积与顺序有关，有 \\(\\langle f|g\\rangle=\\langle g|f\\rangle^*\\) 。",
+      "en": "Write a vector as \\(\\mathinner{|v\\rangle}\\), called a ket—the right half of “braket.” Write the inner product of two vectors \\(\\mathinner{|v\\rangle}\\mathinner{|w\\rangle}\\) as \\({\\langle v}|{w\\rangle}\\) or \\({\\langle w}|{v\\rangle}\\), where \\({\\langle v}|\\) is called a bra, the left half.<br>Since we have found that functions are vectors too, we can write the function \\(f\\) as \\(|f\\rangle\\).<br>For the needs of quantum mechanics, we define the <b>inner product of functions</b> as follows. We will see why shortly:<br>\\(\\langle f|g\\rangle=\\int_{-\\infty}^{+\\infty}f^*(x)g(x)dx\\), where \\(x^*\\) denotes the complex conjugate of \\(x\\).<br>Note that the order matters in this definition: \\(\\langle f|g\\rangle=\\langle g|f\\rangle^*\\)."
+    },
+    {
+      "id": "b119",
+      "kind": "text",
+      "zh": "<p>在线性代数中我们知道，<b>一个向量本身，跟我们所选取的、用来描述他的基底无关</b>。但我们描述它的时候，一般需要选取一组基底，用在各个基底上的<b>分量来表述他</b>。</p>",
+      "en": "<p>From linear algebra, we know that <b>a vector itself is independent of the basis we choose to describe it</b>. But to describe it, we usually choose a basis and <b>specify its components in that basis</b>.</p>"
+    },
+    {
+      "id": "b120",
+      "kind": "text",
+      "zh": "<p>下面我们来考察如何把<b>函数这个向量写成分量形式</b>。</p>",
+      "en": "<p>Let us see how to write <b>a function, viewed as a vector, in component form</b>.</p>"
+    },
+    {
+      "id": "b121",
+      "kind": "quote",
+      "zh": "<b>函数的向量化</b>",
+      "en": "<b>Writing a function as a vector</b>"
+    },
+    {
+      "id": "b122",
+      "kind": "text",
+      "zh": "<p>回忆我们定义函数加法的时候，是要求<b>每个自变量对应的函数值直接相加的</b>。而向量相加，也是各个基底对应的分量直接相加的。从这一点出发，我们希望<b>每个自变量的取值都对应一个基底，而这个对应的函数值则作为这个基底上的分量</b>。</p>",
+      "en": "<p>Recall that we defined addition of functions by <b>adding their values at each argument</b>. Vector addition also adds the corresponding components in a basis. This suggests that <b>each possible argument should correspond to a basis vector, with the function value at that argument as its component</b>.</p>"
+    },
+    {
+      "id": "b123",
+      "kind": "text",
+      "zh": "<p>于是我们把整个定义域分割成 \\(n\\) 个小段，每一段上定义一个基底 </p>",
+      "en": "<p>Divide the entire domain into \\(n\\) small intervals, and define a basis vector on each:</p>"
+    },
+    {
+      "id": "b124",
+      "kind": "text",
+      "zh": "<p>\\[|x_i\\rangle=(0, 0, \\dots, 0, 1,0, \\dots, 0)^T\\\\\\] ，其中 \\(1\\) 位于第 \\(i\\) 项。然后很自然地，我们的函数在这些基上的分量形式就可以定义为 </p>",
+      "en": "<p>\\[|x_i\\rangle=(0, 0, \\dots, 0, 1,0, \\dots, 0)^T\\\\\\], where \\(1\\) sits in the \\(i\\)th position. Naturally, we can then define the components of our function in this basis as</p>"
+    },
+    {
+      "id": "b125",
+      "kind": "text",
+      "zh": "<p>\\[|f\\rangle=(f(x_1), f(x_2), \\dots, f(x_n))^T\\\\\\] ，而且有 \\(|f\\rangle=\\sum_{i=1}^nf(x_i)|x_i\\rangle\\) 。</p>",
+      "en": "<p>\\[|f\\rangle=(f(x_1), f(x_2), \\dots, f(x_n))^T\\\\\\], with \\(|f\\rangle=\\sum_{i=1}^nf(x_i)|x_i\\rangle\\).</p>"
+    },
+    {
+      "id": "b126",
+      "kind": "text",
+      "zh": "<p>当分隔数 \\(n\\to+\\infty\\) 时，我们定义的 \\(|f\\rangle\\) 向量便与原来的函数完全一致了。</p>",
+      "en": "<p>As the number of subdivisions \\(n\\to+\\infty\\), our vector \\(|f\\rangle\\) becomes exactly the original function.</p>"
+    },
+    {
+      "id": "b127",
+      "kind": "text",
+      "zh": "<p>而这个时候，我们所定义的 \\(|x_0\\rangle\\) 就会变成在 \\(x_0\\) 处为 \\(1\\) ，其余处处为 \\(0\\) ，这样的函数我们称作 \\(\\delta\\) 函数： \\[|x_0\\rangle=\\delta(x-x_0)=\\begin{cases} 0&amp;x\\ne x_0\\\\ 1&amp; x=x_0. \\end{cases}\\\\\\] </p>",
+      "en": "<p>Meanwhile, the \\(|x_0\\rangle\\) we defined becomes \\(1\\) at \\(x_0\\) and \\(0\\) everywhere else. We call such a function a \\(\\delta\\) function: \\[|x_0\\rangle=\\delta(x-x_0)=\\begin{cases} 0&amp;x\\ne x_0\\\\ 1&amp; x=x_0. \\end{cases}\\\\\\].</p>"
+    },
+    {
+      "id": "b128",
+      "kind": "text",
+      "zh": "<p><b><i>至此有两个重要的启示：</i></b></p>",
+      "en": "<p><b><i>Two important things to take away:</i></b></p>"
+    },
+    {
+      "id": "b129",
+      "kind": "text",
+      "zh": "<ol><li><b><i>函数是无穷维的向量。</i></b></li><li><b><i>所谓的 </i></b>\\(f(x)\\)<b><i> ，其实是函数向量 </i></b>\\(|f\\rangle\\)<b><i> 在基底 </i></b>\\(|x\\rangle\\)<b><i> 上的分量/投影：</i></b></li></ol>",
+      "en": "<ol><li><b><i>Functions are infinite-dimensional vectors.</i></b></li><li><b><i>What we call </i></b>\\(f(x)\\)<b><i> is actually the component, or projection, of the function vector </i></b>\\(|f\\rangle\\)<b><i> onto the basis vector </i></b>\\(|x\\rangle\\)<b><i>:</i></b></li></ol>"
+    },
+    {
+      "id": "b130",
+      "kind": "text",
+      "zh": "<p><b><i> (回忆在线性代数中我们可以通过把向量与基底做内积的方法得到对应的分量)</i></b></p>",
+      "en": "<p><b><i>(Recall that in linear algebra, taking the inner product of a vector with a basis vector gives the corresponding component.)</i></b></p>"
+    },
+    {
+      "id": "b131",
+      "kind": "text",
+      "zh": "<p>\\[f(x)=\\int_{-\\infty}^{+\\infty}\\delta(t-x)f(t)dt=\\langle x|f\\rangle.\\\\\\] </p>",
+      "en": "<p>\\[f(x)=\\int_{-\\infty}^{+\\infty}\\delta(t-x)f(t)dt=\\langle x|f\\rangle.\\\\\\] </p>"
+    },
+    {
+      "id": "b132",
+      "kind": "text",
+      "zh": "<p>上述是直观的解释，我们还需要证明一下 \\(|x_i\\rangle\\) 这组基的正交性、完备性，我就不证了。</p>",
+      "en": "<p>That is the intuitive explanation. We still need to prove that the basis \\(|x_i\\rangle\\) is orthogonal and complete. I will not prove it here.</p>"
+    },
+    {
+      "id": "b133",
+      "kind": "text",
+      "zh": "<p>现在，函数的内积被定义为上面那个鬼样子的原因就一目了然了。</p>",
+      "en": "<p>Now it is obvious why the inner product of functions was defined in that strange-looking way.</p>"
+    },
+    {
+      "id": "b134",
+      "kind": "text",
+      "zh": "<p>我们知道普通向量的内积是<b>对应分量直接相乘然后相加</b>，而这里<b>函数内积</b></p>",
+      "en": "<p>For ordinary vectors, an inner product means <b>multiplying corresponding components and adding them up</b>. Our <b>inner product of functions</b>,</p>"
+    },
+    {
+      "id": "b135",
+      "kind": "text",
+      "zh": "<p>\\[\\langle f|g\\rangle=\\int_{-\\infty}^{+\\infty}f^*(x)g(x)dx\\\\\\] </p>",
+      "en": "<p>\\[\\langle f|g\\rangle=\\int_{-\\infty}^{+\\infty}f^*(x)g(x)dx\\\\\\] </p>"
+    },
+    {
+      "id": "b136",
+      "kind": "text",
+      "zh": "<p>确实也是对应分量直接相乘然后相加。</p>",
+      "en": "<p>does exactly that: multiply corresponding components and add them up.</p>"
+    },
+    {
+      "id": "b137",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b138",
+      "kind": "text",
+      "zh": "<p>接下来我们试着把函数的<b>求导运算也放入线性代数</b>的框架下研究。</p>",
+      "en": "<p>Next, let us try bringing <b>differentiation into the framework of linear algebra</b> too.</p>"
+    },
+    {
+      "id": "b139",
+      "kind": "quote",
+      "zh": "<b>导数算符的特征值和特征向量</b>",
+      "en": "<b>Eigenvalues and eigenvectors of the derivative operator</b>"
+    },
+    {
+      "id": "b140",
+      "kind": "text",
+      "zh": "<p>我们知道，在线性代数中，<b>任何一个线性算符，都能用矩阵的形式表达</b>。</p>",
+      "en": "<p>We know from linear algebra that <b>any linear operator can be written as a matrix</b>.</p>"
+    },
+    {
+      "id": "b141",
+      "kind": "text",
+      "zh": "<p>而求导运算显然也是线性的，那导数算符是否也有矩阵形式呢？是否也有特征值和特征向量呢？</p>",
+      "en": "<p>Differentiation is clearly linear too. Does the derivative operator have a matrix representation? Does it have eigenvalues and eigenvectors?</p>"
+    },
+    {
+      "id": "b142",
+      "kind": "text",
+      "zh": "<p>第一个问题与本文关系不大，大家可以翻Shankar。（其实我这里本来打了一大段，但是敲公式太累了，通通删了。）</p>",
+      "en": "<p>The first question is not especially relevant here; you can look it up in Shankar. (I actually wrote a whole long section here, but typing the formulas was too exhausting, so I deleted the lot.)</p>"
+    },
+    {
+      "id": "b143",
+      "kind": "text",
+      "zh": "<p>我们来看第二个问题，要求矩阵的特征值和特征向量，就是解方程</p>",
+      "en": "<p>For the second question, finding a matrix’s eigenvalues and eigenvectors means solving</p>"
+    },
+    {
+      "id": "b144",
+      "kind": "text",
+      "zh": "<p>\\[Df=\\lambda f\\\\\\] </p>",
+      "en": "<p>\\[Df=\\lambda f\\\\\\] </p>"
+    },
+    {
+      "id": "b145",
+      "kind": "text",
+      "zh": "<p>我们把它改写成微分方程 \\(\\frac{df}{dx}=\\lambda f\\) 的话，解就显而易见了。</p>",
+      "en": "<p>Rewrite this as the differential equation \\(\\frac{df}{dx}=\\lambda f\\), and the solution is obvious.</p>"
+    },
+    {
+      "id": "b146",
+      "kind": "text",
+      "zh": "<p>没错，<b>导数算符的特征向量就对应指数函数</b> \\(f(x)=e^{\\lambda x}\\) 。</p>",
+      "en": "<p>That is right: <b>the derivative operator’s eigenvectors correspond to exponential functions</b> \\(f(x)=e^{\\lambda x}\\).</p>"
+    },
+    {
+      "id": "b147",
+      "kind": "text",
+      "zh": "<p>在这之后我们把这个函数对应的函数向量记作 \\(|\\lambda\\rangle\\) ，那么 \\(\\lambda(x)=\\langle x|\\lambda\\rangle=e^{\\lambda x}\\) ，而它所对应的特征值就是 \\(\\lambda\\) 。</p>",
+      "en": "<p>From now on, denote the corresponding function vector by \\(|\\lambda\\rangle\\). Then \\(\\lambda(x)=\\langle x|\\lambda\\rangle=e^{\\lambda x}\\), and its eigenvalue is \\(\\lambda\\).</p>"
+    },
+    {
+      "id": "b148",
+      "kind": "text",
+      "zh": "<p>（这里 \\(\\lambda\\) 似乎可以取遍所有数，即无穷组特征值及特征向量，与线性空间的无穷维性质恰好对应。）</p>",
+      "en": "<p>(Here \\(\\lambda\\) seems able to take any value, giving infinitely many eigenvalues and eigenvectors—just what you would expect from the infinite-dimensional linear space.)</p>"
+    },
+    {
+      "id": "b149",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b150",
+      "kind": "text",
+      "zh": "<p>回忆我们一开始介绍矩阵的特征值时，我们发现，特征值的一大作用，就是<b>把复杂的矩阵运算变成简单的数乘</b>。但是这一性质只有对特征向量满足。</p>",
+      "en": "<p>Recall what we found when introducing matrix eigenvalues: one of their main uses is to <b>turn complicated matrix operations into simple scalar multiplication</b>. But this only works on eigenvectors.</p>"
+    },
+    {
+      "id": "b151",
+      "kind": "text",
+      "zh": "<p>不过任何一个向量都可以被特征向量线性表出。所以，我们可以<b>先把普通的向量换到特征向量基上表出，然后再进行矩阵运算，此时所有运算都变为简单的数乘了</b>。</p>",
+      "en": "<p>Any vector can be expressed as a linear combination of eigenvectors, though. So we can <b>first express an ordinary vector in the eigenvector basis and then apply the matrix. All the operations then become simple scalar multiplication</b>.</p>"
+    },
+    {
+      "id": "b152",
+      "kind": "text",
+      "zh": "<p><b><i>用相同的思路，我们也可以把函数向量从原来的 </i></b>\\(|x\\rangle\\)<b><i> 基下，变换到 </i></b>\\(|\\lambda\\rangle\\)<b><i> 基下。这种变换被称为傅里叶/拉普拉斯变换。</i></b></p>",
+      "en": "<p><b><i>By the same idea, we can transform a function vector from the original </i></b>\\(|x\\rangle\\)<b><i> basis to the </i></b>\\(|\\lambda\\rangle\\)<b><i> basis. This is called a Fourier/Laplace transform.</i></b></p>"
+    },
+    {
+      "id": "b153",
+      "kind": "quote",
+      "zh": "<b>傅里叶/拉普拉斯变换</b>",
+      "en": "<b>Fourier/Laplace transforms</b>"
+    },
+    {
+      "id": "b154",
+      "kind": "text",
+      "zh": "<p>我们来尝试一下把函数变到 \\(|\\lambda\\rangle\\) 基下：</p>",
+      "en": "<p>Let us try transforming the function into the \\(|\\lambda\\rangle\\) basis:</p>"
+    },
+    {
+      "id": "b155",
+      "kind": "text",
+      "zh": "<p>\\[\\begin{align} f(\\lambda)&amp;=\\langle\\lambda|f\\rangle\\\\ &amp;=\\int_{-\\infty}^{+\\infty}\\lambda^*(x)f(x)dx\\\\ &amp;=\\int_{-\\infty}^{+\\infty}f(x)e^{\\lambda^*x}dx. \\end{align}\\\\\\] </p>",
+      "en": "<p>\\[\\begin{align} f(\\lambda)&amp;=\\langle\\lambda|f\\rangle\\\\ &amp;=\\int_{-\\infty}^{+\\infty}\\lambda^*(x)f(x)dx\\\\ &amp;=\\int_{-\\infty}^{+\\infty}f(x)e^{\\lambda^*x}dx. \\end{align}\\\\\\] </p>"
+    },
+    {
+      "id": "b156",
+      "kind": "text",
+      "zh": "<p>特别的如果取纯虚数 \\(\\lambda=i\\omega\\) ，我们就会得到 \\(f(\\omega)=\\int_{-\\infty}^{+\\infty}f(x)e^{-i\\omega x}dx.\\) </p>",
+      "en": "<p>In particular, choose a purely imaginary \\(\\lambda=i\\omega\\), and we get \\(f(\\omega)=\\int_{-\\infty}^{+\\infty}f(x)e^{-i\\omega x}dx.\\).</p>"
+    },
+    {
+      "id": "b157",
+      "kind": "text",
+      "zh": "<p>怎么样，是不是和我们以前学的傅里叶变换一模一样？</p>",
+      "en": "<p>Well? Isn’t that exactly the Fourier transform we learned before?</p>"
+    },
+    {
+      "id": "b158",
+      "kind": "text",
+      "zh": "<p>这里我没有考虑归一化的问题，如果做归一化，便会出现 \\(\\frac{1}{\\sqrt{2\\pi}}\\) 的系数。</p>",
+      "en": "<p>I have not considered normalization here. Normalizing introduces a factor of \\(\\frac{1}{\\sqrt{2\\pi}}\\).</p>"
+    },
+    {
+      "id": "b159",
+      "kind": "text",
+      "zh": "<p>同理，如果我们想要从 \\(|\\lambda\\rangle\\) 基下变换到 \\(|x\\rangle\\) 基上，便会得到傅里叶逆变换。</p>",
+      "en": "<p>Likewise, transforming from the \\(|\\lambda\\rangle\\) basis back to the \\(|x\\rangle\\) basis gives the inverse Fourier transform.</p>"
+    },
+    {
+      "id": "b160",
+      "kind": "quote",
+      "zh": "这里有一些细节问题（经评论区dalao指出）<br>1、为什么 \\(\\lambda\\) 只能取纯虚数？<br>原因在于导数算符 \\(D\\) 并非是一个厄米算符（ \\(D^\\dagger=D^{*T}\\ne D\\) ），但是 \\(iD\\) 是一个厄米算符（一般量子力学中将其称为动量算符），而厄米算符的特征值是实数，所以除掉一个 \\(i\\) 之后， \\(\\lambda\\) 就变成了纯虚数了。<br>而且复指数函数基（指数部分为纯虚数）是正交完备的，但是指数函数族并不是。<br>这一步厄米的证明需要把 \\(D\\) 算符的矩阵形式写出来（与 \\(\\delta\\) 函数的导数\\(\\delta&#x27;(t-x)\\) 有关），again，大家可以翻Shankar。<br>2、如何扩展到拉普拉斯变换<br>傅里叶变换需要函数满足绝对可积的条件，但是有的时候不能满足这个条件。拉普拉斯变换 \\(f(s)=\\int_{0}^{+\\infty}f(x)e^{-s x}dx, s\\in\\mathbb{C},\\) 中 \\(s\\) 的虚部与傅里叶变换一致，而实部提出来之后相当于对 \\(f(x)\\) 附加了一个指数衰减，于是使大部分函数都能满足绝对可积的条件，从而扩展了适用范围。",
+      "en": "A few details here, pointed out by knowledgeable readers in the comments:<br>1. Why can \\(\\lambda\\) only be purely imaginary?<br>The reason is that the derivative operator \\(D\\) is not Hermitian, \\(D^\\dagger=D^{*T}\\ne D\\), whereas \\(iD\\) is Hermitian. In quantum mechanics this is usually called the momentum operator. Hermitian operators have real eigenvalues, so dividing out a factor of \\(i\\) makes \\(\\lambda\\) purely imaginary.<br>Also, the complex exponential functions with purely imaginary exponents form a complete orthogonal basis, whereas the family of exponential functions does not.<br>To prove Hermiticity here, we need the matrix representation of \\(D\\), which involves the derivative \\(\\delta&#x27;(t-x)\\) of the \\(\\delta\\) function. Again, look in Shankar.<br>2. How to extend this to the Laplace transform<br>The Fourier transform requires absolute integrability, which is not always satisfied. In the Laplace transform \\(f(s)=\\int_{0}^{+\\infty}f(x)e^{-s x}dx, s\\in\\mathbb{C},\\), the imaginary part of \\(s\\) works just as in the Fourier transform. Factoring out the real part amounts to adding exponential decay to \\(f(x)\\), allowing most functions to satisfy absolute integrability and thus extending the range of application."
+    },
+    {
+      "id": "b161",
+      "kind": "text",
+      "zh": "<p>至此，我们惊奇地发现，</p>",
+      "en": "<p>And now, to our surprise, we find that</p>"
+    },
+    {
+      "id": "b162",
+      "kind": "text",
+      "zh": "<p><b><i>所谓傅里叶变换和拉普拉斯变换，其实就是同一个函数向量，在不同基下的分量形式的变换。</i></b></p>",
+      "en": "<p><b><i>Fourier and Laplace transforms simply change the component representation of the same function vector from one basis to another.</i></b></p>"
+    },
+    {
+      "id": "b163",
+      "kind": "text",
+      "zh": "<p><b><i>而我们选择指数函数基，就是因为它是导数算符的特征向量。</i></b></p>",
+      "en": "<p><b><i>We choose exponential functions as the basis precisely because they are eigenvectors of the derivative operator.</i></b></p>"
+    },
+    {
+      "id": "b164",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b165",
+      "kind": "text",
+      "zh": "<p>有了这个基础，我们终于可以着手解微分方程了。</p>",
+      "en": "<p>With that in place, we can finally get down to solving differential equations.</p>"
+    },
+    {
+      "id": "b166",
+      "kind": "quote",
+      "zh": "微分方程的特征根解法",
+      "en": "The characteristic-root method for differential equations"
+    },
+    {
+      "id": "b167",
+      "kind": "text",
+      "zh": "<p>还是原来的微分方程（注意我们现在自变量是 \\(t\\) ，函数是 \\(x(t)\\) ）</p>",
+      "en": "<p>Take the same differential equation as before. Note that the argument is now \\(t\\) and the function \\(x(t)\\):</p>"
+    },
+    {
+      "id": "b168",
+      "kind": "text",
+      "zh": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0.\\\\\\] </p>",
+      "en": "<p>\\[\\ddot{x}+p\\dot{x}+qx=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b169",
+      "kind": "text",
+      "zh": "<p>我们把它改写成与基底无关的向量形式：</p>",
+      "en": "<p>Rewrite it in a basis-independent vector form:</p>"
+    },
+    {
+      "id": "b170",
+      "kind": "text",
+      "zh": "<p>\\[D^2|x\\rangle+pD|x\\rangle+q|x\\rangle=0.\\\\\\] </p>",
+      "en": "<p>\\[D^2|x\\rangle+pD|x\\rangle+q|x\\rangle=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b171",
+      "kind": "text",
+      "zh": "<p>因为导数算符在 \\(|\\lambda\\rangle\\) 基下会变为数乘，所以我们变换到\\(|\\lambda\\rangle\\)基下</p>",
+      "en": "<p>Since the derivative operator becomes scalar multiplication in the \\(|\\lambda\\rangle\\) basis, transform to the \\(|\\lambda\\rangle\\) basis.</p>"
+    },
+    {
+      "id": "b172",
+      "kind": "text",
+      "zh": "<p>（此步即大家熟知的傅里叶/拉普拉斯变换解常微分方程）：</p>",
+      "en": "<p>(This is the familiar Fourier/Laplace-transform method for solving ordinary differential equations.)</p>"
+    },
+    {
+      "id": "b173",
+      "kind": "text",
+      "zh": "<p>\\[D^2|\\lambda\\rangle\\langle\\lambda|x\\rangle+pD|\\lambda\\rangle\\langle\\lambda|x\\rangle+q|\\lambda\\rangle\\langle\\lambda|x\\rangle=0.\\\\\\] </p>",
+      "en": "<p>\\[D^2|\\lambda\\rangle\\langle\\lambda|x\\rangle+pD|\\lambda\\rangle\\langle\\lambda|x\\rangle+q|\\lambda\\rangle\\langle\\lambda|x\\rangle=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b174",
+      "kind": "text",
+      "zh": "<p>此处我们用了 \\(|\\lambda\\rangle\\) 基的完备性，即 \\(|\\lambda\\rangle\\langle\\lambda|=I.\\) </p>",
+      "en": "<p>Here we used the completeness of the \\(|\\lambda\\rangle\\) basis: \\(|\\lambda\\rangle\\langle\\lambda|=I.\\).</p>"
+    },
+    {
+      "id": "b175",
+      "kind": "text",
+      "zh": "<p>利用特征向量的性质，即得</p>",
+      "en": "<p>Using the eigenvector property gives</p>"
+    },
+    {
+      "id": "b176",
+      "kind": "text",
+      "zh": "<p>\\[(\\lambda^2+p\\lambda+q)|\\lambda\\rangle\\langle\\lambda|x\\rangle=0.\\\\\\] </p>",
+      "en": "<p>\\[(\\lambda^2+p\\lambda+q)|\\lambda\\rangle\\langle\\lambda|x\\rangle=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b177",
+      "kind": "text",
+      "zh": "<p>我们要非平凡解 \\(\\langle\\lambda|x\\rangle\\ne0\\) ，所以有方程</p>",
+      "en": "<p>We want a nontrivial solution \\(\\langle\\lambda|x\\rangle\\ne0\\), so we have the equation</p>"
+    },
+    {
+      "id": "b178",
+      "kind": "text",
+      "zh": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>",
+      "en": "<p>\\[\\lambda^2+p\\lambda+q=0.\\\\\\] </p>"
+    },
+    {
+      "id": "b179",
+      "kind": "text",
+      "zh": "<p>得到两个根 \\(\\lambda_1,\\lambda_2,\\) 我们发现<b>这些所谓特征根实际上就是解出来的特征值。</b></p>",
+      "en": "<p>with two roots \\(\\lambda_1,\\lambda_2,\\). We see that <b>these so-called characteristic roots are actually the eigenvalues we have just found.</b></p>"
+    },
+    {
+      "id": "b180",
+      "kind": "text",
+      "zh": "<p>接着我们用向量 \\(|\\lambda\\rangle\\) 把函数向量线性表出，即</p>",
+      "en": "<p>Next, express the function vector as a linear combination of \\(|\\lambda\\rangle\\):</p>"
+    },
+    {
+      "id": "b181",
+      "kind": "text",
+      "zh": "<p>\\[|x\\rangle=C_1|\\lambda_1\\rangle+C_2|\\lambda_2\\rangle.\\\\\\] </p>",
+      "en": "<p>\\[|x\\rangle=C_1|\\lambda_1\\rangle+C_2|\\lambda_2\\rangle.\\\\\\] </p>"
+    },
+    {
+      "id": "b182",
+      "kind": "text",
+      "zh": "<p>而我们要求的便是函数向量在 \\(|t\\rangle\\) 下的分量形式</p>",
+      "en": "<p>What we want is the function vector’s component representation in the \\(|t\\rangle\\) basis:</p>"
+    },
+    {
+      "id": "b183",
+      "kind": "text",
+      "zh": "<p>\\(x(t)=\\langle t|x\\rangle=C_1\\langle t|\\lambda_1\\rangle+C_2\\langle t|\\lambda_2\\rangle=C_1e^{\\lambda_1t}+C_2e^{\\lambda_2t}.\\) </p>",
+      "en": "<p>\\(x(t)=\\langle t|x\\rangle=C_1\\langle t|\\lambda_1\\rangle+C_2\\langle t|\\lambda_2\\rangle=C_1e^{\\lambda_1t}+C_2e^{\\lambda_2t}.\\) </p>"
+    },
+    {
+      "id": "b184",
+      "kind": "text",
+      "zh": "<p>（如果有重根怎么办？）</p>",
+      "en": "<p>(What if there is a repeated root?)</p>"
+    },
+    {
+      "id": "b185",
+      "kind": "text",
+      "zh": "<p><b>至此，我们成功的用线性代数的方法解出了微分方程。</b></p>",
+      "en": "<p><b>We have solved the differential equation using linear algebra.</b></p>"
+    },
+    {
+      "id": "b186",
+      "kind": "text",
+      "zh": "<p><b>我们发现，所谓微分方程的特征根其实就是微分算子的特征值。</b></p>",
+      "en": "<p><b>The characteristic roots of a differential equation are the eigenvalues of a differential operator.</b></p>"
+    },
+    {
+      "id": "b187",
+      "kind": "text",
+      "zh": "<p><b>由此，微分方程中的特征根与矩阵特征值也是一致的。</b></p>",
+      "en": "<p><b>So the characteristic roots of differential equations agree with matrix eigenvalues too.</b></p>"
+    },
+    {
+      "id": "b188",
+      "kind": "text",
+      "zh": "<p><b>而傅里叶/拉普拉斯变换，其实就是基的变换。</b></p>",
+      "en": "<p><b>And Fourier/Laplace transforms are simply changes of basis.</b></p>"
+    },
+    {
+      "id": "b189",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b190",
+      "kind": "h2",
+      "zh": "3、从矩阵到数列",
+      "en": "3. From Matrices to Sequences"
+    },
+    {
+      "id": "b191",
+      "kind": "text",
+      "zh": "<p>本文的重头戏其实已经结束了，最后这部分比较简单。</p>",
+      "en": "<p>The main event is actually over. This last part is fairly simple.</p>"
+    },
+    {
+      "id": "b192",
+      "kind": "text",
+      "zh": "<p>我们观察一下数列的递推式 \\(a_{n+2}+pa_{n+1}+qa_n=0,\\) </p>",
+      "en": "<p>Look at the recurrence relation \\(a_{n+2}+pa_{n+1}+qa_n=0,\\).</p>"
+    },
+    {
+      "id": "b193",
+      "kind": "text",
+      "zh": "<p>想一下怎么才能把他<b>变成矩阵形式。</b></p>",
+      "en": "<p>How might we <b>turn it into matrix form</b>?</p>"
+    },
+    {
+      "id": "b194",
+      "kind": "text",
+      "zh": "<p>这时候我想到了在理论力学中的哈密顿方程。</p>",
+      "en": "<p>This reminded me of Hamilton’s equations in classical mechanics.</p>"
+    },
+    {
+      "id": "b195",
+      "kind": "quote",
+      "zh": "我们知道，理论力学中的拉格朗日方程是一个二阶方程：<br> \\[\\frac{d}{dt}(\\frac{\\partial L}{\\partial\\dot{q}})-\\frac{\\partial L}{\\partial q}=0.\\\\\\] <br>经过一系列变换，则可以写成两个一阶方程 \\(\\frac{\\partial H}{\\partial q}=-\\dot{p}, \\frac{\\partial H}{\\partial p}=\\dot{q}.\\) <br>由此可以把 \\((q, p)\\) 作为一组坐标，作出相图。其中又有 \\(p\\propto \\dot q\\) 。<br>一般的，微分方程理论证明，<b>一个二阶常微分方程可以写成两个一阶常微分方程。</b>",
+      "en": "We know that the Euler–Lagrange equation in classical mechanics is second order:<br>\\[\\frac{d}{dt}(\\frac{\\partial L}{\\partial\\dot{q}})-\\frac{\\partial L}{\\partial q}=0.\\\\\\]<br>After a series of transformations, it can be written as two first-order equations, \\(\\frac{\\partial H}{\\partial q}=-\\dot{p}, \\frac{\\partial H}{\\partial p}=\\dot{q}.\\).<br>We can then take \\((q, p)\\) as coordinates and draw a phase portrait. We also have \\(p\\propto \\dot q\\).<br>More generally, differential-equation theory shows that <b>a second-order ODE can be written as two first-order ODEs.</b>"
+    },
+    {
+      "id": "b196",
+      "kind": "text",
+      "zh": "<p>受此启发，我开始思考能不能用 \\((a_{n+1}, a_{n})^T\\) 作为整体来改写递推式：</p>",
+      "en": "<p>Inspired by this, I wondered whether we could treat \\((a_{n+1}, a_{n})^T\\) as a whole and rewrite the recurrence:</p>"
+    },
+    {
+      "id": "b197",
+      "kind": "text",
+      "zh": "<p>\\[\\begin{pmatrix} a_{n+2} \\\\ a_{n+1}\\end{pmatrix}=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}\\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}.\\\\\\] </p>",
+      "en": "<p>\\[\\begin{pmatrix} a_{n+2} \\\\ a_{n+1}\\end{pmatrix}=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}\\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}.\\\\\\] </p>"
+    },
+    {
+      "id": "b198",
+      "kind": "text",
+      "zh": "<p><b>我们做的事情实际上就是把一个二阶递推式写成了两个一阶递推式。</b></p>",
+      "en": "<p><b>What we have done is turn a second-order recurrence into two first-order recurrences.</b></p>"
+    },
+    {
+      "id": "b199",
+      "kind": "text",
+      "zh": "<p>（高次同理，全部拆成一阶即可。）</p>",
+      "en": "<p>(Higher orders work the same way: split everything into first-order relations.)</p>"
+    },
+    {
+      "id": "b200",
+      "kind": "text",
+      "zh": "<p>然后我们希望不断累乘这个矩阵，即</p>",
+      "en": "<p>Now we want to multiply by this matrix repeatedly:</p>"
+    },
+    {
+      "id": "b201",
+      "kind": "text",
+      "zh": "<p>\\[\\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}^{n-1}\\begin{pmatrix} a_{2} \\\\ a_{1}\\end{pmatrix}.\\\\\\] </p>",
+      "en": "<p>\\[\\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}^{n-1}\\begin{pmatrix} a_{2} \\\\ a_{1}\\end{pmatrix}.\\\\\\] </p>"
+    },
+    {
+      "id": "b202",
+      "kind": "text",
+      "zh": "<p>这里又出现了一个问题，就是如何方便的<b>计算矩阵的幂</b>？</p>",
+      "en": "<p>Another question appears: how can we conveniently <b>calculate matrix powers</b>?</p>"
+    },
+    {
+      "id": "b203",
+      "kind": "text",
+      "zh": "<p><b>矩阵的幂很难算，而常数的幂很容易，于是我们又想起了矩阵的特征值。</b></p>",
+      "en": "<p><b>Matrix powers are hard to calculate, whereas powers of constants are easy. So eigenvalues come to mind again.</b></p>"
+    },
+    {
+      "id": "b204",
+      "kind": "text",
+      "zh": "<p>我们先把矩阵的特征值求出来 \\(\\begin{vmatrix} -p-\\lambda &amp; -q \\\\ 1 &amp; -\\lambda \\end{vmatrix}=0,\\\\ \\lambda^2+p\\lambda+q=0.\\) </p>",
+      "en": "<p>First find the matrix’s eigenvalues: \\(\\begin{vmatrix} -p-\\lambda &amp; -q \\\\ 1 &amp; -\\lambda \\end{vmatrix}=0,\\\\ \\lambda^2+p\\lambda+q=0.\\).</p>"
+    },
+    {
+      "id": "b205",
+      "kind": "text",
+      "zh": "<p>两根记为 \\(\\lambda_1,\\lambda_2,\\) 对应的特征向量分别记为 \\(\\vec{e_1},\\vec{e_2}.\\) </p>",
+      "en": "<p>Call the two roots \\(\\lambda_1,\\lambda_2,\\) and the corresponding eigenvectors \\(\\vec{e_1},\\vec{e_2}.\\).</p>"
+    },
+    {
+      "id": "b206",
+      "kind": "text",
+      "zh": "<p>接下来我们用特征向量将 \\((a_2, a_1)^T\\) 线性表出： \\((a_2, a_1)^T=C_1\\vec{e_1}+C_1\\vec{e_2}.\\) </p>",
+      "en": "<p>Express \\((a_2, a_1)^T\\) as a linear combination of the eigenvectors: \\((a_2, a_1)^T=C_1\\vec{e_1}+C_1\\vec{e_2}.\\).</p>"
+    },
+    {
+      "id": "b207",
+      "kind": "text",
+      "zh": "<p>（有重根怎么办？）</p>",
+      "en": "<p>(What if there is a repeated root?)</p>"
+    },
+    {
+      "id": "b208",
+      "kind": "text",
+      "zh": "<p>然后再乘矩阵便有：</p>",
+      "en": "<p>Multiplying by the matrix then gives:</p>"
+    },
+    {
+      "id": "b209",
+      "kind": "text",
+      "zh": "<p>\\[ \\begin{align} \\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}&amp;=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}^{n-1}(C_1\\vec{e_1}+C_2\\vec{e_2})\\\\ &amp;=C_1\\lambda_1^n\\vec{e_1}+C_2\\lambda_2^n\\vec{e_2}. \\end{align}\\\\\\] </p>",
+      "en": "<p>\\[ \\begin{align} \\begin{pmatrix} a_{n+1} \\\\ a_{n}\\end{pmatrix}&amp;=\\begin{pmatrix} -p &amp; -q \\\\ 1 &amp; 0 \\end{pmatrix}^{n-1}(C_1\\vec{e_1}+C_2\\vec{e_2})\\\\ &amp;=C_1\\lambda_1^n\\vec{e_1}+C_2\\lambda_2^n\\vec{e_2}. \\end{align}\\\\\\] </p>"
+    },
+    {
+      "id": "b210",
+      "kind": "text",
+      "zh": "<p>吸收系数后得 \\(a_{n}=C_1\\lambda_1^n+C_2\\lambda_2^n.\\) </p>",
+      "en": "<p>Absorbing the coefficients gives \\(a_{n}=C_1\\lambda_1^n+C_2\\lambda_2^n.\\).</p>"
+    },
+    {
+      "id": "b211",
+      "kind": "text",
+      "zh": "<p><i>至此，我们<b>用矩阵方法推导出了数列通项。</b></i></p>",
+      "en": "<p><i>We have <b>derived the sequence’s general term using matrices.</b></i></p>"
+    },
+    {
+      "id": "b212",
+      "kind": "text",
+      "zh": "<p><b>我们发现，数列的特征值再一次被证明与矩阵的特征值是一致的。</b></p>",
+      "en": "<p><b>Once again, the eigenvalues of the sequence have turned out to agree with the matrix’s eigenvalues.</b></p>"
+    },
+    {
+      "id": "b213",
+      "kind": "quote",
+      "zh": "<b>经评论区dalao提示，本段采用的方法与友矩阵（companion）的思想一致。</b>",
+      "en": "<b>A knowledgeable reader in the comments pointed out that the method used here is the idea of a companion matrix.</b>"
+    },
+    {
+      "id": "b214",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b215",
+      "kind": "h2",
+      "zh": "<b>四、结语</b>",
+      "en": "<b>IV. Closing Thoughts</b>"
+    },
+    {
+      "id": "b216",
+      "kind": "text",
+      "zh": "<p>以上，我们分别研究了</p>",
+      "en": "<p>We have looked at</p>"
+    },
+    {
+      "id": "b217",
+      "kind": "text",
+      "zh": "<ol><li>如何从<b>数列到微分方程</b>，</li><li>如何从<b>微分方程到矩阵</b>，</li><li>如何从<b>矩阵到数列</b>。</li></ol>",
+      "en": "<ol><li>how to go from <b>sequences to differential equations</b>,</li><li>how to go from <b>differential equations to matrices</b>,</li><li>how to go from <b>matrices to sequences</b>.</li></ol>"
+    },
+    {
+      "id": "b218",
+      "kind": "text",
+      "zh": "<p>到此刻为止，我们成功地将数列、微分方程与矩阵的特征值之间<b>两两关联</b>。</p>",
+      "en": "<p>We have now connected the eigenvalues of sequences, differential equations, and matrices <b>pair by pair</b>.</p>"
+    },
+    {
+      "id": "b219",
+      "kind": "text",
+      "zh": "<p><b>我们惊喜地发现，确实，三者的特征值是一致的，的确是同一个特征值。</b></p>",
+      "en": "<p><b>And, to our delight, they really do agree. They really are the same eigenvalues.</b></p>"
+    },
+    {
+      "id": "b220",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b221",
+      "kind": "quote",
+      "zh": "<b><i>Mathematics, rightly viewed, possesses not only truth, but supreme beauty.</i></b><br><b><i>——Bertrand Russell</i></b>",
+      "en": "<b><i>Mathematics, rightly viewed, possesses not only truth, but supreme beauty.</i></b><br><b><i>——Bertrand Russell</i></b>"
+    },
+    {
+      "id": "b222",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b223",
+      "kind": "h2",
+      "zh": "<b>Update</b>",
+      "en": "<b>Update</b>"
+    },
+    {
+      "id": "b224",
+      "kind": "text",
+      "zh": "<p>大家可能已经注意到，经过评论区dalao提点，</p>",
+      "en": "<p>You may have noticed that, after some pointers from knowledgeable readers in the comments,</p>"
+    },
+    {
+      "id": "b225",
+      "kind": "text",
+      "zh": "<p>每个版块下我都注明了与我的想法对应的现存数学工具。</p>",
+      "en": "<p>I have added notes to each section naming the existing mathematical tools that correspond to my ideas.</p>"
+    },
+    {
+      "id": "b226",
+      "kind": "text",
+      "zh": "<p>很不幸，看来我还是想的太多，而书读得太少。 </p>",
+      "en": "<p>Unfortunately, it seems I still think too much and read too little.</p>"
+    },
+    {
+      "id": "b227",
+      "kind": "text",
+      "zh": "<p></p>",
+      "en": "<p></p>"
+    }
+  ]
+}

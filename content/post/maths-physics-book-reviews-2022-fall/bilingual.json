@@ -1,0 +1,261 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/550923432",
+  "slug": "maths-physics-book-reviews-2022-fall",
+  "captured": "2026-09-21",
+  "source_body_sha256": "b16db6830c3c5cc49af1897f0d95b1232b0699fc70fa7e65773207ca23ca12ed",
+  "excluded": [
+    {
+      "type": "platform-commerce-ui",
+      "count": 2,
+      "details": "Book-card titles and original links retained; live prices, buy buttons, ad badges, and shopping thumbnails not copied."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "text",
+      "zh": "<p>上一篇：<a href=\"/post/maths-physics-book-reviews-2021-spring/\">HM Zhao：数理教材阅读进度及读后简评（大一春夏）</a></p>",
+      "en": "<p>Previous: <a href=\"/post/maths-physics-book-reviews-2021-spring/\">HM Zhao: Maths &amp; Physics Book Reviews (Freshman Year of College: Spring and Summer)</a></p>"
+    },
+    {
+      "id": "b002",
+      "kind": "text",
+      "zh": "<p>最近一年都没有更新这一系列的文章了。主要的原因有两方面：一是没有时间，感觉到了目前这个阶段，空闲的时间往往有比写文章更重要的事情要做，多读一篇短文总比写一些不着边际的话要好，虽然细碎的时间最后大多还是被浪费了；二是学习的材料过于细碎，在四大力学之后，学习的路径有非常大的任意性，使用的材料也千奇百怪，很难系统地做一总结，所以迟迟无法动笔。但最后还是决定粗略地给大二学年做一个总结，大致地勾勒一下目前的状态，既不完整，又难免散乱，因此本文的标题或许也有些名不副实了。</p>",
+      "en": "<p>I haven't updated this series for nearly a year. Mainly for two reasons. First, no time. At this point, there always seems to be something more important to do with my free time than write an article. Better to read one more short piece than write a lot of rambling nonsense—though most of those little scraps of time get wasted anyway. Second, what I have been learning is just too scattered. After the four core theoretical physics subjects, you can go pretty much anywhere, and the materials you use are all over the place. It is hard to pull them into a systematic account, so I kept putting it off. But in the end I decided to make a rough record of my sophomore year of college and sketch where I am now. It is incomplete and inevitably a bit of a jumble, so perhaps the title doesn't quite fit anymore.</p>"
+    },
+    {
+      "id": "b003",
+      "kind": "h2",
+      "zh": "大二秋季",
+      "en": "Sophomore Year of College: Autumn"
+    },
+    {
+      "id": "b004",
+      "kind": "text",
+      "zh": "<p>大一花了一年的时间仔细学了一遍四大力学，相对还是比较扎实的。但过了这个门槛之后，我的第一感觉是很多方向都可以着手学习，但却不知道究竟应该往哪个方向走。某种意义上，找到自己究竟想做什么，成了大二一年的主旋律。坦白地说，到目前为止我依然没有一个明确的答案。但至少从大二秋季的一开始，我在三条主线上做了一定的探索。</p>",
+      "en": "<p>I spent my entire freshman year of college carefully working through the four core theoretical physics subjects, so the foundation was reasonably solid. But once I was over that threshold, my first thought was: there are so many directions I could start learning in, but which way do I actually want to go? In a sense, figuring out what I really wanted to do became the main theme of my sophomore year. Honestly, I still don't have a clear answer. But from the beginning of the autumn semester, I at least started exploring along three main lines.</p>"
+    },
+    {
+      "id": "b005",
+      "kind": "h3",
+      "zh": "统计",
+      "en": "Statistics"
+    },
+    {
+      "id": "b006",
+      "kind": "text",
+      "zh": "<p>第一条主线是概率论、统计推断与机器学习。这在某种意义上是我的老本行，因为在高中的时候研究过一段时间计算机视觉的东西。但其实直到这时候我才开始系统地学习概率论和统计推断。从结果来看，统计的学习让我对机器学习的认识上升了一个层级，并且与物理的学习有机地融合在了一起。其中比较有意思的几个点（目前我能回忆起的）如下：</p>",
+      "en": "<p>The first was probability theory, statistical inference, and machine learning. In a sense I was back on home turf, since I had spent some time doing computer vision research back in high school. Yet it was only now that I began studying probability and statistical inference systematically. Learning statistics took my understanding of machine learning to another level and connected naturally with my physics studies. A few things I found interesting (the ones I can still remember, anyway):</p>"
+    },
+    {
+      "id": "b007",
+      "kind": "text",
+      "zh": "<p>1. 条件概率在某种意义上是函数的推广。函数的对应关系是确定性的，但如果要刻画不确定的对应关系，使用的工具是条件概率。所以机器学习，不只是生成式学习，很大程度上都是对概率分布的建模。</p>",
+      "en": "<p>1. Conditional probability is, in a sense, a generalization of a function. A function specifies a deterministic correspondence; conditional probability is the tool for describing an uncertain one. Thus much of machine learning—not just generative learning—is about modeling probability distributions.</p>"
+    },
+    {
+      "id": "b008",
+      "kind": "text",
+      "zh": "<p>2. 函数拟合是统计推断。在机器学习中大量使用的各种Loss都是有一定的统计背景的，而不仅仅是直觉。</p>",
+      "en": "<p>2. Function fitting is statistical inference. Many of the loss functions used in machine learning have a statistical basis; they are not simply matters of intuition.</p>"
+    },
+    {
+      "id": "b009",
+      "kind": "text",
+      "zh": "<p>比如想要对一组数据 \\((x_i, y_i)\\) 做拟合，曾经我会认为，目标就是假设关系是 \\(y=f(x)\\) ，寻找一个 \\(f\\) 使得拟合的效果最好，比如最小化MSE= \\(\\sum_i (y_i-f(x_i))^2\\) ，而我会觉得MSE如此定义的原因就是为了防止正负的误差抵消。</p>",
+      "en": "<p>For example, when fitting data \\((x_i, y_i)\\), I used to think the task was to assume a relation \\(y=f(x)\\) and find the \\(f\\) that gives the best fit, perhaps by minimizing MSE = \\(\\sum_i (y_i-f(x_i))^2\\). I thought MSE was defined this way simply to prevent positive and negative errors from canceling.</p>"
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>但现在我会觉得，假设 \\(y=f(x)\\) 只能应对很少的一部分情形，也就是一个自变量只能对应一个因变量，而不能对应多个。更一般的拟合的目标其实是对条件概率 \\(p(Y|X)\\) 建模。而Loss的形式则是来源于对误差概率分布的建模，例如假设误差 \\(\\epsilon = Y-f(X)\\) 服从高斯分布 \\(p(\\epsilon)=Z^{-1} e^{-\\frac{1}{2\\sigma^2}\\epsilon^2}\\) ，那么在观测到这些数据的概率就是 \\(p_f(\\{\\epsilon_i\\}) = Z^{-n}\\prod_i e^{-\\frac{1}{2\\sigma^2}\\epsilon_i^2}=Z^{-n}e^{-\\frac{1}{2\\sigma^2}\\sum_i\\epsilon_i^2}\\) ，那么最有可能（概率最大）的函数 \\(f\\) 就满足（其实就是MLE） \\(\\min_f \\epsilon^2 = \\min_f \\sum_i (y_i-f(x_i))^2\\) ，这就是MSE的来源。（进一步这也是VAE比GAN模糊的原因）</p>",
+      "en": "<p>Now I think that assuming \\(y=f(x)\\) covers only a small subset of situations: each independent-variable value must correspond to only one dependent-variable value, not several. More generally, fitting is about modeling the conditional probability \\(p(Y|X)\\). The form of the loss comes from a model of the error distribution. For example, suppose the error \\(\\epsilon = Y-f(X)\\) follows a Gaussian distribution, \\(p(\\epsilon)=Z^{-1} e^{-\\frac{1}{2\\sigma^2}\\epsilon^2}\\). Then the probability of observing the data is \\(p_f(\\{\\epsilon_i\\}) = Z^{-n}\\prod_i e^{-\\frac{1}{2\\sigma^2}\\epsilon_i^2}=Z^{-n}e^{-\\frac{1}{2\\sigma^2}\\sum_i\\epsilon_i^2}\\). The most likely function \\(f\\) therefore satisfies \\(\\min_f \\epsilon^2 = \\min_f \\sum_i (y_i-f(x_i))^2\\), which is just maximum likelihood estimation. This is where MSE comes from. (Going further, this is also why VAEs produce blurrier results than GANs.)</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "text",
+      "zh": "<p>3. 采样是一种优化。</p>",
+      "en": "<p>3. Sampling is a form of optimization.</p>"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<p>这个就不细说了，跟统计力学、机器学习都有很大关系。核心思想就是在概率测度的空间中，可以用KL散度度量概率分布之间的距离，最小化KL散度的优化问题给出了Gradient Flow，从起始的概率分布流向目标的概率分布，这样只需要按某个起始概率分布采样，然后沿着Flow走就可以得到目标概率分布，完成采样的目的。因此优化的语言和采样的语言是相互对应的，比如gradient descent对应Langevin Monte Carlo，类似的natural gradient descent也对应Langevin里加一个Hessian，等等。当然从统计力学的角度看，这些粒子在势场中最后稳定的分布，就是热平衡的玻尔兹曼分布。</p>",
+      "en": "<p>I will not go into detail, but this connects closely with both statistical mechanics and machine learning. The central idea is that, in the space of probability measures, KL divergence can measure the distance between distributions. Minimizing it defines a gradient flow from an initial distribution to the target distribution. We can then sample from an initial distribution and follow the flow to obtain the target distribution, achieving the goal of sampling. The languages of optimization and sampling thus correspond: gradient descent corresponds to Langevin Monte Carlo, and similarly natural gradient descent corresponds to adding a Hessian in Langevin dynamics, and so on. From the statistical-mechanics perspective, of course, the eventual stationary distribution of these particles in a potential is the thermal-equilibrium Boltzmann distribution.</p>"
+    },
+    {
+      "id": "b013",
+      "kind": "text",
+      "zh": "<p>具体学习的层面上，概率论用的是自编讲义，统计推断用的是韦来生的数理统计，都中规中矩。比较有意思的是从统计推断和逻辑的角度出发的Jaynes的书</p>",
+      "en": "<p>As for actual study materials, the probability course used its own lecture notes, while statistical inference used Wei Laisheng’s <i>Mathematical Statistics</i>. Both were perfectly standard. More interesting was Jaynes’s book, which approaches the subject through statistical inference and logic:</p>"
+    },
+    {
+      "id": "b014",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.cambridge.org/core/books/probability-theory/9CA08E224FF30123304E6D8935CF1A99\">Probability Theory: The Logic of Science</a>",
+      "en": "<a href=\"https://www.cambridge.org/core/books/probability-theory/9CA08E224FF30123304E6D8935CF1A99\">Probability Theory: The Logic of Science</a>"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<p>这方面的前沿，我感觉统计学和计算机两个出发点在越走越近，融合地越来越深入，所以或许多去ICML, NeurIPS, ICLR之类的看看比较好，每次看Tutorial和Workshop都能学到不少东西。另外除了统计学和计算机两种视角，其实还有第三种看待机器学习的视角：计算复杂度。简而言之就是机器学习的复杂类其实比一般的随机算法BPP还要大，关键就在于有训练数据，而训练数据其实是一种特殊的advice。因此类似配备多项式advice的复杂类BPP/poly，机器学习其实属于某种BPP/data的复杂度类。这个想法是从Robert Huang和Preskill的与classical shadow tomography相关的一系列工作那听来的，特别是<a href=\"https://www.nature.com/articles/s41467-021-22539-9\">Power of data in quantum machine learning - Nature Communication</a>。</p>",
+      "en": "<p>At the research frontier, I feel that the statistical and computer-science approaches are moving closer together and becoming more deeply integrated. So it is probably worth checking out more of what goes on at ICML, NeurIPS, ICLR, and the like; I learn a lot whenever I watch tutorials and workshops. Beyond statistics and computer science, there is also a third way to view machine learning: computational complexity. Briefly, the complexity class of machine learning is actually larger than BPP, the class of ordinary randomized algorithms. The key is the availability of training data, which is a special kind of advice. Just as BPP/poly allows polynomial advice, machine learning belongs to a kind of BPP/data class. I learned this idea from Robert Huang and Preskill’s series of works related to classical shadow tomography, especially <a href=\"https://www.nature.com/articles/s41467-021-22539-9\">Power of data in quantum machine learning — Nature Communications</a>.</p>"
+    },
+    {
+      "id": "b016",
+      "kind": "h3",
+      "zh": "量子与计算",
+      "en": "Quantum Physics and Computation"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>第二条主线是和量子与计算都有关系，一方面是计算量子力学，特别是强关联的多体问题等，不包括DFT，另一方面是利用量子优势的计算方法，比如量子计算、量子机器学习等。这部分的知识也非常零碎，主要是用论文堆砌起来的，只能大概列个提纲（报菜名），总结一下学习过的topic。</p>",
+      "en": "<p>The second direction involved both quantum physics and computation. On one side was computational quantum mechanics, especially strongly correlated many-body problems, though not DFT. On the other were computational methods that exploit quantum advantages, including quantum computing and quantum machine learning. What I know here is also pretty patchy, mostly cobbled together from papers. All I can really do is run through the topics I've studied (basically read out the menu).</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<p>计算量子力学部分，主要学了精确对角化、DMRG、MPS、iTEBD、量子蒙卡和张量网络。这部分内容是选了一门研究生课学的，老师讲的还是挺清楚的，但由于课时所限，很多内容没有细节，主要还是自己看论文，所以最后大概也就对做过的作业比较熟悉，很多东西都停留在听过的层面。个人感觉到这个阶段因为可以学的东西太多了，但每个东西又都没有必要学，学了也不一定能咋样，所以很多时候就只能边做边学，对不常用的东西就只能浅尝辄止了。作业里实现的一些小玩意都放在GitHub上了，最后课程大作业做了一个normalizing flow解lattice phi^4。</p>",
+      "en": "<p>For computational quantum mechanics, I mainly studied exact diagonalization, DMRG, MPS, iTEBD, quantum Monte Carlo, and tensor networks. I learned this material in a graduate-level course I took. The instructor explained things quite clearly, but with limited class time there wasn't much detail on many topics, so it mostly came down to reading papers myself. In the end, I was probably only fairly comfortable with the material I'd actually worked through in the course assignments. A lot of the rest was still just “I've heard of that.” At this stage there is so much you could learn, but no particular thing you absolutely have to learn, and learning it might not get you anywhere anyway. So often you just learn as you go, and only scratch the surface of things you don't use much. I put the small programs I wrote for the course assignments on GitHub. For the final project I used a normalizing flow to solve lattice phi^4.</p>"
+    },
+    {
+      "id": "b019",
+      "kind": "reference",
+      "zh": "<a href=\"https://github.com/JasonZHM/computational-qm\">GitHub - JasonZHM/computational-qm: code for a course on computational quantum mechanics: ED, DMRG, MPS, iTEBD, MCMC &amp; Normalizing Flow</a>",
+      "en": "<a href=\"https://github.com/JasonZHM/computational-qm\">GitHub — JasonZHM/computational-qm: code for a computational quantum mechanics course: ED, DMRG, MPS, iTEBD, MCMC &amp; Normalizing Flow</a>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>量子机器学习部分，先学了PAC learning theory和一些quantum complexity，然后就开始HHL, QRAM, QPCA, 一堆分类器QSVM, variational的classifier, 然后是一些生成式的模型quantum autoencoder, QGM, QGAN, 以及barren plateau之类的现象，最后学了一些ML在quantum many-body里的应用，比如相分类、分析RBM neural network state的entanglement之类的。这部分主要就是一篇一篇文章看下来，全部走一遭基本对这个领域就有一定了解了。最后课程的大作业做了一个量子生成式模型的东西。这里面PAC learning theory主要参考了<a href=\"https://mitpress.mit.edu/books/foundations-machine-learning\">Mohri et al. Foundations of Machine Learning</a>和<a href=\"https://www-m5.ma.tum.de/foswiki/pub/M5/Allgemeines/MA4801_2021S/ML.pdf\">Wolf的Lecture Notes on Mathematical Foundations of Supervised Learning</a>, 其他的主要就是读对应的文章。</p>",
+      "en": "<p>For quantum machine learning, I first studied PAC learning theory and some quantum complexity, then moved on to HHL, QRAM, QPCA, and a whole bunch of classifiers, including QSVM and variational classifiers. Next came generative models—quantum autoencoders, QGM, QGAN—and phenomena such as barren plateaus. Finally I studied applications of machine learning to quantum many-body physics, including phase classification and the entanglement of RBM neural-network states. This mostly meant reading one paper after another; going through the whole sequence gives you some familiarity with the field. For the final course project I did something with a quantum generative model. For PAC learning theory, I mainly used <a href=\"https://mitpress.mit.edu/books/foundations-machine-learning\">Mohri et al., Foundations of Machine Learning</a> and <a href=\"https://www-m5.ma.tum.de/foswiki/pub/M5/Allgemeines/MA4801_2021S/ML.pdf\">Wolf’s Lecture Notes on Mathematical Foundations of Supervised Learning</a>. For the rest, I mainly read the relevant papers.</p>"
+    },
+    {
+      "id": "b021",
+      "kind": "h3",
+      "zh": "物理",
+      "en": "Physics"
+    },
+    {
+      "id": "b022",
+      "kind": "text",
+      "zh": "<p>第三条主线就比较偏向传统的物理学了，主要是进一步学习量子场论，以及各个物理方向的导论课程。大二秋季主要就是着手了解了一些场论，并且学了一点AMO的基础知识。</p>",
+      "en": "<p>The third direction was closer to traditional physics: further study of quantum field theory and introductory courses in various branches of physics. In the autumn of my sophomore year of college, I mainly began exploring field theory and learned a little basic AMO physics.</p>"
+    },
+    {
+      "id": "b023",
+      "kind": "h3",
+      "zh": "场论",
+      "en": "Field Theory"
+    },
+    {
+      "id": "b024",
+      "kind": "text",
+      "zh": "<p>场论部分我个人一直学的不是很扎实，目前还处于名词党的阶段。之前和同学一起搞过一个讨论班，读的书主要是Sidney Coleman的<a href=\"https://www.worldscientific.com/worldscibooks/10.1142/9371\">Lectures of Sidney Coleman on Quantum Field Theory</a>。对这本书感兴趣的读者可以去看 <a href=\"https://www.zhihu.com/people/6df21486fa9c818dce046f2321bd4ea2\">@TOAA</a> 写的总结<a href=\"https://zhuanlan.zhihu.com/p/550906831\">TOAA：第一本量子场论：Lectures of Sidney Coleman</a>。除了高能这一侧的场论，还有凝聚态一侧的，之前试图读过Fetter和Altland&amp;Simons，但也因为没时间而没坚持下来，如果以后有机会的话再学。这方面还上了一门研究生课，讲格点规范场论，按老师的话说原则上只需要会加减乘除就能学。主要参考的材料是Kogut的Rev Mod Phys <a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.51.659\">An introduction to lattice gauge theory and spin systems</a>和Polyakov的<a href=\"https://www.taylorfrancis.com/books/oa-mono/10.1201/9780203755082/gauge-fields-strings-polyakov\">Gauge Fields and Strings</a>。学的时候既不会凝聚态也不会高能，就只会一些基本的统计和量子，不过多亏了老师讲得好，也能顺利学下来，但现在看来也用不上，只是学得好玩。</p>",
+      "en": "<p>My field theory has never been all that solid. I'm still mostly at the stage of knowing the terminology. Some classmates and I put together a reading group a while back, mainly using <a href=\"https://www.worldscientific.com/worldscibooks/10.1142/9371\">Lectures of Sidney Coleman on Quantum Field Theory</a>. Readers interested in it can see <a href=\"https://www.zhihu.com/people/6df21486fa9c818dce046f2321bd4ea2\">@TOAA</a>’s review, <a href=\"https://zhuanlan.zhihu.com/p/550906831\">A First Quantum Field Theory Book: Lectures of Sidney Coleman</a>. Besides the high-energy side, there is also field theory from the condensed-matter side. I tried reading Fetter and Altland &amp; Simons, but again did not keep going because of lack of time; perhaps I will return to them if I get the chance. I also took a graduate-level course on lattice gauge theory. According to the instructor, in principle all you need is addition, subtraction, multiplication, and division. The main references were Kogut’s <i>Reviews of Modern Physics</i> article <a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.51.659\">An introduction to lattice gauge theory and spin systems</a> and Polyakov’s <a href=\"https://www.taylorfrancis.com/books/oa-mono/10.1201/9780203755082/gauge-fields-strings-polyakov\">Gauge Fields and Strings</a>. At the time I knew neither condensed matter nor high-energy physics, only some basic statistical and quantum mechanics. Thanks to the instructor’s excellent teaching, I could still follow the course. Looking at it now, though, I don't really have a use for it. It was just fun to learn.</p>"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<p>对于场论，我目前的感想是可以学的东西太多了，而且出发点不同，学到的东西可能完全不一样，同时可能永远也无法学完，给人一种陷入泥潭之感。所以目前处于搁置的状态，以后如果要用到再速成。其实我也很好奇大家是怎么学下来的。</p>",
+      "en": "<p>My current feeling about field theory is that there is just too much to learn. Start from a different place and you may learn something completely different, and you might never finish anyway. It feels like getting bogged down in a swamp. So I have shelved it for now. If I need it later, I will give myself a crash course. I really am curious how everyone else managed to get through it.</p>"
+    },
+    {
+      "id": "b026",
+      "kind": "h3",
+      "zh": "AMO",
+      "en": "AMO"
+    },
+    {
+      "id": "b027",
+      "kind": "text",
+      "zh": "<p>这部分主要是上了一门课，既是培养方案的要求，也是一门传统的物理分支的导论课。主要内容就是原子分子和光物理，参考的教材是Foot的<a href=\"https://global.oup.com/academic/product/atomic-physics-9780198506966?cc=us&amp;lang=en\">Atomic Physics</a>，有影印版</p>",
+      "en": "<p>Here I mainly took a course that was both a degree requirement and an introduction to a traditional branch of physics: atomic, molecular, and optical physics. The textbook was Foot’s <a href=\"https://global.oup.com/academic/product/atomic-physics-9780198506966?cc=us&amp;lang=en\">Atomic Physics</a>, which is available in a reprint edition.</p>"
+    },
+    {
+      "id": "book001",
+      "kind": "reference",
+      "zh": "原子物理学",
+      "en": "Atomic Physics"
+    },
+    {
+      "id": "b028",
+      "kind": "text",
+      "zh": "<p>，学了原子与光的相互作用（选择定则、Rabi振荡、怎么在各种态之间跳来跳去、Bloch方程、Stark shift之类的），然后是单电子原子、多电子原子、分子的光谱结构（精细结构、超精细结构、Hartree-Fock之类的怎么算、怎么看懂那些光谱记号），最后是散射（散射长度、分波法之类的基本概念、冷原子主要关注的s波散射、以及Feshbach共振等等）。这门课老师讲的超好，节奏很恰当，对物理图像非常关注，感觉学会了很多半经典的物理图像，也对AMO有了一些初步的认识。感觉整体思路接近MIT OCW上诺奖得主Wolfgang Ketterle的AMO课了。</p>",
+      "en": "<p>We studied atom–light interactions—selection rules, Rabi oscillations, how to hop back and forth between states, Bloch equations, Stark shifts, and so on—then the spectral structure of one-electron atoms, many-electron atoms, and molecules: fine and hyperfine structure, how to do calculations like Hartree–Fock and make sense of all that spectroscopic notation. Finally came scattering: scattering lengths, partial-wave methods, the s-wave scattering central to cold atoms, Feshbach resonances, and so forth. The instructor was so good. The pace was just right, and there was a real emphasis on physical pictures. I felt I learned many semiclassical ways of thinking and gained an initial understanding of AMO. The overall approach seemed close to Nobel laureate Wolfgang Ketterle’s AMO course on MIT OCW.</p>"
+    },
+    {
+      "id": "b029",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.bilibili.com/video/BV1EE411G7W2\">【MIT公开课】8.421 原子与光学物理 I（完结·英文字幕）_哔哩哔哩_bilibili</a>",
+      "en": "<a href=\"https://www.bilibili.com/video/BV1EE411G7W2\">MIT 8.421 Atomic and Optical Physics I — complete course with English subtitles on Bilibili</a>"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p>不过目前还是没有做实验的打算x</p>",
+      "en": "<p>Still not planning to do experiments for now, though x</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "h3",
+      "zh": "数学物理方程",
+      "en": "Equations of Mathematical Physics"
+    },
+    {
+      "id": "b032",
+      "kind": "text",
+      "zh": "<p>这部分就是中规中矩的课了，基本就是把吴崇试的数学物理方法过了一遍。这书网上有答案<a href=\"https://www.docin.com/p-1045354253.html\">数学物理方法+吴崇试+习题解答</a>，就非常好。不过我个人感觉吴崇试有很多东西没有细节，这里顾樵的书</p>",
+      "en": "<p>This was a fairly standard course, essentially working through Wu Chongshi’s <i>Methods of Mathematical Physics</i>. Solutions are available online—<a href=\"https://www.docin.com/p-1045354253.html\">Solutions to Wu Chongshi’s Methods of Mathematical Physics</a>—which is great. Personally, though, I found that Wu left out many details. Gu Qiao’s book</p>"
+    },
+    {
+      "id": "book002",
+      "kind": "reference",
+      "zh": "数学物理方法 顾樵",
+      "en": "Methods of Mathematical Physics — Gu Qiao"
+    },
+    {
+      "id": "b033",
+      "kind": "text",
+      "zh": "<p>就做得很好，推导什么的都很详细，而且考试要背的结论上面都有写，所以搭配着看可能比较好。走这个传统路子学数学物理方法，给我最大的收获就是面对各种特殊函数不再发憷了，虽然现在基本都忘光了……当然数学物理方法完全还有另一种现代的路子学，就是从李群李代数的角度出发，可以把这些特殊函数都自然地推出来，感兴趣的读者可以看Hassani的Mathematical Physics: A Modern Introduction to Its Foundations，以及万老师的讲义：<a href=\"https://www.zhihu.com/question/383543500/answer/1344305932\">如何看待复旦大学物理系2019学年第二学期开设的数学物理方法课程？</a>。不过我目前对这类先打好数学基础，再去学物理的思路持怀疑态度，毕竟仅仅物理就足够丰富了。</p>",
+      "en": "<p>does much better in that respect: the derivations are detailed, and it includes the results you need to memorize for exams, so reading the two together may work well. The main benefit I got from this traditional route through mathematical methods was that special functions no longer frightened me, though I've now forgotten pretty much all of it… There is, of course, a completely different modern route: starting from Lie groups and Lie algebras, from which these special functions arise naturally. Interested readers can look at Hassani’s Mathematical Physics: A Modern Introduction to Its Foundations and Professor Wan’s notes: <a href=\"https://www.zhihu.com/question/383543500/answer/1344305932\">What do you think of the Methods of Mathematical Physics course offered by Fudan’s physics department in the second semester of the 2019 academic year?</a> Still, I'm currently skeptical of the idea that you should get all your maths in place first and then start learning physics. Physics alone is already rich enough.</p>"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b035",
+      "kind": "h2",
+      "zh": "大二冬季",
+      "en": "Sophomore Year of College: Winter"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<p>大二冬季主要做的事有两件：一是看书，把秋季遗留下来的一些需要大块时间的材料系统性地阅读一下；二是做研究，秋季学期在天文系老师的指导下，我开始研究如何用机器学习加速微引力透镜的分析。</p>",
+      "en": "<p>I mainly did two things over the winter of my sophomore year of college. One was reading: working systematically through material left over from autumn that required uninterrupted stretches of time. The other was research. During the autumn semester, under the guidance of a professor in the astronomy department, I had begun studying how machine learning could accelerate the analysis of gravitational microlensing.</p>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<p>最后把前面提到的Coleman的场论书读了一半，到矢量场为止。另外因为一直感觉量子计算的基本功不太扎实，但又懒得完整读一遍Nielsen&amp;Chuang，于是就把Kitaev的<a href=\"https://www.ams.org/books/gsm/047/\">Classical and Quantum Computation</a>读了一下，一开始还是认认真真往下做，后来发现还是有些困难（虽然人家都给提示了orz），而且又感觉没那么必要抠细节，最后就变成草草阅读了。感觉这本书的思路比较偏Theory &amp; Complexity，虽然短但是不好读。不过草草读下来倒也了解了不少东西。</p>",
+      "en": "<p>I ended up reading half of Coleman's field-theory book mentioned above, up to vector fields. I also kept feeling that my quantum-computing basics were shaky, but was too lazy to read all of Nielsen &amp; Chuang, so I picked up Kitaev's <a href=\"https://www.ams.org/books/gsm/047/\">Classical and Quantum Computation</a>. At first I dutifully worked through it, then found it was still quite hard (even with the hints they give you, orz). Besides, I didn't feel I really needed to get every detail down, so in the end I just skimmed it. The approach leans toward Theory &amp; Complexity. Short, but not an easy read. Still, even skimming it taught me quite a few things.</p>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>研究方面，因为问题很明确，解决方案也是我比较熟悉的，所以其实秋季学期两三个月项目主体就已经搞定了。结果寒假的时候发生了小转折，有两个时间参数怎么都估计不好：一个相当于事件发生的时间点，一个相当于事件的时间尺度。最后花了一整个寒假的试错，终于想到或许不应该直接进行参数估计，而是可以把问题转化成语义分割的任务，切割出一段特征长度，用它的中心位置来估计时间点，用它的长度来估计时间尺度，最终用U-Net解决了这个问题。</p>",
+      "en": "<p>As for research, the problem was clearly defined and the solution was familiar to me, so the main part of the project was actually finished within two or three months during autumn. Then things took a little turn over winter break: there were two time parameters I just could not get right, no matter what I tried. One was essentially the time of the event, and the other its timescale. After a whole winter break of trial and error, I finally realized that perhaps I should not estimate the parameters directly. Instead, I could turn the problem into semantic segmentation: identify a segment of characteristic length, use its center to estimate the event time, and its length to estimate the timescale. I finally solved it with U-Net.</p>"
+    },
+    {
+      "id": "b039",
+      "kind": "text",
+      "zh": "<p>大二秋冬的内容看起来已经不少了，知乎编辑器都开始卡了，春夏的内容还是另开一篇好了。</p>",
+      "en": "<p>That already looks like quite a lot for the autumn and winter of my sophomore year of college. Even the Zhihu editor is starting to lag. Better leave spring and summer for another post.</p>"
+    }
+  ]
+}

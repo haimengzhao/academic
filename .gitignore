@@ -7,3 +7,10 @@ public/
 
 # Mac
 .DS_Store
+.hugo_build.lock
+
+# Local migration notes and unused typography experiments
+docs/book-review-migration/STATUS.md
+docs/article-migration/context-review.md
+docs/article-migration/context-polish-changes.json
+static/fonts/eb-garamond/

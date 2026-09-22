@@ -1,0 +1,6 @@
+{{- $parts := split .Title " — " -}}
+{{- if and (eq .Params.layout "book-review") (eq (len $parts) 2) -}}
+<span class="post-title-series">{{ index $parts 0 }}</span><span class="post-title-separator"> — </span><span class="post-title-detail">{{ index $parts 1 }}</span>
+{{- else -}}
+{{- .Title -}}
+{{- end -}}

@@ -1,0 +1,807 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/408967061",
+  "slug": "maths-physics-book-reviews-2021-spring",
+  "captured": "2026-09-21",
+  "source_body_sha256": "9057f4bdd0b6c72d116af31f394f45c036cfb177c249aa0701dbe1a170a60279",
+  "excluded": [
+    {
+      "type": "platform-commerce-ui",
+      "count": 11,
+      "details": "Book-card titles and original links retained; live prices, buy buttons, ad badges, and shopping thumbnails not copied."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "text",
+      "zh": "<p>上一篇：<a href=\"/post/maths-physics-book-reviews-2020-fall/\">数理教材阅读进度及读后简评（大一秋冬）</a></p>",
+      "en": "<p>Previous: <a href=\"/post/maths-physics-book-reviews-2020-fall/\">Maths &amp; Physics Book Reviews (Freshman Year of College: Autumn and Winter)</a></p>"
+    },
+    {
+      "id": "b002",
+      "kind": "text",
+      "zh": "<p>下一篇：<a href=\"/post/maths-physics-book-reviews-2022-fall/\">数理教材阅读进度及读后简评（大二秋冬）</a></p>",
+      "en": "<p>Next: <a href=\"/post/maths-physics-book-reviews-2022-fall/\">Maths &amp; Physics Book Reviews (Sophomore Year of College: Autumn and Winter)</a></p>"
+    },
+    {
+      "id": "b003",
+      "kind": "text",
+      "zh": "<p>多快啊，已经一年了。</p>",
+      "en": "<p>That went fast. A whole year already.</p>"
+    },
+    {
+      "id": "b004",
+      "kind": "text",
+      "zh": "<p>这一年的心态可谓一波三折：从急切地想做科研发paper，因而为此高速学习量子和统计；到学习量子与统计的过程中被物理再次震撼，激发了大量兴趣点，反而不愿学得太快；与此同时又旁听了组会，着手跟着老师做了一个机器学习应用于计算物理的小project，跟很多老师谈了谈，渐渐对物理科研的模式有了一定认识；到最后在读了几篇Phys. Rev.之后突然想明白了，决定不再急躁。那一瞬间感到无比的自由与放松，仿佛又回到了几年前心无旁骛的时候。</p>",
+      "en": "<p>My state of mind has taken quite a few turns this year. First I was impatient to do research and publish papers, so I tore through quantum and statistical mechanics. Then, while learning them, physics blew me away all over again and gave me so many things to get interested in that I no longer wanted to rush. Meanwhile, I sat in on research group meetings, started a small research project under a professor's supervision on applying machine learning to computational physics, and talked to quite a few professors, gradually getting a sense of how physics research works. Finally, after reading a few <i>Phys. Rev.</i> papers, something suddenly clicked, and I decided there was no need to be so impatient. I felt unbelievably free and relaxed at that moment, as though I were back a few years earlier, with nothing else on my mind.</p>"
+    },
+    {
+      "id": "b005",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b006",
+      "kind": "text",
+      "zh": "<p>言归正传。</p>",
+      "en": "<p>Anyway, back to the books.</p>"
+    },
+    {
+      "id": "b007",
+      "kind": "text",
+      "zh": "<p>由于我在春季的某个时刻决定对数学学习采取实用主义的态度，即以物理为主线，要用到什么数学再学什么，所以以后除非是独立的数学课程会单独列出，其余的数学都糅合在对应的物理课程下。</p>",
+      "en": "<p>At some point in the spring, I decided to take a pragmatic approach to mathematics: let physics guide my studies, and learn the mathematics when I need it. From now on, then, I will list only standalone mathematics courses separately; the rest will be woven into the corresponding physics subjects.</p>"
+    },
+    {
+      "id": "b008",
+      "kind": "h2",
+      "zh": "大一春夏",
+      "en": "Freshman Year of College: Spring and Summer"
+    },
+    {
+      "id": "b009",
+      "kind": "text",
+      "zh": "<p>春季学期主要学习了复变函数，费曼II（电磁学）和量子力学。暑假主要学了统计力学和简单的固体物理，同时学了大量「实验物理的大数据方法」（一门可以让四星期消失的课）。</p>",
+      "en": "<p>During the spring semester I mainly studied complex analysis, Feynman II (electromagnetism), and quantum mechanics. Over the summer I mainly studied statistical mechanics and elementary solid-state physics, while also spending a huge amount of time on the course “Big Data Methods in Experimental Physics”—a course that can make four weeks disappear.</p>"
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>其中量子力学的学习时间因为各种原因显著长于我的预期，主要是因为其包含的数学以及课题非常多，包括但不限于群与群表示、诠释、路径积分、开放系统、量子信息等等。</p>",
+      "en": "<p>For various reasons, quantum mechanics took significantly longer than I had expected, mainly because it encompasses so much mathematics and so many topics: groups and representations, interpretations, path integrals, open systems, quantum information, and more.</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "h2",
+      "zh": "复变函数",
+      "en": "Complex Analysis"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<ul><li><b>李岩松 复变函数讲义 ≈ 吴崇试 数学物理方法 复变函数部分</b></li></ul>",
+      "en": "<ul><li><b>Li Yansong, Lecture Notes on Complex Analysis ≈ the complex-analysis part of Wu Chongshi’s Methods of Mathematical Physics</b></li></ul>"
+    },
+    {
+      "id": "book001",
+      "kind": "reference",
+      "zh": "数学物理方法(第三版)",
+      "en": "Methods of Mathematical Physics (3rd Edition)"
+    },
+    {
+      "id": "b013",
+      "kind": "text",
+      "zh": "<p>这是我们课堂用的讲义，基本上跟吴崇试的数学物理方法是一致的，前者可能补充了一些例子，但跳了不少步，有的时候只能自学后者。<b>为了课程要求值得看，但本身并不推荐。</b>总体来说是一本标准的课程教材，比较偏重计算技巧和技术，能够教会你算留数，了解一些Gamma函数，但对理论上的构建比较少，大概就是物理系开数学课的风格。对我来说就是提供了一个标准，告诉你你已经达到复变函数这门课的要求了。另外这门课学的是很痛苦了，估计是还不太习惯含糊而定义不明的数学课。</p>",
+      "en": "<p>These were our course notes, and they are essentially consistent with Wu Chongshi’s <i>Methods of Mathematical Physics</i>. The notes may add a few examples, but skip quite a few steps, so sometimes I had to teach myself from the book instead. <b>Worth reading to meet course requirements, but not a book I would recommend otherwise.</b> Overall it is a standard course text, leaning toward computational skills and techniques. It teaches you to calculate residues and a little about the gamma function, but spends less time building the theory—roughly what mathematics courses in a physics department tend to be like. For me, it served as a benchmark: it told me when I had met the requirements for complex analysis. Also, this course was painful. I suppose I was still not used to maths classes where things were vague and the definitions were fuzzy.</p>"
+    },
+    {
+      "id": "b014",
+      "kind": "text",
+      "zh": "<ul><li><b>Needham, 复分析：可视化方法, <i>Visual Complex Analysis</i></b></li></ul>",
+      "en": "<ul><li><b>Needham, <i>Visual Complex Analysis</i></b></li></ul>"
+    },
+    {
+      "id": "book002",
+      "kind": "reference",
+      "zh": "复分析：可视化方法",
+      "en": "Visual Complex Analysis"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<p>这本书名气很大，早有耳闻。恰逢再版，毫不犹豫就买了下来。新版的排版看起来还是很舒服的，齐民友老先生（R.I.P.）的翻译和译注也很好，某种意义上超越了原版。这本书总体来说还是很<b>值得推荐的，很适合物理系学生在闲暇时刻阅读，</b>由于有大量图示，读起来很快乐，可以帮助读者建立起复分析里的直觉，理解很多复分析里的重要定理在几何上的意义。其重点与上一本标准教材完全不同：在埃尔朗根纲领（几何在于变换下的不变性）的指导下，通过几何、拓扑与场论串联起了全文，给出了大量物理上的例子，特别强调了莫比乌斯变换与非欧几何，可以说是一本独一无二的好书。这本书还有大量习题，但由于时间原因（lan）我没有做。</p>",
+      "en": "<p>I had long heard of this famous book. It happened to be reissued, and I bought it without hesitation. The new edition is pleasantly typeset, and Qi Minyou's (R.I.P.) translation and translator’s notes are excellent—in a sense, better than the original. Overall, it is <b>well worth recommending, especially for physics students to read in their spare time.</b> The many illustrations make it a pleasure to read, help build intuition, and reveal the geometric meaning of important theorems in complex analysis. Its emphasis is entirely different from the standard text above. Guided by the Erlangen program—the idea of geometry as invariance under transformations—it connects geometry, topology, and field theory throughout, supplies many physical examples, and particularly emphasizes Möbius transformations and non-Euclidean geometry. It is a uniquely good book. There are also many exercises, which I did not do because of time constraints (read: laziness).</p>"
+    },
+    {
+      "id": "b016",
+      "kind": "text",
+      "zh": "<p>个人印象比较深刻的点有：埃尔朗根纲领，泰勒展开与傅里叶展开的一体两面，莫比乌斯变换与相对论，Kasner-Arnold定理（同样在Arnold的经典力学的数学方法中出现，可见知乎文章<a href=\"https://zhuanlan.zhihu.com/p/342397329\">旭-ASAHI：【经典力学】开普勒势与谐振子势的对偶</a>），双曲几何，环绕数与拓扑和一些场论的应用。</p>",
+      "en": "<p>Particularly memorable topics were the Erlangen program; Taylor and Fourier expansions as two sides of the same coin; Möbius transformations and relativity; the Kasner–Arnold theorem, also discussed in Arnold’s <i>Mathematical Methods of Classical Mechanics</i> (see <a href=\"https://zhuanlan.zhihu.com/p/342397329\">ASAHI: The Duality Between the Kepler and Harmonic-Oscillator Potentials</a>); hyperbolic geometry; winding numbers and topology; and applications to field theory.</p>"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>另外Needham最近又出了一本 <a href=\"https://press.princeton.edu/books/paperback/9780691203706/visual-differential-geometry-and-forms\">Visual Differential Geometry and Forms</a> 值得期待。</p>",
+      "en": "<p>Needham has also recently published <a href=\"https://press.princeton.edu/books/paperback/9780691203706/visual-differential-geometry-and-forms\">Visual Differential Geometry and Forms</a>, which looks promising.</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<p>有条件的同学也可以去看看复旦万老师的数理方法讲义。我有幸旁听了一段时间这门课，但很遗憾现在貌似停止了。讲义的复变函数部分整体是与这本书一致的，其余部分也保持了类似的风格，非常有意思。具体参见问题：<a href=\"https://www.zhihu.com/question/383543500/answer/1344305932\">如何看待复旦大学物理系2019学年第二学期开设的数学物理方法课程？</a></p>",
+      "en": "<p>If you have access, Professor Wan’s mathematical-methods notes from Fudan are also worth a look. I was fortunate enough to sit in on the course for a while, but unfortunately it now seems to have stopped. The complex-analysis section broadly follows this book, and the rest maintains a similar, very interesting style. For details, see <a href=\"https://www.zhihu.com/question/383543500/answer/1344305932\">What do you think of the Methods of Mathematical Physics course offered by Fudan’s physics department in the second semester of the 2019 academic year?</a></p>"
+    },
+    {
+      "id": "b019",
+      "kind": "text",
+      "zh": "<ul><li><b>Stein, <i>Complex Analysis</i></b></li></ul>",
+      "en": "<ul><li><b>Stein, <i>Complex Analysis</i></b></li></ul>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>这恐怕和Ahlfors一起是两本最负盛名的复分析教材了，我犹豫了一下是否要把它放上了，因为我只是在考前简单翻阅了一下这本书，澄清了不少物理系标准教材含糊不清的地方。总的来说我还没有能力评价这本书，这本书有很大的部分对于物理系学生来说可能完全不需要掌握。但是必须指出的是：<b>别买机械工业出版社的中译版！翻译的令人无语……</b></p>",
+      "en": "<p>Along with Ahlfors, this is probably one of the two most renowned complex-analysis textbooks. I hesitated to include it because I only browsed it briefly before the exam, though it cleared up quite a few things left vague in standard physics-department texts. Overall, I am not yet qualified to assess it, and large parts may be unnecessary for physics students. But one thing must be said: <b>do not buy the Chinese translation from China Machine Press! I have no words for that translation…</b></p>"
+    },
+    {
+      "id": "b021",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b022",
+      "kind": "h2",
+      "zh": "普通物理（电磁学……或者应该叫场论？）",
+      "en": "Introductory Physics: Electromagnetism… or Should We Call It Field Theory?"
+    },
+    {
+      "id": "b023",
+      "kind": "text",
+      "zh": "<ul><li><b>R. P. Feynman, <i>Feynman Lectures on Physics Volume II</i></b></li></ul>",
+      "en": "<ul><li><b>R. P. Feynman, <i>The Feynman Lectures on Physics, Volume II</i></b></li></ul>"
+    },
+    {
+      "id": "book003",
+      "kind": "reference",
+      "zh": "费曼物理学讲义",
+      "en": "The Feynman Lectures on Physics"
+    },
+    {
+      "id": "b024",
+      "kind": "text",
+      "zh": "<p>先说句题外话，费曼的讲义我还是建议读英文版的，中文翻译把费曼的wit都丢掉了，其中比较典型的是对unworldliness的翻译……</p>",
+      "en": "<p>A brief aside: I still recommend reading Feynman’s lectures in English. The Chinese translation loses his wit; its rendering of “unworldliness” is a particularly telling example…</p>"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<p>这学期读完了Feynman的第二卷，对这套讲义的评价只增不减，<b>说真的，我没有更推荐的普物读物了</b>。本卷同时具有如下两个性质：充斥着大量普通教科书想都想不到的话题；对于普通教科书里有的内容，Feynman的论述一般要么令人眼前一亮，要么令人恍然大悟，原来xxx是从这里抄来的。很多时候，会让读者在感慨标准教材一直在糊弄自己的同时，很放心Feynman没有在糊弄自己，除非他自己也没想到。</p>",
+      "en": "<p>I finished Feynman's second volume this semester, and I only think more highly of these lectures now. <b>Seriously, there is no introductory physics book I would recommend more.</b> This volume manages two things at once: it is full of topics ordinary textbooks would never even think of; and when it covers something ordinary textbooks do discuss, Feynman either makes you see it in a new light or makes you go, “Oh, so that's where so-and-so copied it from.” Quite often you find yourself thinking that standard textbooks have been fobbing you off all along, while feeling reassured that Feynman isn't—unless he hasn't thought of it himself.</p>"
+    },
+    {
+      "id": "b026",
+      "kind": "text",
+      "zh": "<p>简单罗列几个印象深刻的点：</p>",
+      "en": "<p>A few particularly memorable points:</p>"
+    },
+    {
+      "id": "b027",
+      "kind": "text",
+      "zh": "<ol><li>场论数学工具的构建（同样推荐的等价物有<a href=\"https://www.springer.com/la/book/9783540761808\">Matthews, Vector Calculus</a>和周磊老师的课程<a href=\"https://www.bilibili.com/video/BV17b411F7hV\">复旦大学周磊电动力学</a>）</li><li>矢势与磁场哪个更基本？</li><li>最小作用量原理</li><li>波导与准粒子质量（Feynman并未点明，但可一直延伸到弦论的紧化思想）</li><li>自能、电磁场质量分布与相对论</li><li>经典物理没有磁性物质</li><li>广义相对论的超简版本</li></ol>",
+      "en": "<ol><li>The development of mathematical tools for field theory. Comparable resources I also recommend are <a href=\"https://www.springer.com/la/book/9783540761808\">Matthews, Vector Calculus</a> and <a href=\"https://www.bilibili.com/video/BV17b411F7hV\">Zhou Lei’s Electrodynamics course at Fudan</a>.</li><li>Which is more fundamental: the vector potential or the magnetic field?</li><li>The principle of least action</li><li>Waveguides and quasiparticle masses. Feynman does not make the connection explicit, but the idea extends all the way to compactification in string theory.</li><li>Self-energy, the mass distribution of the electromagnetic field, and relativity</li><li>Why classical physics has no magnetic materials</li><li>A very brief version of general relativity</li></ol>"
+    },
+    {
+      "id": "b028",
+      "kind": "text",
+      "zh": "<p>更好玩的是此卷最后的部分讲了许多固体（晶格对称性、位错与缺陷）、弹性和流体，所以或许本卷主题不应该叫电磁学，更应该叫场论？总之和第一卷一样还是<b>强烈推荐！</b></p>",
+      "en": "<p>Even more fun, the final part discusses solids—lattice symmetry, dislocations, and defects—as well as elasticity and fluids. So perhaps the volume should really be called field theory rather than electromagnetism? In any case, just like Volume I, <b>highly recommended!</b></p>"
+    },
+    {
+      "id": "b029",
+      "kind": "h2",
+      "zh": "量子力学",
+      "en": "Quantum Mechanics"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p>终于到重头戏了，大量材料预警！</p>",
+      "en": "<p>At last, the main event. Warning: lots of material ahead!</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "text",
+      "zh": "<p>量子力学的预习和入门部分参见第一篇文章末尾：</p>",
+      "en": "<p>For reading ahead and getting started with quantum mechanics, see the end of the first article:</p>"
+    },
+    {
+      "id": "b032",
+      "kind": "reference",
+      "zh": "<a href=\"/post/maths-physics-book-reviews-2020-fall/\">数理教材阅读进度及读后简评（大一秋冬）</a>",
+      "en": "<a href=\"/post/maths-physics-book-reviews-2020-fall/\">Maths &amp; Physics Book Reviews (Freshman Year of College: Autumn and Winter)</a>"
+    },
+    {
+      "id": "b033",
+      "kind": "text",
+      "zh": "<ul><li><b>Landau, 量子力学（非相对论理论）</b></li></ul>",
+      "en": "<ul><li><b>Landau, Quantum Mechanics: Non-Relativistic Theory</b></li></ul>"
+    },
+    {
+      "id": "book004",
+      "kind": "reference",
+      "zh": "朗道理论物理学教程·第3卷：量子力学（非相对论理论）",
+      "en": "Landau’s Course of Theoretical Physics, Volume 3: Quantum Mechanics (Non-Relativistic Theory)"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p>朗道是我学习量子力学的<b>主线教材</b>。选它是一波三折的结果，一开始我打算用Sakurai或者Shankar作为主要教材，但是后来咨询了一个老师，他说“其他这些书我只会参考的时候翻一翻，它们能让你达到一个平均水平，但和朗道完全不在一个层次上，如果能把朗道这本书学明白，就可以说是far above average了，只是你可能看不太懂……”最后我决定以这本书为主线，不懂的地方就去找各种参考材料，希望能把它啃下来。</p>",
+      "en": "<p>Landau was my <b>main textbook</b> for quantum mechanics. Getting to that choice was a bit of a saga. At first I planned to use Sakurai or Shankar, but then I consulted a professor, who said: “I only open those other books when I need a reference. They can bring you to an average level, but they are not in the same league as Landau. If you can really understand this book, you can call yourself far above average. You may find it hard to follow, though…” In the end I decided to stick with this as my main text, hunting down other references whenever I got stuck and hoping I could chew my way through it.</p>"
+    },
+    {
+      "id": "b035",
+      "kind": "text",
+      "zh": "<p>事实情况是，这本书的确<b>有不少槛</b>，有层次地分布在全书的各个位置，在这些地方我不得不参考别的材料来衔接，大致可以罗列如下：</p>",
+      "en": "<p>In practice, the book does have <b>quite a few hurdles</b>, appearing at different levels throughout. At these points I had to use other materials to bridge the gaps. Roughly, they were:</p>"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<ol><li>第三章薛定谔方程：各种偏微分方程的特殊函数解，需要<b>和自己和解</b>。</li><li>从第五章有心力场开始大量出现的渐进分析技术，需要一段时间适应。</li><li>第八章自旋：旋量代数、SO(3)与SU(2)群表示，需要其他材料帮助。</li><li>第九章全同粒子：置换群的表示和杨图，需要其他材料帮助。</li><li>从第十二章群论开始大量出现的有限群表示理论，需要其他材料帮助。</li><li>另外如果没学复变函数的话，会在数学附录、第七章准经典近似和最后散射的地方遇到麻烦。</li></ol>",
+      "en": "<ol><li>Chapter 3, the Schrödinger equation: special-function solutions of various PDEs. You need to <b>make peace with yourself</b>.</li><li>The asymptotic-analysis techniques used extensively from Chapter 5, on central fields, take time to get used to.</li><li>Chapter 8, spin: spinor algebra and the representations of SO(3) and SU(2). Other resources are needed.</li><li>Chapter 9, identical particles: representations of permutation groups and Young diagrams. Other resources are needed.</li><li>The finite-group representation theory used extensively from Chapter 12, on group theory. Other resources are needed.</li><li>If you have not studied complex analysis, you will also run into trouble in the mathematical appendices, Chapter 7 on the semiclassical approximation, and the scattering material near the end.</li></ol>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<p>具体来说，在补充群与群表示理论的过程中我主要参考了：</p>",
+      "en": "<p>More specifically, to fill in my knowledge of groups and representation theory, I mainly consulted:</p>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>知乎专栏 </p>",
+      "en": "<p>The Zhihu column</p>"
+    },
+    {
+      "id": "b039",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.zhihu.com/column/c_1058726231565996032\">当代数学物理专题</a>",
+      "en": "<a href=\"https://www.zhihu.com/column/c_1058726231565996032\">Topics in Contemporary Mathematical Physics</a>"
+    },
+    {
+      "id": "b040",
+      "kind": "text",
+      "zh": "<p>中对于置换群表示和杨图的介绍；GTM42 Serre, Linear Representations of Finite Groups</p>",
+      "en": "<p>for its introduction to permutation-group representations and Young diagrams; and Serre’s <i>Linear Representations of Finite Groups</i>, GTM 42,</p>"
+    },
+    {
+      "id": "b041",
+      "kind": "reference",
+      "zh": "<a href=\"https://link.springer.com/book/10.1007/978-1-4684-9458-7\">Linear Representations of Finite Groups</a>",
+      "en": "<a href=\"https://link.springer.com/book/10.1007/978-1-4684-9458-7\">Linear Representations of Finite Groups</a>"
+    },
+    {
+      "id": "b042",
+      "kind": "text",
+      "zh": "<p>的第一章，页数很少，清晰地介绍了有限群及其表示理论，作者说这部分来自给化学家的授课讲义，用来学习朗道对于多原子分子谱项分类的内容可以说是很合适了；以及一本很有趣的书</p>",
+      "en": "<p>whose first chapter gives a clear introduction to finite groups and their representation theory in very few pages. The author says it comes from lectures for chemists, making it especially apt for Landau’s classification of polyatomic molecular terms. I also used the very interesting book</p>"
+    },
+    {
+      "id": "b043",
+      "kind": "reference",
+      "zh": "<a href=\"https://link.springer.com/book/10.1007/978-3-319-66631-0\">Physics from Symmetry</a>",
+      "en": "<a href=\"https://link.springer.com/book/10.1007/978-3-319-66631-0\">Physics from Symmetry</a>"
+    },
+    {
+      "id": "b044",
+      "kind": "text",
+      "zh": "<p>用于学习李群和李代数（主要是SO(3)和SU(2)）的基本知识。其余可以看看的材料还有<a href=\"https://webspace.science.uu.nl/~hooft101/lectures/lieg07.pdf\">t&#x27;Hooft, Lie Groups in Physics</a>，<a href=\"https://www.math.columbia.edu/~woit/QM/\">Woit, Quantum Theory, Groups and Representations - An Introduction</a>等等。</p>",
+      "en": "<p>to learn the basics of Lie groups and Lie algebras, mainly SO(3) and SU(2). Other materials worth looking at include <a href=\"https://webspace.science.uu.nl/~hooft101/lectures/lieg07.pdf\">’t Hooft, Lie Groups in Physics</a> and <a href=\"https://www.math.columbia.edu/~woit/QM/\">Woit, Quantum Theory, Groups and Representations: An Introduction</a>.</p>"
+    },
+    {
+      "id": "b045",
+      "kind": "text",
+      "zh": "<p>除此之外，朗道这本书还有一些不友好之处：</p>",
+      "en": "<p>There are a few other ways in which Landau is not exactly friendly to the reader:</p>"
+    },
+    {
+      "id": "b046",
+      "kind": "text",
+      "zh": "<p>一是它具有一定的<b>工具书性质</b>，因此有的时候会引用后面的部分的结果，比如在第一次介绍角动量时直接搬出了很久之后才会介绍的Wigner-Eckart定理相关的内容，如果死磕的话可能就卒了，所以读这本书必须放宽心。</p>",
+      "en": "<p>First, it partly functions as a <b>reference book</b>, so it sometimes uses results developed later. For example, its first introduction to angular momentum brings in material related to the Wigner–Eckart theorem, which is not introduced until much later. Insist on grinding through every last detail and you may die trying. You have to loosen up a little with this book.</p>"
+    },
+    {
+      "id": "b047",
+      "kind": "text",
+      "zh": "<p>二是它推导的许多<b>结论完全不给名字</b>，比如你可能很熟悉朗道的准经典近似，但你第一次听到WKB近似的时候会一脸懵（无法成为名词党），又或者是你其实已经会了Hatree-Fock方法，但你不自知，客观上确实会对交流造成一定阻碍。当然据栗弗席兹说，这是因为朗道压根没参考这些人，自己就推导出了结论……</p>",
+      "en": "<p>Second, many <b>results are derived without being named</b>. You may know Landau’s semiclassical approximation well and still look blank when someone first mentions WKB (so much for showing off your fancy terminology). Or you may already know the Hartree–Fock method without realizing it. This really can get in the way of communication. According to Lifshitz, though, it is because Landau did not consult those people’s work; he derived the results himself…</p>"
+    },
+    {
+      "id": "b048",
+      "kind": "text",
+      "zh": "<p>三是他讲了<b>大量的标准教材中鲜见的内容</b>，尤其是花费了大量笔墨写原子分子能谱的分类，容易让人怀疑人生，毕竟同学都没人学这个，还这么难懂，学了真的有用吗？不过回头来看，原子分子能谱分类绝对是掌握有限群表示的物理应用的绝佳例子，让人更深刻地理解对称性在量子力学里的意义，同时为统计物理中空间群、二级相变理论埋下了伏笔。</p>",
+      "en": "<p>Third, it covers <b>a great deal rarely seen in standard textbooks</b>, especially its lengthy treatment of the classification of atomic and molecular spectra. It can make you question your life choices: none of your classmates is studying this, it is hard to understand, and will it ever be useful? Looking back, though, spectral classification is an outstanding example of finite-group representations in physics. It deepens your understanding of symmetry in quantum mechanics and prepares you for space groups and second-order phase transitions in statistical physics.</p>"
+    },
+    {
+      "id": "b049",
+      "kind": "text",
+      "zh": "<p>当然以上提到的不友好之处依然瑕不掩瑜，或者说其实并非是瑕，而是我水平不行。<b>总体来说这本书依然是强烈推荐，的确比其他书不知道高到哪里去了，有非常多独到的见解和处理方法。啃下来这本书后就会比较适应朗道写书的风格，读朗道的其他书比如统计物理I的时候也会舒畅很多（当然我在读这本书时才意识到，朗道的力学真的是最不朗道的一本了）。</b>简单罗列几个例子：</p>",
+      "en": "<p>Of course, none of these unfriendly bits takes away from how good the book is. Or perhaps they aren't flaws at all—I'm just not good enough yet. <b>I still recommend it very strongly. It really is leagues above other books, with so many insights and ways of doing things that are all its own. Once you have chewed your way through it, you get used to how Landau writes, and reading his other books, such as Statistical Physics I, becomes much more comfortable. (It was only while reading this one that I realized Mechanics is easily the least Landau-like of his books.)</b> A few examples:</p>"
+    },
+    {
+      "id": "b050",
+      "kind": "text",
+      "zh": "<ol><li>丝毫没有回避测量问题，可以说是哥本哈根学派完整思想的最佳阐述。</li><li>对密度矩阵以及泡利算符的论述，让人不禁怀疑朗道已经会现代量子信息学了。</li><li>对称性与守恒量的关系，很多人说它们在Sakurai的书里看到了关于这个内容的精彩论述，但我读过朗道之后再去读Sakurai并未感到有所惊艳。</li><li>对称性与哈密顿量的关系，可以说如果守恒量与对称性的关系是开胃小菜，在第十二章之后用群表示论研究多原子谱项时，整个对称性的意义被朗道和盘托出，非常震撼。</li><li>介绍了大量广泛的技术：微扰论、准经典近似、旋量代数、杨图等等。全书总页数不多，但包含的内容很难在任何一本其他的量子力学教材中都找到。</li></ol>",
+      "en": "<ol><li>It does not evade the measurement problem at all; it may be the best complete exposition of the Copenhagen school’s ideas.</li><li>The treatment of density matrices and Pauli operators makes you wonder whether Landau already knew modern quantum information theory.</li><li>The relationship between symmetries and conserved quantities. Many people praise Sakurai’s treatment, but after Landau I did not find it particularly surprising.</li><li>The relationship between symmetries and the Hamiltonian. If conserved quantities and symmetry are just the appetizer, then the use of group representations to study polyatomic spectral terms after Chapter 12 reveals the full significance of symmetry. It blew me away.</li><li>A broad range of techniques: perturbation theory, the semiclassical approximation, spinor algebra, Young diagrams, and more. The book is not very long, but it would be hard to find all this material in any other single quantum-mechanics textbook.</li></ol>"
+    },
+    {
+      "id": "b051",
+      "kind": "text",
+      "zh": "<p>最后朗道的书都<b>有完整的习题解答</b>，这点很好。另外我觉得有必要为朗道澄清一下：我个人感觉朗道是<b>不跳步</b>的，它的每步推导都给你写出来了，不存在很多人说太简略了很难懂的情况，但它的确会出现对于很重要的东西，仅以寥寥几句阐明，虽然这几句话往往一针见血，但的确容易让读者slip over。</p>",
+      "en": "<p>Finally, Landau’s books provide <b>complete solutions to the exercises</b>, which is excellent. I also feel I need to clear something up for Landau: personally, I think he <b>does not skip steps</b>. Each step of a derivation is written out; I do not share the common complaint that it is too terse to understand. He does, however, sometimes explain something very important in only a few sentences. Those sentences often get straight to the heart of the matter, but readers can easily slip past them.</p>"
+    },
+    {
+      "id": "b052",
+      "kind": "text",
+      "zh": "<p><b>一句话总结一下：有决心好好学量子力学，而且不在乎为此花掉一整个学期时间的，请选择朗道作为主线吧！</b></p>",
+      "en": "<p><b>To put it in one sentence: if you are determined to learn quantum mechanics properly and do not mind spending an entire semester on it, choose Landau as your main textbook!</b></p>"
+    },
+    {
+      "id": "b053",
+      "kind": "text",
+      "zh": "<ul><li><b>Dirac, 量子力学原理</b></li></ul>",
+      "en": "<ul><li><b>Dirac, The Principles of Quantum Mechanics</b></li></ul>"
+    },
+    {
+      "id": "book005",
+      "kind": "reference",
+      "zh": "狄拉克量子力学原理",
+      "en": "Dirac’s The Principles of Quantum Mechanics"
+    },
+    {
+      "id": "b054",
+      "kind": "text",
+      "zh": "<p>这本书被称为<b>量子力学的圣经</b>，我个人是作为补充阅读材料看的，总的来说<b>非常推荐。</b>这本书对理论的conceptual部分的论述令人豁然开朗，尤其是对整个理论的建立过程、Dirac符号的建立过程，写的非常细致精彩（毕竟人家发明的），令我印象尤为深刻的主要有：</p>",
+      "en": "<p>This is often called <b>the bible of quantum mechanics</b>. I read it as a supplement and <b>highly recommend it</b>. Its discussion of the conceptual side makes things click, especially the detailed and elegant development of the theory and Dirac notation—he did invent it, after all. The parts that particularly stayed with me were:</p>"
+    },
+    {
+      "id": "b055",
+      "kind": "text",
+      "zh": "<ol><li>基本理论的建立</li><li>量子力学为什么需要复数</li><li>Dirac符号的建立</li><li>量子化的意义</li><li>正则变换与幺正变换</li></ol>",
+      "en": "<ol><li>The construction of the basic theory</li><li>Why quantum mechanics needs complex numbers</li><li>The development of Dirac notation</li><li>The meaning of quantization</li><li>Canonical and unitary transformations</li></ol>"
+    },
+    {
+      "id": "b056",
+      "kind": "text",
+      "zh": "<p>但本书由于年代原因，许多记号比较陈旧，需要适应，但依然是非常好的书。另外这个译本虽然是机械工业出版社那个系列的，但质量还不错，如果要快速阅读可以读中译本。</p>",
+      "en": "<p>Because of its age, much of the notation is old-fashioned and takes some adjustment, but it remains an excellent book. Although the Chinese translation belongs to that China Machine Press series, its quality is quite good; if you want to read quickly, the Chinese version is an option.</p>"
+    },
+    {
+      "id": "b057",
+      "kind": "text",
+      "zh": "<ul><li><b>Sakurai,<i> Modern Quantum Mechanics</i></b></li></ul>",
+      "en": "<ul><li><b>Sakurai, <i>Modern Quantum Mechanics</i></b></li></ul>"
+    },
+    {
+      "id": "book006",
+      "kind": "reference",
+      "zh": "现代量子力学 第2版 中译本修订版",
+      "en": "Modern Quantum Mechanics, 2nd Edition (Revised Chinese Translation)"
+    },
+    {
+      "id": "b058",
+      "kind": "text",
+      "zh": "<p>这本书也是<b>风评很好</b>的一本标准教材，据称前四章尤其是对称性写的非常好。我粗略读了一下这本书的前四章，但是在此之前已经读过Landau和Dirac的类似内容，并且对李群李代数有了一定的认识，所以没有感到有什么特别出彩的地方。但可能初学读会很惊艳，而且相比前两本是<b>比较现代的标准教材</b>，因此还是把它放在了这里。</p>",
+      "en": "<p>This is another standard textbook with an <b>excellent reputation</b>. The first four chapters, especially symmetry, are said to be particularly good. I skimmed those chapters, but had already read similar material in Landau and Dirac and learned some Lie groups and Lie algebras, so I was not particularly blown away. It might well blow you away if it is your first encounter, though, and it is a <b>more modern standard textbook</b> than the previous two, which is why I include it here.</p>"
+    },
+    {
+      "id": "b059",
+      "kind": "text",
+      "zh": "<ul><li><b>John von Neumann, 量子力学的数学基础</b></li></ul>",
+      "en": "<ul><li><b>John von Neumann, Mathematical Foundations of Quantum Mechanics</b></li></ul>"
+    },
+    {
+      "id": "b060",
+      "kind": "reference",
+      "zh": "<a href=\"https://press.princeton.edu/books/paperback/9780691178578/mathematical-foundations-of-quantum-mechanics\">Mathematical Foundations of Quantum Mechanics</a>",
+      "en": "<a href=\"https://press.princeton.edu/books/paperback/9780691178578/mathematical-foundations-of-quantum-mechanics\">Mathematical Foundations of Quantum Mechanics</a>"
+    },
+    {
+      "id": "book007",
+      "kind": "reference",
+      "zh": "量子力学的数学基础",
+      "en": "Mathematical Foundations of Quantum Mechanics"
+    },
+    {
+      "id": "b061",
+      "kind": "text",
+      "zh": "<p>这本书<b>适合对数学和测量、熵增等基本问题有特殊爱好的读者。</b>当时读这本书是因为遇到了一个问题：坐标的本征函数和谐振子哈密顿量的本征函数都是同一个Hilbert Space的正交完备基，为什么一个不可数，一个可数呢？读了这本书之后得到了解答。另外我同时也对测量和熵增问题比较感兴趣，这本书里也有专门一章阐述Wigner和von Neumann这一派的看法。简单罗列一下这本书使我印象深刻的部分：</p>",
+      "en": "<p>This is <b>for readers with a particular interest in mathematics and foundational questions such as measurement and entropy increase</b>. I picked it up because of a question: the eigenfunctions of position and those of the harmonic-oscillator Hamiltonian are both complete orthogonal bases for the same Hilbert space, so why is one uncountable and the other countable? The book gave me an answer. I was also interested in measurement and entropy increase, and it devotes a chapter to the views of the Wigner–von Neumann school. The parts that stood out were:</p>"
+    },
+    {
+      "id": "b062",
+      "kind": "text",
+      "zh": "<ol><li>严肃地处理了Hilbert空间和其上的算符的理论；</li><li>单独一章讨论了开放系统与熵增问题；</li><li>单独一章讨论了测量问题。</li></ol>",
+      "en": "<ol><li>A serious treatment of Hilbert spaces and operators on them</li><li>A separate chapter on open systems and entropy increase</li><li>A separate chapter on the measurement problem</li></ol>"
+    },
+    {
+      "id": "b063",
+      "kind": "text",
+      "zh": "<p>同时，von Neumann还发展了一套用算符和Hilbert空间描述经典力学的方法，称为Koopman von Neumann mechanics，Wilczek写了一篇关于这个topic的很好的入门材料：</p>",
+      "en": "<p>Von Neumann also developed a way to describe classical mechanics using operators and Hilbert spaces, known as Koopman–von Neumann mechanics. Wilczek has written a very good introduction:</p>"
+    },
+    {
+      "id": "b064",
+      "kind": "reference",
+      "zh": "<a href=\"http://frankwilczek.com/2015/koopmanVonNeumann02.pdf\">Frank Wilczek, Notes on Koopman von Neumann Mechanics, and a Step Beyond</a>",
+      "en": "<a href=\"http://frankwilczek.com/2015/koopmanVonNeumann02.pdf\">Frank Wilczek, Notes on Koopman von Neumann Mechanics, and a Step Beyond</a>"
+    },
+    {
+      "id": "b065",
+      "kind": "text",
+      "zh": "<p>这本书总体来说还是不错的，但是<b>科学出版社的这个翻译出现了大量的typo</b>，令人难以忍受，我总结了一个勘误发给了编辑，他们说再版时会考虑的，如果有朋友需要可以找我要，毕竟读中文比英文要快得多。另外，这本书的<b>记号非常陈旧</b>，对于矩阵大量采用指标记号，如果读者想要更现代、更完整的量子力学数学方法，可以看：</p>",
+      "en": "<p>Overall, it is a good book, but <b>the Science Press translation contains an intolerable number of typos</b>. I compiled an errata list and sent it to the editor, who said they would consider it for a reprint. If anyone needs it, feel free to ask me; after all, reading Chinese is much faster than reading English. The <b>notation is also very dated</b>, with extensive use of indices for matrices. For a more modern and complete mathematical treatment of quantum mechanics, try:</p>"
+    },
+    {
+      "id": "b066",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.springer.com/us/book/9781461471158\">Quantum Theory for Mathematicians | Brian C. Hall | Springer</a>",
+      "en": "<a href=\"https://www.springer.com/us/book/9781461471158\">Brian C. Hall, Quantum Theory for Mathematicians — Springer</a>"
+    },
+    {
+      "id": "b067",
+      "kind": "text",
+      "zh": "<ul><li><b>R. P. Feynman, 量子力学与路径积分</b></li></ul>",
+      "en": "<ul><li><b>R. P. Feynman, Quantum Mechanics and Path Integrals</b></li></ul>"
+    },
+    {
+      "id": "book008",
+      "kind": "reference",
+      "zh": "量子力学与路径积分",
+      "en": "Quantum Mechanics and Path Integrals"
+    },
+    {
+      "id": "b068",
+      "kind": "text",
+      "zh": "<p>这本书是我为了了解一些路径积分，同时想看看Feynman是怎么理解量子力学而读的。总的来说对于<b>对路径积分感兴趣的读者还是非常推荐</b>的，不仅可以帮助读者熟悉路径积分处理问题的思路，还可以从一个全新的视角看待量子力学。令我非常诧异的是，<b>Feynman所采取的量子力学诠释完全不同于其他人</b>，在面对电子双缝干涉的概率矛盾时，标准教材的理解是放弃电子要么经过1缝要么经过2缝的假设，转而引入叠加态的概念；而费曼选择的是放弃概率的计算法则，提出了干涉选择和互斥选择的概念，认为在某些情形中，概率不再满足加法，而是遵循概率幅加法，以此为基础建立了路径积分，令人耳目一新，也不禁令人联想量子力学是否能启发非常规的概率理论。具体的阐述见第一章的内容。</p>",
+      "en": "<p>I read this to learn about path integrals and to see how Feynman understood quantum mechanics. Overall, I <b>highly recommend it to anyone interested in path integrals</b>. It teaches the path-integral approach and offers an entirely new perspective on quantum mechanics. What surprised me most was that <b>Feynman’s interpretation differs completely from other people’s</b>. Faced with the probability puzzle of electron double-slit interference, standard textbooks abandon the assumption that the electron passes through either slit 1 or slit 2 and introduce superposition. Feynman instead abandons the ordinary rules for combining probabilities. He distinguishes interfering alternatives from exclusive alternatives and argues that, in some situations, probabilities do not add; probability amplitudes do. He builds path integrals on that basis. It is refreshing and makes you wonder whether quantum mechanics might inspire unconventional theories of probability. See Chapter 1 for the detailed discussion.</p>"
+    },
+    {
+      "id": "b069",
+      "kind": "text",
+      "zh": "<p>其余令我印象深刻的内容还有：</p>",
+      "en": "<p>Other memorable topics include:</p>"
+    },
+    {
+      "id": "b070",
+      "kind": "text",
+      "zh": "<ol><li>路径积分中的微扰论的物理图像（比如如何理解能量二级微扰中分母出现的Em-En？在路径积分微扰论中有非常直观的图像）</li><li>虚时演化的统计力学路径积分方法（这部分与Feynman的统计力学讲义有一定重合）</li><li>变分法</li><li>路径积分在一般概率问题中的应用</li></ol>",
+      "en": "<ol><li>The physical picture of perturbation theory in path integrals. For example, why does Em−En appear in the denominator of second-order energy corrections? Path-integral perturbation theory gives a very intuitive picture.</li><li>The imaginary-time path-integral approach to statistical mechanics, partly overlapping with Feynman’s statistical-mechanics lectures</li><li>Variational methods</li><li>Applications of path integrals to general probability problems</li></ol>"
+    },
+    {
+      "id": "b071",
+      "kind": "text",
+      "zh": "<p>另外不得不说，这本书与Feynman的普物讲义在风格上还是有一定差距的，可能跟记录者有关。</p>",
+      "en": "<p>Still, I have to say that the writing does not quite live up to Feynman’s introductory physics lectures. Perhaps that has something to do with who wrote it up.</p>"
+    },
+    {
+      "id": "b072",
+      "kind": "text",
+      "zh": "<ul><li><b>陈童，量子力学新讲</b></li></ul>",
+      "en": "<ul><li><b>Chen Tong, New Lectures on Quantum Mechanics</b></li></ul>"
+    },
+    {
+      "id": "b073",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.zhihu.com/column/c_1248602202186403840\">量子力学新讲</a>",
+      "en": "<a href=\"https://www.zhihu.com/column/c_1248602202186403840\">New Lectures on Quantum Mechanics</a>"
+    },
+    {
+      "id": "b074",
+      "kind": "text",
+      "zh": "<p><a href=\"https://www.zhihu.com/people/9dd4f7c75fcfddec06ed96978f8a7816\">@陈童</a> <b>老师的这份讲义是我读过的最好的中文量子力学教材</b>（我没读过喀兴林，无法比较）。它最大的特点是<b>观点非常现代</b>，涵盖了量子信息、量子霍尔效应、任意子、拓扑现象、开放系统等众多课题，而且深入浅出，将这些高级课题与基本内容糅合得很好。同时，对各种常规内容，如微扰论、散射、对称性与群论等，都<b>博采众长</b>，采取了我个人认为最好的讲法，简单罗列几个令我印象深刻的部分：</p>",
+      "en": "<p><b>These notes by <a href=\"https://www.zhihu.com/people/9dd4f7c75fcfddec06ed96978f8a7816\">Chen Tong</a> are the best Chinese quantum-mechanics textbook I have read</b>. I have not read Ka Xinglin, so I cannot compare the two. What really sets them apart is a <b>very modern viewpoint</b>, covering quantum information, the quantum Hall effect, anyons, topological phenomena, open systems, and more. The treatment is accessible and blends these advanced topics beautifully with the basics. For conventional subjects such as perturbation theory, scattering, symmetry, and group theory, it <b>draws on the strengths of many sources</b> and uses what I personally regard as the best explanations. A few memorable examples:</p>"
+    },
+    {
+      "id": "b075",
+      "kind": "text",
+      "zh": "<ol><li>海森堡是怎么想到矩阵相乘的？这个补充材料其实完美地解释了矩阵元为什么被叫作跃迁元，同时还引入了路径积分的思想。</li><li>在一开始建立理论的时候就强调了量子信息的观点</li><li>对各种例子（第四章）的组织方式</li><li>对微扰论和变分法的论述，应该是采自Feynman的统计力学讲义，在数学严谨上比Feynman更胜一筹，但我个人觉得Feynman在介绍这种微扰观点时顺势延伸到费曼图的讲法提供了更为丰富的物理图像和应用，但客观上在这里也很难这样讲。</li><li>对称性和角动量，我想这就是现代版本最好的讲法了，甚至还讲了一点超对称。</li><li>全同粒子部分讲到了辫子群、任意子、自旋统计定理和二次量子化，观点现代，内容丰富。</li><li>单独一章介绍了分数量子霍尔效应和Berry phase。</li></ol>",
+      "en": "<ol><li>How did Heisenberg arrive at matrix multiplication? This supplementary discussion explains perfectly why matrix elements are called transition elements, and introduces the path-integral idea as well.</li><li>A quantum-information perspective is emphasized from the very beginning of the theory.</li><li>The organization of the examples in Chapter 4</li><li>The treatment of perturbation theory and variational methods seems to draw on Feynman’s statistical-mechanics lectures and is more mathematically rigorous. Personally, though, I think Feynman’s natural extension of this viewpoint to Feynman diagrams provides richer physical pictures and applications, even if it would be difficult to do the same here.</li><li>Symmetry and angular momentum: I think this is the best modern treatment, and it even includes a little supersymmetry.</li><li>The identical-particles discussion includes braid groups, anyons, the spin-statistics theorem, and second quantization. Modern in perspective and rich in content.</li><li>A separate chapter introduces the fractional quantum Hall effect and Berry phase.</li></ol>"
+    },
+    {
+      "id": "b076",
+      "kind": "text",
+      "zh": "<p><b>总的来说，虽然我只把这本书作为了已经熟悉量子力学之后的阅读材料，但我觉得完全可以把这本书作为一个现代的主线教材。可惜以我目前的水平大概还无法完全欣赏这本教材，不过就我已经读过的部分值得强烈推荐。</b></p>",
+      "en": "<p><b>Overall, although I only read this after I was already familiar with quantum mechanics, I think it could absolutely serve as the main text for learning quantum mechanics from a modern perspective. I am probably not yet at the level to appreciate all of it, unfortunately, but I strongly recommend the parts I have read.</b></p>"
+    },
+    {
+      "id": "b077",
+      "kind": "text",
+      "zh": "<ul><li><b>多世界诠释与退相干</b></li></ul>",
+      "en": "<ul><li><b>Many-Worlds Interpretation and Decoherence</b></li></ul>"
+    },
+    {
+      "id": "b078",
+      "kind": "text",
+      "zh": "<p>这一部分内容是由于我个人对量子力学的诠释问题比较感兴趣，所以特别了解了一下各种量子力学的诠释，包括哥本哈根诠释、Bohm力学（ 见<a href=\"https://www.zhihu.com/people/6e5a897175340cce2ba6a81ec080dd31\">@coucou Tao</a> 学长关于这个内容的文章）、多世界理论等等，其中 <a href=\"https://www.zhihu.com/people/972173e1e7b9d77062e411de1ead84a7\">@贾明子</a>的文章对我帮助很大。目前来说我对多世界理论比较信服，系统的介绍可以看Hugh Everett III的博士论文：</p>",
+      "en": "<p>Because I am personally interested in interpretations of quantum mechanics, I looked into several of them: Copenhagen, Bohmian mechanics (see the articles by a more senior student, <a href=\"https://www.zhihu.com/people/6e5a897175340cce2ba6a81ec080dd31\">@coucou Tao</a>), many-worlds, and so on. The articles by <a href=\"https://www.zhihu.com/people/972173e1e7b9d77062e411de1ead84a7\">@贾明子</a> were particularly helpful. At present I find many-worlds rather convincing. For a systematic introduction, see Hugh Everett III’s doctoral dissertation:</p>"
+    },
+    {
+      "id": "b079",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.pbs.org/wgbh/nova/manyworlds/pdf/dissertation.pdf\">Hugh Everett, III, The Theory of the Universal Wavefunction</a>",
+      "en": "<a href=\"https://www.pbs.org/wgbh/nova/manyworlds/pdf/dissertation.pdf\">Hugh Everett III, The Theory of the Universal Wavefunction</a>"
+    },
+    {
+      "id": "b080",
+      "kind": "text",
+      "zh": "<p>但这篇论文的篇幅的确很长，如果没有时间的话可以考虑读吴飚老师的缩略版（我只读了这个）：</p>",
+      "en": "<p>The dissertation is quite long, though. If you do not have time, you could read Wu Biao’s condensed account instead; this is the only one I have read:</p>"
+    },
+    {
+      "id": "b081",
+      "kind": "reference",
+      "zh": "<a href=\"https://doi.org/10.1140/epjh/s13129-021-00001-0\">Biao Wu, Everett’s theory of the universal wave function</a>",
+      "en": "<a href=\"https://doi.org/10.1140/epjh/s13129-021-00001-0\">Biao Wu, Everett’s theory of the universal wave function</a>"
+    },
+    {
+      "id": "b082",
+      "kind": "text",
+      "zh": "<p>另外，对于量子-经典过渡，以及退相干如何参与这个过程，这篇Rev. Mod. Phys.做了一个比较好的综述：</p>",
+      "en": "<p>For the quantum-to-classical transition and the role of decoherence, this <i>Reviews of Modern Physics</i> article gives a good overview:</p>"
+    },
+    {
+      "id": "b083",
+      "kind": "reference",
+      "zh": "<a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.715\">Decoherence, einselection, and the quantum origins of the classical</a>",
+      "en": "<a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.75.715\">Decoherence, einselection, and the quantum origins of the classical</a>"
+    },
+    {
+      "id": "b084",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b085",
+      "kind": "text",
+      "zh": "<ul><li><b>John Preskill, Ph219/CS219 Lecture Notes on Quantum Computation</b></li></ul>",
+      "en": "<ul><li><b>John Preskill, Ph219/CS219 Lecture Notes on Quantum Computation</b></li></ul>"
+    },
+    {
+      "id": "b086",
+      "kind": "reference",
+      "zh": "<a href=\"http://theory.caltech.edu/~preskill/ph229/\">Physics 219 Course Information</a>",
+      "en": "<a href=\"http://theory.caltech.edu/~preskill/ph229/\">Physics 219 Course Information</a>"
+    },
+    {
+      "id": "b087",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.bilibili.com/video/BV13z4y1m7W1\">[中英双字](2021)量子计算公开课 John Preskill Ph CS 219A_哔哩哔哩_bilibili</a>",
+      "en": "<a href=\"https://www.bilibili.com/video/BV13z4y1m7W1\">John Preskill, Ph/CS 219A Quantum Computation (2021), with Chinese and English subtitles — Bilibili</a>"
+    },
+    {
+      "id": "b088",
+      "kind": "text",
+      "zh": "<p>量子信息和量子计算可以说是目前量子力学方兴未艾的重要应用之一，同时也对量子力学基本原理的理解有所帮助，而Preskill的讲义可谓是<b>久负盛名</b>了，今年由于疫情的原因，这门课的视频也被开放出来了。对于这个视频我个人觉得稍有拖沓，不过总体还是很好的，适合倍速播放。讲义我没有完整读过，只是跟随着段路明老师的课当做参考资料读，读过的部分感觉写的都很好，<b>值得推荐</b>。类似的参考书还有Nielson and Chuang的<a href=\"https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview\">Quantum Computation and Quantum Information</a>以及Kitaev的<a href=\"http://dx.doi.org/10.1090/gsm/047\">Classical and Quantum Computation</a>。</p>",
+      "en": "<p>Quantum information and quantum computing are important and rapidly developing applications of quantum mechanics, and they also help clarify its foundations. Preskill’s notes have <b>long been renowned</b>, and this year the course videos were released because of the pandemic. Personally, I find the videos drag a little, but they are good overall. Watch them sped up. I have not read the notes in full; I used them as a reference alongside Duan Luming’s course. Everything I have read is very well written and <b>worth recommending</b>. Related references include Nielsen and Chuang’s <a href=\"https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview\">Quantum Computation and Quantum Information</a> and Kitaev’s <a href=\"http://dx.doi.org/10.1090/gsm/047\">Classical and Quantum Computation</a>.</p>"
+    },
+    {
+      "id": "b089",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b090",
+      "kind": "h2",
+      "zh": "统计物理",
+      "en": "Statistical Physics"
+    },
+    {
+      "id": "b091",
+      "kind": "text",
+      "zh": "<ul><li><b>Landau, 统计物理学 I</b></li></ul>",
+      "en": "<ul><li><b>Landau, Statistical Physics, Part I</b></li></ul>"
+    },
+    {
+      "id": "book009",
+      "kind": "reference",
+      "zh": "朗道理论物理学教程·第5卷：统计物理学1（第5版）",
+      "en": "Landau’s Course of Theoretical Physics, Volume 5: Statistical Physics, Part I (5th Edition)"
+    },
+    {
+      "id": "b092",
+      "kind": "text",
+      "zh": "<p>这本书是我用来学习统计物理的<b>主线教材，同时也是统计物理公认的名著。</b>总的来说，这本书贯彻了朗道一贯的风格：<b>原理先行，然后辅以大量例子。</b>在第一章讲清楚了统计力学的基本原理，第二章回顾了一下热力学后，在第三章建立起了吉布斯系综理论，而后以此为基础重剑无锋地处理了理想气体、固体、非理想气体等理论性较强的例子，同时介绍了相平衡、溶液、化学反应、星体等大量例子，展现出统计物理如此简洁，却又有如此强大的威力。书的后半段介绍了更深入的理论：涨落、晶体对称性、二级相变。</p>",
+      "en": "<p>This was my <b>main textbook for statistical physics and is also a recognized classic</b>. It follows Landau’s characteristic approach: <b>principles first, followed by a wealth of examples</b>. Chapter 1 explains the foundations of statistical mechanics, Chapter 2 reviews thermodynamics, and Chapter 3 develops Gibbs ensemble theory. From there, it powers through more theoretical examples such as ideal gases, solids, and nonideal gases—no fancy tricks, just sheer force—while also covering phase equilibria, solutions, chemical reactions, stars, and much more. It shows how statistical physics can be so simple and yet so powerful. The latter half develops deeper theory: fluctuations, crystal symmetry, and second-order phase transitions.</p>"
+    },
+    {
+      "id": "b093",
+      "kind": "text",
+      "zh": "<p><b>原理深刻，选例广泛，物理图像丰富，论述一针见血。</b></p>",
+      "en": "<p><b>Deep principles, wide-ranging examples, rich physical pictures, and explanations that get straight to the point.</b></p>"
+    },
+    {
+      "id": "b094",
+      "kind": "text",
+      "zh": "<p><b>在读过朗道的量子力学之后，读统计物理时就非常习惯朗道的风格了。</b>就我个人而言，原理部分是在春季学期空闲的时候读的，剩余部分在暑期电工实习的时候花了十天左右的时间就读完了，而且感到非常流畅，浑然天成，就像艺术品一样（除了栗弗席兹补的一些内容，个人感觉与原来的有很明显的割裂，主要是二级相变最后几节和空间群的一些部分）。</p>",
+      "en": "<p><b>After Landau's Quantum Mechanics, I felt right at home with his style when reading Statistical Physics.</b> I read the principles during spare moments in the spring semester, then finished the rest in about ten days during the summer hands-on electrical engineering course. It all flowed so naturally, as if it could not have been written any other way. Like a work of art. (Apart from some material Lifshitz added, which felt noticeably out of step with the original to me—mainly the last few sections on second-order phase transitions and some of the space-group material.)</p>"
+    },
+    {
+      "id": "b095",
+      "kind": "text",
+      "zh": "<p><b>这本书的闪光点和令人震撼之处实在是数不胜数，以至于我觉得怎么表述我的震撼都有损于这本书的精妙，所以我就只是列出存在震撼之处的章节，不详细叙述了，以免玷污了这本书：</b></p>",
+      "en": "<p><b>There are simply too many brilliant things in this book, too many things that blew me away. I feel that however I try to describe them, I will only make them sound less wonderful than they are. So I will just list the chapters and spare the book my attempts at explaining them:</b></p>"
+    },
+    {
+      "id": "b096",
+      "kind": "text",
+      "zh": "<ol><li><b>第一章基本原理全部</b></li><li><b>第三章Gibbs系综全部</b></li><li><b>73节负温度</b></li><li><b>第十一章高密度物体全部</b></li><li><b>第十二章涨落全部</b></li><li><b>第十三章晶体对称性全部</b></li><li><b>第十四章二级相变全部，本章的二级相变与对称性的联系是全书最令我震撼的！尤其是对表示论的应用。难怪朗道在做完这个工作之后感叹：“现在，我终于成为二流物理学家了。”</b></li></ol>",
+      "en": "<ol><li><b>All of Chapter 1, on the foundations</b></li><li><b>All of Chapter 3, on Gibbs ensembles</b></li><li><b>Section 73, on negative temperatures</b></li><li><b>All of Chapter 11, on matter at high density</b></li><li><b>All of Chapter 12, on fluctuations</b></li><li><b>All of Chapter 13, on crystal symmetry</b></li><li><b>All of Chapter 14, on second-order phase transitions. The connection between second-order phase transitions and symmetry blew me away more than anything else in the book! Especially the use of representation theory. No wonder Landau exclaimed after completing this work: “Now I have finally become a second-rate physicist.”</b></li></ol>"
+    },
+    {
+      "id": "b097",
+      "kind": "text",
+      "zh": "<p><b>令人震撼的细节还是请大家亲自阅读吧，我无法言表。其实我本来很想详细介绍这本书带给我的启发，但后来发现实在太多了，无从下手，只能作罢。我想可以这么说，这本书是我到目前为止读过的最好的物理书之一。如果这篇文章只推荐一本书，我会选择这本。</b></p>",
+      "en": "<p><b>Please just read it and see for yourself. I have no words. I really wanted to write in detail about everything this book made me see, but then I realized there was far too much and I had no idea where to start, so I gave up. I think I can say this: it is one of the best physics books I have read so far. If I could recommend only one book in this article, it would be this one.</b></p>"
+    },
+    {
+      "id": "b098",
+      "kind": "text",
+      "zh": "<p><br></p>",
+      "en": "<p><br></p>"
+    },
+    {
+      "id": "b099",
+      "kind": "text",
+      "zh": "<ul><li><b>Kubiznak, Perimeter Institute, <i>Statistical Mechanics</i></b></li></ul>",
+      "en": "<ul><li><b>Kubiznak, Perimeter Institute, <i>Statistical Mechanics</i></b></li></ul>"
+    },
+    {
+      "id": "b100",
+      "kind": "reference",
+      "zh": "<a href=\"https://pirsa.org/C17039?page=0\">PSI 2017/2018 - Statistical Mechanics (Kubiznak)</a>",
+      "en": "<a href=\"https://pirsa.org/C17039?page=0\">PSI 2017/2018 — Statistical Mechanics (Kubiznak)</a>"
+    },
+    {
+      "id": "b101",
+      "kind": "text",
+      "zh": "<p>这是Perimeter Institute的一门统计物理课，我没有看过视频，但是读过讲义，总共只有70页，<b>读起来很快</b>。主要聚焦在相变理论和临界现象，包括简单的统计场论和重整化群理论，作为统计物理的<b>升级读物</b>很不错。</p>",
+      "en": "<p>This is a statistical-physics course from Perimeter Institute. I have not watched the videos, but I have read the notes: only 70 pages, so <b>a quick read</b>. The focus is phase-transition theory and critical phenomena, including elementary statistical field theory and renormalization-group theory. It makes a very good <b>next step beyond an introductory statistical-physics course</b>.</p>"
+    },
+    {
+      "id": "b102",
+      "kind": "text",
+      "zh": "<ul><li><b>信息论、统计物理、大偏差理论</b></li></ul>",
+      "en": "<ul><li><b>Information Theory, Statistical Physics, and Large-Deviation Theory</b></li></ul>"
+    },
+    {
+      "id": "b103",
+      "kind": "text",
+      "zh": "<p>由于我对信息论与统计物理的关联很感兴趣，同时萌生过统计物理就是一种统计推断的思考，于是读了不少这方面的工作，其中最主要的是E. T. Jaynes的一些著作，比如他Phys. Rev.上的两篇奠基性的经典文章：</p>",
+      "en": "<p>I am interested in the connection between information theory and statistical physics, and had begun wondering whether statistical physics itself is a form of statistical inference. So I read quite a bit in this area, especially work by E. T. Jaynes, including his two foundational <i>Physical Review</i> papers:</p>"
+    },
+    {
+      "id": "b104",
+      "kind": "reference",
+      "zh": "<a href=\"https://journals.aps.org/pr/abstract/10.1103/PhysRev.106.620\">E. T. Jaynes, Information Theory and Statistical Mechanics</a>",
+      "en": "<a href=\"https://journals.aps.org/pr/abstract/10.1103/PhysRev.106.620\">E. T. Jaynes, Information Theory and Statistical Mechanics</a>"
+    },
+    {
+      "id": "b105",
+      "kind": "reference",
+      "zh": "<a href=\"https://journals.aps.org/pr/abstract/10.1103/PhysRev.108.171\">Information Theory and Statistical Mechanics. II</a>",
+      "en": "<a href=\"https://journals.aps.org/pr/abstract/10.1103/PhysRev.108.171\">Information Theory and Statistical Mechanics. II</a>"
+    },
+    {
+      "id": "b106",
+      "kind": "text",
+      "zh": "<p>在这两篇文章里，Jaynes把<b>统计物理的预测功能视作了统计推断的一个特例</b>，由于Shannon熵是满足一些条件下唯一的对不确定性的度量，因此面对已知测量结果，对微观状态概率分布最合理的推测，就是使Shannon熵最大的分布。由此Jaynes<b>把最大熵作为第一性原理重构了统计物理</b>，而这种“<b>主观统计物理</b>”可以<b>免于遍历假设</b>等不必要的麻烦。当然这种主观性会面临一定的概念性挑战与问题，具体可见这两篇文章的内容。</p>",
+      "en": "<p>In these papers, Jaynes treats <b>the predictive role of statistical physics as a special case of statistical inference</b>. Since Shannon entropy is the unique measure of uncertainty satisfying certain conditions, the most reasonable inference about the probability distribution of microstates, given known measurement results, is the distribution maximizing Shannon entropy. Jaynes thus <b>reconstructs statistical physics with maximum entropy as a first principle</b>. This “<b>subjective statistical physics</b>” can <b>avoid unnecessary complications such as the ergodic hypothesis</b>. Of course, its subjectivity raises conceptual challenges and questions; see the papers for details.</p>"
+    },
+    {
+      "id": "b107",
+      "kind": "text",
+      "zh": "<p>而这种最大熵(MaxEnt)的思想在现代得到了广泛的发展，并被应用于很多领域，进一步推广至了用于处理非平衡过程的最大路径熵(MaxCal)原理详细可见这篇Rev. Mod. Phys.的综述：</p>",
+      "en": "<p>The maximum-entropy idea, MaxEnt, has since been developed extensively and applied in many fields. It has also been generalized to the maximum-caliber principle, MaxCal, for nonequilibrium processes. This <i>Reviews of Modern Physics</i> review gives details:</p>"
+    },
+    {
+      "id": "b108",
+      "kind": "reference",
+      "zh": "<a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.85.1115\">Principles of maximum entropy and maximum caliber in statistical physics</a>",
+      "en": "<a href=\"https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.85.1115\">Principles of maximum entropy and maximum caliber in statistical physics</a>"
+    },
+    {
+      "id": "b109",
+      "kind": "text",
+      "zh": "<p>据说最近非常火的&quot;Generalized Gibbs Ensemble&quot;就是这一理论的结果：<a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.98.050405\">Relaxation in a Completely Integrable Many-Body Quantum System: An Ab Initio Study of the Dynamics of the Highly Excited States of 1D Lattice Hard-Core Bosons</a>。</p>",
+      "en": "<p>I have heard that the “Generalized Gibbs Ensemble” that everyone has been talking about lately follows from this theory: <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.98.050405\">Relaxation in a Completely Integrable Many-Body Quantum System: An Ab Initio Study of the Dynamics of the Highly Excited States of 1D Lattice Hard-Core Bosons</a>.</p>"
+    },
+    {
+      "id": "b110",
+      "kind": "text",
+      "zh": "<p>E. T. Jaynes作为一个物理学家，对概率论做出了重要的贡献，尤其是Bayes学派，他的观点的slogan是<a href=\"https://bayes.wustl.edu/\">Probability Theory As Extended Logic</a>。具体可以参见下面这本书，我在下学期打算认真读一下：</p>",
+      "en": "<p>As a physicist, E. T. Jaynes made important contributions to probability theory, especially the Bayesian school. His slogan was <a href=\"https://bayes.wustl.edu/\">Probability Theory as Extended Logic</a>. See the following book, which I plan to study carefully next semester:</p>"
+    },
+    {
+      "id": "b111",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.cambridge.org/core/books/probability-theory/9CA08E224FF30123304E6D8935CF1A99\">Probability Theory</a>",
+      "en": "<a href=\"https://www.cambridge.org/core/books/probability-theory/9CA08E224FF30123304E6D8935CF1A99\">Probability Theory</a>"
+    },
+    {
+      "id": "b112",
+      "kind": "text",
+      "zh": "<p>另外一个对熵的理解方式来自数学上的所谓大偏差理论，这部分我目前只有一点了解，还没有认真学习过，具体可以参考<a href=\"https://link.springer.com/book/10.1007%2F3-540-29060-5\">Entropy, Large Deviations, and Statistical Mechanics </a>和Phys. Rep.上的这篇综述<a href=\"https://doi.org/10.1016/j.physrep.2009.05.002\">The Large Deviation Approach to Statistical Mechanics</a>。</p>",
+      "en": "<p>Another way to understand entropy comes from the mathematical field of large-deviation theory. I currently know only a little about it and have not studied it seriously. References include <a href=\"https://link.springer.com/book/10.1007%2F3-540-29060-5\">Entropy, Large Deviations, and Statistical Mechanics</a> and the <i>Physics Reports</i> review <a href=\"https://doi.org/10.1016/j.physrep.2009.05.002\">The Large Deviation Approach to Statistical Mechanics</a>.</p>"
+    },
+    {
+      "id": "b113",
+      "kind": "text",
+      "zh": "<ul><li><b>R. P. Feynman, <i>Statistical Mechanics: A Set of Lectures</i></b></li></ul>",
+      "en": "<ul><li><b>R. P. Feynman, <i>Statistical Mechanics: A Set of Lectures</i></b></li></ul>"
+    },
+    {
+      "id": "book010",
+      "kind": "reference",
+      "zh": "费曼统计力学讲义",
+      "en": "Feynman’s Statistical Mechanics: A Set of Lectures"
+    },
+    {
+      "id": "b114",
+      "kind": "text",
+      "zh": "<p>这本书看似是统计物理的教材，实际也的确是从最基本的统计物理开始讲的，但一直延伸到了很深的量子多体内容，包括超导超流等等。<b>所以这本书必须得有了统计物理的基础，并且最好对二次量子化下的多体物理计算细节非常熟悉了才适合读，应该可以作为从统计物理到量子多体的衔接。</b>由于对二次量子化下的计算细节还不甚熟悉，我目前还没法完全欣赏这本书，不过就我目前读懂的部分，还是很值得推荐的，不仅对一些熟知的概念获得了令人眼前一亮的理解，而且能教会你如何以路径积分的视角看待很多问题（这本书的路径积分部分和《量子力学与路径积分》很相似），同时提供了很多比较现代的例子。简单列举几个令我印象深刻的内容：</p>",
+      "en": "<p>This looks like a statistical-physics textbook, and it really does begin with the basics, but it goes deep into quantum many-body physics, including superconductivity and superfluidity. <b>You therefore need a foundation in statistical physics, and preferably considerable familiarity with the computational details of many-body physics in second quantization, before reading it. It could serve as a bridge from statistical physics to quantum many-body theory.</b> Since I am not yet comfortable with those computational details, I cannot fully appreciate it. Still, the parts I understand are well worth recommending. They give fresh insights into familiar concepts, teach you to view many problems through path integrals—the path-integral material closely resembles <i>Quantum Mechanics and Path Integrals</i>—and supply many fairly modern examples. A few memorable points:</p>"
+    },
+    {
+      "id": "b115",
+      "kind": "text",
+      "zh": "<ol><li>对化学势的直观理解；</li><li>路径积分视角下密度矩阵的直观理解；</li><li>变分原理 \\(F \\le F_0 + \\langle H-H_0\\rangle_0\\) ，这个东西费曼用得很溜，但我在别的教材里从未见过，也没法很直观的理解，如果有朋友有好的理解方法一定要教教我！</li><li>第一次看懂了二维Ising模型的解法！</li><li>费曼教你费曼图！</li><li>后半段用发展出的方法详细研究了大量例子：自旋波、极化子、费米液体、超导、超流等等。</li></ol>",
+      "en": "<ol><li>An intuitive understanding of chemical potential</li><li>An intuitive understanding of the density matrix from the path-integral perspective</li><li>The variational principle \\(F \\le F_0 + \\langle H-H_0\\rangle_0\\). Feynman makes this look effortless, but I had never seen it in other textbooks and do not have an intuitive grasp of it. If you have a good way to understand it, please teach me!</li><li>For the first time, I understood the solution of the two-dimensional Ising model!</li><li>Feynman teaching you Feynman diagrams!</li><li>The second half uses the developed methods to study many examples in detail: spin waves, polarons, Fermi liquids, superconductivity, superfluidity, and more.</li></ol>"
+    },
+    {
+      "id": "b116",
+      "kind": "text",
+      "zh": "<ul><li><b>黄昆，固体物理学（重排本）</b></li></ul>",
+      "en": "<ul><li><b>Huang Kun, Solid State Physics (Retypeset Edition)</b></li></ul>"
+    },
+    {
+      "id": "book011",
+      "kind": "reference",
+      "zh": "固体物理学 重排本",
+      "en": "Solid State Physics (Retypeset Edition)"
+    },
+    {
+      "id": "b117",
+      "kind": "text",
+      "zh": "<p>之前听说这本书的改编本错误很多，于是就买了重排本，重排本<b>内容比较少，相对比较简单。</b>基本上前几章就是学高中化学的感觉，空间群、相图、能带论等等讲的还是很清晰的，最后简单点了一下超导，内容真的是很少，读起来超快，但让我有点怀疑只看这本书学到的太少了，因此就当做一个入门，以后还要以后继续学习。</p>",
+      "en": "<p>I had heard that the revised edition contained many errors, so I bought the retypeset edition instead. It has <b>less material and is relatively simple</b>. The first few chapters almost feel like studying high-school chemistry. Space groups, phase diagrams, and band theory are explained clearly, and superconductivity gets a brief mention at the end. There really is not much in it, and you fly through it. That did leave me wondering whether I was learning too little by reading only this book, though. So I'll treat it as a way in and keep learning later.</p>"
+    },
+    {
+      "id": "b118",
+      "kind": "text",
+      "zh": "<p>有意思的是我之前一直觉得很奇怪，朗道的理论物理学教程里为什么没有固体物理。栗弗席兹在统计物理II的前言里给出的理由是：固体物理不算理论物理学基本内容。不过我发现，其实统计物理I里已经覆盖了相图、简并电子气、德拜理论、声子、空间群等等内容，而能带论超流超导等等考虑电子与其他东西相互作用的理论都在统计物理II里覆盖了，因此从这个角度讲，除了位错等（反而在Feynman的普物讲义里有）知识性的内容，<b>原则上完全可以用朗道统计物理两册覆盖固体物理和固体理论。</b></p>",
+      "en": "<p>I had always found it strange that Landau’s <i>Course of Theoretical Physics</i> has no solid-state-physics volume. Lifshitz’s explanation in the preface to <i>Statistical Physics II</i> is that solid-state physics is not part of the basic content of theoretical physics. But I noticed that <i>Statistical Physics I</i> already covers phase diagrams, the degenerate electron gas, Debye theory, phonons, space groups, and more, while band theory, superfluidity, superconductivity, and other theories involving interactions between electrons and other degrees of freedom are covered in Part II. From that perspective, apart from descriptive topics such as dislocations—which do appear in Feynman’s introductory physics lectures—<b>Landau’s two statistical-physics volumes could in principle cover both solid-state physics and solid-state theory</b>.</p>"
+    },
+    {
+      "id": "b119",
+      "kind": "rule",
+      "zh": "",
+      "en": ""
+    },
+    {
+      "id": "b120",
+      "kind": "text",
+      "zh": "<p>这篇文章施工了很长时间，主要是由于夏季学期的摧残，不过随着新学期的开始，渐渐有时间完成了。最后送大家一段高中写作文时邂逅的那段诗，不知道半年之后我的心境又会如何变化呢……</p>",
+      "en": "<p>This article has been under construction for ages, mainly because the summer term put me through the wringer. Now that the new semester has started, I have finally found bits of time to finish it. I will leave you with a passage of poetry I stumbled across while writing essays in high school. Who knows how I will feel about things six months from now…</p>"
+    },
+    {
+      "id": "b121",
+      "kind": "quote",
+      "zh": "We shall not cease from exploration<br>And the end of all our exploring<br>Will be to arrive where we started<br>And know the place for the first time.<br>Through the unknown, remembered gate<br>When the last of earth left to discover<br>Is that which was the beginning;<br>At the source of the longest river<br>The voice of the hidden waterfall<br>And the children in the apple-tree<br>Not known, because not looked for<br>But heard, half-heard, in the stillness<br>Between two waves of the sea.<br>—T.S. Eliot",
+      "en": "We shall not cease from exploration<br>And the end of all our exploring<br>Will be to arrive where we started<br>And know the place for the first time.<br>Through the unknown, remembered gate<br>When the last of earth left to discover<br>Is that which was the beginning;<br>At the source of the longest river<br>The voice of the hidden waterfall<br>And the children in the apple-tree<br>Not known, because not looked for<br>But heard, half-heard, in the stillness<br>Between two waves of the sea.<br>—T.S. Eliot"
+    }
+  ]
+}

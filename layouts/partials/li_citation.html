@@ -1,0 +1,9 @@
+<article class="pub-list-item publication-entry">
+  <div class="publication-year">{{ .Date.Format "2006" }}</div>
+  <div>
+    <h3 class="publication-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <div class="publication-authors">{{ partial "publication_authors" . }}</div>
+    {{ with .Params.publication }}<div class="publication-venue">{{ . | markdownify }}</div>{{ end }}
+    <div class="publication-links">{{ partial "page_links" (dict "page" . "is_list" 1) }}</div>
+  </div>
+</article>

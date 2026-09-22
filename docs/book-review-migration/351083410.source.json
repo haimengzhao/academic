@@ -1,0 +1,475 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/351083410",
+  "slug": "maths-physics-book-reviews-2020-fall",
+  "captured": "2026-09-21",
+  "source_body_sha256": "003b6fac2563e7909024c6a6419436e8b76d897742ea86ff4d6741f37fd01d64",
+  "excluded": [
+    {
+      "type": "platform-commerce-ui",
+      "count": 10,
+      "details": "Book-card titles and original links retained; live prices, buy buttons, ad badges, and shopping thumbnails not copied."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "text",
+      "zh": "<p>下一篇：<a href=\"/post/maths-physics-book-reviews-2021-spring/\">数理教材阅读进度及读后简评（大一春夏）</a></p>"
+    },
+    {
+      "id": "b002",
+      "kind": "text",
+      "zh": "<p>学一门课之前，总是会到处找各种教材的评价，花很多时间试图找到一本别人口中最好的，好像选对了教材就能学懂似的，结果发现找一本相对不错的开始静下心学，同时多参考各种书目才是正道。等学完之后，好不容易有了些许理解，却又懒得再记录下来。于是我打算开始撰写并维护这一系列文章，记录自己学习数理基础课时认真读过以及参考过的教材，既是督促自己温故知新，也是给大家提供一个参考。</p>"
+    },
+    {
+      "id": "b003",
+      "kind": "rule",
+      "zh": ""
+    },
+    {
+      "id": "b004",
+      "kind": "h2",
+      "zh": "大一秋冬"
+    },
+    {
+      "id": "b005",
+      "kind": "text",
+      "zh": "<p>本学期主要学了微积分，线代，拓扑，费曼I（力热光）和经典力学，寒假预习了一下量子。</p>"
+    },
+    {
+      "id": "b006",
+      "kind": "h2",
+      "zh": "数学"
+    },
+    {
+      "id": "b007",
+      "kind": "text",
+      "zh": "<p>大一秋的数学主要学了高等微积分(1)，线(xie)性(xing)代(dan)数(shu)，基础拓扑学和一些散装的几何知识。</p>"
+    },
+    {
+      "id": "b008",
+      "kind": "h2",
+      "zh": "高等微积分(1)"
+    },
+    {
+      "id": "b009",
+      "kind": "text",
+      "zh": "<ul><li><b>艾颖华 高等微积分讲义</b></li></ul>"
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>主要用的是艾神的讲义，拓扑学讲义熟读之后对比Zorich会发现是后者的简化精华版，观点很现代，课堂上常常渗透了范畴、拓扑、微分几何等现代数学的思想，且为物理系的需要，简化了很多不必要的证明及定理，强调了许多物理中会用到的对象（ \\(\\delta\\) 函数、Feynman图等），非常好，唯一的缺点是无法开放获取。</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "text",
+      "zh": "<ul><li><b>B. A. Zorich, 数学分析（第一卷）</b></li></ul>"
+    },
+    {
+      "id": "book001",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345416770732068864-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRRHlwdARc3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFEeXB0BFxgMXgdIMklwUlwvZmJuZD1tPGxDCAcgGw9zZEQLWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXxYAFgJcGFolAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH14VBRQBVB1ZFgMVDlwcXgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFQdBAFQeNU9fGgEBXl4TbBUOVxlaFQUSN1caWhcA\">数学分析（第一卷 第7版）</a>"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<p>没有仔细读，只是在复习的时候简略通读过。个人认为是一本很适合物理系同学的参考书，<b>前提是略读（跳/挑），不究细节，只求建立直觉上的理解，因为如果精读会消耗大量时间</b>，并且所有我询问的物理系老师都反对<b>精读</b>这本书。书中有很多叙述直接在物理情境中进行，与应用结合紧密，具备绝大多数AYH讲义的优点。习题没看过不做评价，据数学系朋友称有很多诡异物理题。</p>"
+    },
+    {
+      "id": "b013",
+      "kind": "h2",
+      "zh": "线性代数"
+    },
+    {
+      "id": "b014",
+      "kind": "text",
+      "zh": "<p>表面上是线性代数，由于是数学中心的老师执教（XD！），整个课程变异成了前半学期标准线性代数，后半学期张量+群环域+群表示论，习题质量很高，让人收获很大，花的时间精力也很多。但是很遗憾，讲义目前还比较简略零散，所以在学习的过程中参考了不少书。还记得开课的时候XD邪魅一笑，说：“不知道有没有同学已经学过线性代数的，但我可以保证，我这门课的内容绝对有你没学过的。”</p>"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<ul><li><b>Sheldon Axler, <i>Linear Algebra Done Right</i></b></li></ul>"
+    },
+    {
+      "id": "book002",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345472662525685760-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgZUHFkQCxQ3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBlQcWRALFBgMXgdIMkpuNUVdSkVXZTJfAW5xDFg8GgBeW2ILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXBEFGwZQH14lAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH14TARUAVh9YEQUbA1McWgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFQtHUlNJNU9fGlAHTFJRbBUOUx9THQYVN1caWhcA\">线性代数应该这样学（第2版）(图灵出品)</a>"
+    },
+    {
+      "id": "b016",
+      "kind": "text",
+      "zh": "<p>Done Right是一本声名远扬的书了，我仔细通读了一遍，<b>名副其实，值得精读</b>。全书立足于线性映射叙述所有的线代内容，属于进入抽象层面的第一步，对一开始培养maths maturity很有帮助。对特征空间及Jordan型，复数与奇异值分解等问题的处理令人记忆犹新。美中不足的是内容较少（短小精悍），因此在有一定基础后只能当闲书看了（其实是自己拖太久买了一直晾着）。</p>"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>另外我买了一本英文第三版精装收藏，书里有不少小彩蛋，比如页码 \\(22\\approx 7\\pi\\) 等，挺有意思。</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<ul><li><a href=\"https://www.zhihu.com/people/0cce2a3130aa358a3ab934abb23ac0cc\">@Tautochrone</a><b> 的线性代数手写笔记</b></li></ul>"
+    },
+    {
+      "id": "b019",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.zhihu.com/column/c_182866514\">线性代数手写笔记</a>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>写得<b>非常好</b>！我偷偷下载下来合成了一个pdf编上大纲，在复习线代期中的时候完整通读了一遍，平时遇到一些老师以为平凡，而我完全摸不着头脑的地方，常常会翻阅。涉及的Topic较一般线代更广，包括了所有的标准线代内容，同时专门严肃地处理了多重线性代数（张量），<b>证明很详尽，同时也有作者自己的评论和理解，精读略读皆宜。</b></p>"
+    },
+    {
+      "id": "b021",
+      "kind": "text",
+      "zh": "<p>其余升级内容（简易抽代、群表示和特征标等）因为没时间通读，就只能到处胡乱学，参考过且较有帮助的包括AYH <i>拓扑学讲义</i>, S. Hassani <i>Mathematical Physics</i>, <a href=\"https://github.com/Dongryul-Kim/harvard_notes\">Harvard Math55a Lecture Notes</a>, 李新征老师的<i>群论及其在凝聚态物理中的应用</i>，N. Jeevanjee <i>An Introduction to Tensors and Group Theory for Physicists.</i></p>"
+    },
+    {
+      "id": "b022",
+      "kind": "text",
+      "zh": "<p>2021/6/13补充，群表示论部分可以参考GTM42 Serre Linear Representations of Finite Groups的第一部分，据作者本人说本来就是写给化学家的。</p>"
+    },
+    {
+      "id": "b023",
+      "kind": "h2",
+      "zh": "基础拓扑学"
+    },
+    {
+      "id": "b024",
+      "kind": "text",
+      "zh": "<p>主要包括点集拓扑和一点点代数拓扑（基本群、同伦、闭曲面分类、de Rham上同调等）。</p>"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<ul><li><b>艾颖华 拓扑学讲义</b></li></ul>"
+    },
+    {
+      "id": "b026",
+      "kind": "text",
+      "zh": "<p>一开始花了几节课介绍了简单的范畴论，接下来全部用这一语言叙述所有内容。为了进入代数拓扑，还补了不少群论的知识，对线代课产生了莫大的帮助，叙述的点集拓扑也加深了对微积分的理解，个人感觉<b>大一学一点简单的拓扑，尤其是熟悉了基本的范畴论语言，对整个大一数学的整体理解有非常大的帮助，对形成maths maturity有很大帮助</b>，是个英明的决定（跟我一起去听课的数学系朋友也有同感），而且在此基础上就可以试图理解拓扑群、李群等搭积木搭出来的概念了。但很可惜的是艾神说因为时间太紧（要去CMO阅卷），以后不会再开这门课了。唯一的缺点依然是无法开放获取……</p>"
+    },
+    {
+      "id": "b027",
+      "kind": "text",
+      "zh": "<p>由于艾神讲得太好太细了，所以课外没有花很多时间读书，推荐的参考书有J. R. Munkres <i>Topology, </i>尤承业<i> 基础拓扑学讲义</i>。艾神同时特别推荐了<i>From Calculus to Cohomology一书。</i></p>"
+    },
+    {
+      "id": "b028",
+      "kind": "text",
+      "zh": "<ul><li><b>Fredric Schuller, <i>Geometric Anatomy of Theoretical Physics</i></b></li></ul>"
+    },
+    {
+      "id": "b029",
+      "kind": "reference",
+      "zh": "<a href=\"https://www.bilibili.com/video/BV18p411Z7jD?p=8\">Geometric Anatomy of Theoretical Physics by Fredric Schuller</a>"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p>这是一套视频课程，介绍了很多与物理相关的几何知识，目前我只看了一小半，但已经对我理解许多概念有了非常大的帮助，有很多独到的观点，但是量很大，所以<b>非常推荐慢慢看</b>。</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "rule",
+      "zh": ""
+    },
+    {
+      "id": "b032",
+      "kind": "h2",
+      "zh": "物理"
+    },
+    {
+      "id": "b033",
+      "kind": "h2",
+      "zh": "普通物理（力学、光学、热学）"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p>由于高中竞赛已经有很好的基础了，所以这学期普物唯一干的一件事就是完整仔细读了一遍Feynman的讲义。</p>"
+    },
+    {
+      "id": "b035",
+      "kind": "text",
+      "zh": "<ul><li><b>R. P. Feynman, <i>Feynman Lectures on Physics Volume I</i></b></li></ul>"
+    },
+    {
+      "id": "book003",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345505205362900992-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgdcHF4TAxs3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSB1wcXhMDGxgMXgdIMhIHNV8AbEZWZShhBUFlTWQzeABoAWILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXRcHEA9WE1olAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH18UBhEGURlcFgoTBl0TWAkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFQtAAgJPNU9fGlwdWhBObBUPVBlTFAoXN1caWhcA\">费恩曼物理学讲义 新千年版 三本全套加补编 套装4册</a>"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<p>我的评价简单来说就是<b>必读，写得实在是太好了！好到几乎每一章都有让人读得非常激动，忍不住要用荧光笔划下来的论述，隔几章还会有令人想整段划下的叙述。</b>目前我印象比较深刻包括但不限于</p>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<ol><li>对质量的数学表述的建构过程</li><li>对数学与物理之间关系的论述</li><li>费马原理与波动光学、路径积分</li><li>反射折射的本质</li><li>菲涅尔公式的推导</li><li>量子与不确定性原理及其哲学含义</li><li>熵、混乱程度和时间箭头</li><li>涨落与麦克斯韦妖</li><li>对称性</li></ol>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>个人认为恰恰是<b>已经完整学过一遍普物的人最适合看</b>，Feynman的很多思考方式是标准教材里<b>从来没见过的</b>，并且<b>真正能够让你明白到底发生了什么</b>。</p>"
+    },
+    {
+      "id": "b039",
+      "kind": "text",
+      "zh": "<p>最简单的例子是反射折射的本质：高中就教我们反射和折射，有费马原理、惠更斯原理，看起来好像很有道理，其实根本没道理，凭啥光在介质里速度变慢了？没有这个，你这些原理根本用不了。你说介质一大坨好像阻挡了光？其实毫无道理，因为原子和原子之间间距大了去了，阻挡啥？后来解麦克斯韦方程组的边界条件，一通算发现算出了折射定律，用介电常数解释光速的变化，看起来很有道理，其实只是数学，根本没有理解。</p>"
+    },
+    {
+      "id": "b040",
+      "kind": "text",
+      "zh": "<p>而Feynman的方法是从光是电荷振动产生的电磁辐射出发，发现电磁辐射里振动的电场会驱动介质里的电子，电子受迫振动，于是自己也辐射电磁波，和原来的电磁波一干涉，就导致了各种效应，比如不透明的东西本质上就是两个波在透射方向上相互抵消了。就用这一套模型就足以完整推出菲涅尔公式。</p>"
+    },
+    {
+      "id": "b041",
+      "kind": "text",
+      "zh": "<p><b>总之是强烈推荐，认真精读！</b>唯一的缺点是如果只看它会<b>缺乏习题等基本功的训练</b>。</p>"
+    },
+    {
+      "id": "b042",
+      "kind": "h2",
+      "zh": "经典力学"
+    },
+    {
+      "id": "b043",
+      "kind": "text",
+      "zh": "<p>作为四大力学里最基本的一个，我这学期花了很大力气参考了很多书试图学好它。经典力学主要可以分成理论和应用两部分。理论其实并不复杂，主要就是Lagrange和Hamilton两套体系，再高级一点可以用微分几何的语言叙述。应用部分比较复杂，主要是有心力与散射、小振动、刚体、摄动法等，给理论提供了充足的例子。</p>"
+    },
+    {
+      "id": "b044",
+      "kind": "text",
+      "zh": "<ul><li><b>李岩松 分析力学讲义</b></li></ul>"
+    },
+    {
+      "id": "b045",
+      "kind": "text",
+      "zh": "<p>这是我们课堂用的讲义，完整仔细推过，<b>容量极大，十分深入</b>，一般经典力学不讲的摄动法、连续系统和混沌都各有专门一章处理，但是要压缩在3学分的课一学期上完，实在是强人所难，只能飙车。内容和难度大致相当于MIT Classical Mechanics I &amp; II &amp; III的总和（我为啥会知道呢，因为有一次讲义实在看不懂，结果没想到在MIT 8.09 Classical Mechanics III的讲义里翻到了相似度极高的片段）。推导有些关键步骤会省略，然后上课的时候一语点醒，但你要是已经跟不上了就会直接错过......缺点还是无法开放获取，但据说和Goldstein几 乎 差 不 多。</p>"
+    },
+    {
+      "id": "b046",
+      "kind": "text",
+      "zh": "<ul><li><b>Landau 力学</b></li></ul>"
+    },
+    {
+      "id": "book004",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345509680433684480-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgZVGF8XABY3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBlUYXxcAFhgMXgdIMmZsBRwhUV0XZxZtIEtKQm4WTRNHZVQLWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXRAGEwBWHF0lAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH18UChUOVB5ZFwUbAlASWgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFlVAAVIcNU9fGl0IRlJUbBUPVR5eEwYVN1caWhcA\">理论物理学教程·第1卷：力学（第5版）</a>"
+    },
+    {
+      "id": "b047",
+      "kind": "text",
+      "zh": "<p><b>写的非常好，强烈推荐，认真精读。</b>书本身短小精悍，所以阅读起来压力不大，我随着课时完整精读了一遍。有很多独到的评论和叙述，而且Landau的习题都是有详细解答的，非常好。另外有一个常见的误解，觉得Landau会跳步，容易看不懂，其实Landau经常会先抛出结论，然后在紧接着的下一段阐述或者证明它，个人觉得步骤其实挺详尽的，只是有的时候你先看到他抛出的结论，被吓到了，没看后面的证明，就以为很难懂。这跟排版也有一定的关系，我发现读的时候一定要注意什么时候换了一段，段首缩进了，说明后面讲的和前面的已经换了一个主题了，不注意的话就容易云里雾里的。</p>"
+    },
+    {
+      "id": "b048",
+      "kind": "text",
+      "zh": "<ul><li><b>刘川 理论力学</b></li></ul>"
+    },
+    {
+      "id": "book005",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345509932293054464-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRRHV0UBhY3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFEdXRQGFhgMXgdIMmUEJ2E9TGN5ZxdDAgtbb34xUwNgcmILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXRAGFQBXEl8lAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH18UChoFVhhTFwMWAlAcXgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFgsbDlcfNU9fGl0JXAFUbBUPVBxZHAAbN1caWhcA\">理论力学</a>"
+    },
+    {
+      "id": "b049",
+      "kind": "text",
+      "zh": "<p>这本书我是从图书馆借的，当时想的是多参考几本，而这本是互联网上名声最大的一本，最后在复习的时候完整地略读过一遍。个人认为很有Landau的风格（有不少地方很 相 似），所以读过Landau之后就会觉得比较无聊（可能是读过Landau之后必然的结果......）。和主流教材的区别在于一上来是从狭义相对论构建Lagrangian的，并且在有心力部分严肃地处理了Lagrange点等受限三体问题，以及有一个简（wu）易（yong）的群论介绍，其他的都差不多。但个人感觉并没有很大的意义，所以<b>读过Landau的就不推荐再读了</b>，而且书中有不少跳步的地方，如果去翻以简洁著称的Landau，会发现一模一样的地方Landau反而有推导。个人认为可能是讲义在汇编成书时有不少课堂内容没有编入，因此广泛的好评其实是针对刘川老师的课堂再配上讲义的，没有了课就大打折扣。</p>"
+    },
+    {
+      "id": "b050",
+      "kind": "text",
+      "zh": "<ul><li><b>I. W. Stewart, <i>Advanced Classical Mechanics</i> (MIT 8.09 &amp; 8.309 Classical Mechanics III Lecture Notes)</b></li></ul>"
+    },
+    {
+      "id": "b051",
+      "kind": "reference",
+      "zh": "<a href=\"https://ocw.mit.edu/courses/physics/8-09-classical-mechanics-iii-fall-2014/lecture-notes/\">Classical Mechanics III</a>"
+    },
+    {
+      "id": "b052",
+      "kind": "text",
+      "zh": "<p>这个Lecture Notes是我在看LYS讲义的摄动法部分云里雾里的时候参考的，因为是III的内容，所以主要讲的是Hamilton力学，加上摄动法、流体、混沌和非线性的部分。个人认为讲的是很清楚的，推导也比较详尽，<b>可以用作高级Topic的参考材料</b>。对应的I和II的Notes我没看过，不过估计也不错。</p>"
+    },
+    {
+      "id": "b053",
+      "kind": "text",
+      "zh": "<ul><li><b>Arnold, 经典力学的数学方法</b></li></ul>"
+    },
+    {
+      "id": "book006",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345510228222337024-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRXElwWBhs3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFcSXBYGGxgMXgdIMmBCNFoNUml1ZSUYPkN7Eh1PHSAcBGILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1cfXRAFEABcG1klAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH18VAxEEXBhYFgAQAVQYXgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFVcbBQUcNU9fGl0LT1pJbBUPVRxYFgEVN1caWhcA\">经典力学的数学方法（第4版）</a>"
+    },
+    {
+      "id": "b054",
+      "kind": "text",
+      "zh": "<p>这本书高中就买了（好高骛远的名词党石锤辣），一直没敢读，主要是风评说它超难。这个寒假学完经典力学之后开始读，发现也就这样，把正文部分完整略读了一遍。因此<b>学完经典力学之后，如果对抽象数学有一定兴趣的，推荐一定要读一下，写得很好。但只需要略读，追求建立直觉上的理解即可，不必深究细节和证明</b>。</p>"
+    },
+    {
+      "id": "b055",
+      "kind": "text",
+      "zh": "<p>关于<b>先修要求</b>，其实前言里说得听明白的，<b>只要求有微积分、线代和ODE的基础</b>，不需要微分几何的基础。事实上也的确如此，并且我作为没学过ODE的，发现只要把书中所有出现的“李雅普诺夫稳定性”都只从直觉上理解就行了。当然我在读这本书之前已经接触了不少拓扑和微分几何（那套视频）的知识，所以<b>有一定maths maturity是比较重要的</b>，因为只有这样才能看出很多定义为何自然，为何只能这样定义，很多定理为什么直觉上就应该是对的。</p>"
+    },
+    {
+      "id": "b056",
+      "kind": "text",
+      "zh": "<p><b>数学上，这本书本身也是给物理系同学极好的微分形式和几何的教材</b>，我是在这本书上搞明白变分法不是随便乱 \\(\\delta\\) 的，明白Legendre变换，微分形式，Stokes定理的内涵（边界算子 \\(\\partial\\) 是外微分算子 \\(\\text{d}\\) 的伴随），de Rham上同调的含义（与Poincare引理和洞的关系）以及一点点辛几何等等。</p>"
+    },
+    {
+      "id": "b057",
+      "kind": "text",
+      "zh": "<p><b>而在物理上，这本书通过高观点的几何工具带来了非常独到的物理理解。</b>印象深刻的包括诺特定理的叙述和证明（非常优雅，而课上是暴算作用量的变化），Liouville相体积不变定理的N种证明（最优雅的版本就是保辛结构），各种最小作用量原理的区别和联系（相空间在不同子空间上的投影），用辛变换谱的特性分析参数共振，以及可积系统的Arnold-Liouville定理与作用-角变量的内涵（同胚于n维环面 \\(T^n=\\{(\\varphi_1,\\cdots,\\varphi_n)\\ \\text{mod}\\ 2\\pi\\}\\) ）等等。</p>"
+    },
+    {
+      "id": "b058",
+      "kind": "text",
+      "zh": "<p><b>总而言之，对于爱好抽象数学的物理系朋友们，这本书是非常值得推荐的，这种风格的仅此一家。</b>美中不足的地方在于书中的<b>习题几乎都没有答案，所以适合跳跳跳地略读</b>，以及部分翻译有点奇怪（比如推论会翻译成“系”，正则会翻译成“典则”），同时有几处小Typo，不过无伤大雅。</p>"
+    },
+    {
+      "id": "b059",
+      "kind": "h2",
+      "zh": "量子力学预习"
+    },
+    {
+      "id": "b060",
+      "kind": "text",
+      "zh": "<p>由于下学期选了量子力学，又是一门极其重要的课，想尽量好好学明白，于是寒假先看了一些书预习一下。</p>"
+    },
+    {
+      "id": "b061",
+      "kind": "text",
+      "zh": "<ul><li>Leonard Susskind, <i>Quantum Mechanics: The Theoretical Minimum</i></li></ul>"
+    },
+    {
+      "id": "b062",
+      "kind": "reference",
+      "zh": "<a href=\"https://item.jd.com/71725788281.html\">量子力学 Quantum Mechanics: The Theoretical Minimum - 京东图书</a>"
+    },
+    {
+      "id": "b063",
+      "kind": "text",
+      "zh": "<p>这本书也是短小精悍，推导简单，<b>很适合当入门闲书读，但是观点很有意思，有很多独到的见解，因此非常推荐，</b>我完整地读过一遍。这本书的特点主要有两个，其一是<b>完全立足于自旋这个二能级系统，将量子力学的原理和逻辑讲得非常透彻，让量子力学与经典直觉的尖锐矛盾从一开始就突出出来</b>，只有在最后几章才回到一般的一维系统，最后以谐振子的代数解法告终；其二是花了<b>大量篇幅讨论纠缠</b>，将“对整体系统完全了解，不能得到对子系统的完全了解”这一反直觉事实描述得很透彻，同时<b>借助与仪器的纠缠对测量问题做了一定阐述，但点到为止，没有给读者强加某一诠释，个人觉得处理得很好。</b>美中不足的是全书的层级很初等，内容较少，只适合入门。</p>"
+    },
+    {
+      "id": "b064",
+      "kind": "text",
+      "zh": "<ul><li>Allan Adams, MIT 8.04 Quantum Physics I, 2013 Spring</li></ul>"
+    },
+    {
+      "id": "b065",
+      "kind": "reference",
+      "zh": "<a href=\"https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/\">Quantum Physics I</a>"
+    },
+    {
+      "id": "b066",
+      "kind": "text",
+      "zh": "<p>这门课b站上也有搬运的，但是需要注意p19p20有部分音画不同步，可以去原网站上看。</p>"
+    },
+    {
+      "id": "b067",
+      "kind": "text",
+      "zh": "<p>这门课我完整地看了一遍，并且把Problem Set（有答案）全做了一遍，<b>个人感觉很好，非常推荐，</b>一方面是因为他的<b>资料很完备</b>（有视频、各种演示用的Mathematica文档、含解答的习题、考试等），另一方面是教学和习题<b>质量很高</b>。尤其是前几集用虚构的Hardness和Color的概念将量子力学的矛盾阐释得很清楚又很有趣，让人看了就想跟下去。课程的内容大致相当于Griffiths理论部分的内容，同时加了一点能带理论和量子计算的简介，依然是比较初等的。</p>"
+    },
+    {
+      "id": "b068",
+      "kind": "text",
+      "zh": "<p>预习量子力学的过程中同时还参考了但没读完的书包括：Landau 量子力学（前4章），Feynman&amp;Hibbs 量子力学与路径积分（前两章）。还有一些以后继续学的时候打算读（但最后可能读不了多少）的材料包括：Dirac <i>The Principles of Quantum Mechanics</i>, Shankar <i>Principles of Quantum Mechanics</i>, A. Peres <i>Quantum Theory: Concepts and Methods</i>, Sakurai <i>Modern Quantum Mechanics</i>, <a href=\"https://www.zhihu.com/people/9dd4f7c75fcfddec06ed96978f8a7816\">@陈童</a>老师的<a href=\"https://zhuanlan.zhihu.com/p/261419318\">量子力学新讲</a>, W. H. Zurek <a href=\"http://rmp.aps.org/abstract/RMP/v75/i3/p715_1\">Decoherence, Einselection, and the Quantum Origins of the Classical</a>, 吴飚老师的<a href=\"https://arxiv.org/abs/2005.04812\">Everett’s Theory of the Universal Wave Function </a>等等。</p>"
+    },
+    {
+      "id": "b069",
+      "kind": "rule",
+      "zh": ""
+    },
+    {
+      "id": "b070",
+      "kind": "text",
+      "zh": "<p>最后附上个人读过的普物标准教材里比较推荐的。</p>"
+    },
+    {
+      "id": "b071",
+      "kind": "text",
+      "zh": "<p><b>力学</b></p>"
+    },
+    {
+      "id": "b072",
+      "kind": "text",
+      "zh": "<p>不评论，我只读过舒幼生老师的力学，但据说题目对一般大学生太难了？</p>"
+    },
+    {
+      "id": "b073",
+      "kind": "text",
+      "zh": "<p><b>电磁学</b></p>"
+    },
+    {
+      "id": "b074",
+      "kind": "text",
+      "zh": "<p>梁灿彬老师的电磁学及拓展篇。前者很标准，我也没读过别的，不评价；拓展篇是对一些专题问题的讨论，用对话体写成，很体现梁老的可爱直率，我记得里面还批评了很多教材“扭扭捏捏”讲不清楚，可爱。总之写的是真的好，有很多独到的见解，强烈推荐。</p>"
+    },
+    {
+      "id": "book007",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345734011499589632-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRXGVkWAxs3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFcZWRYDGxgMXgdIMmACEXguaERJZyJbIGV1VnlTTgQWRHILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1ccWBMKGgZdGlwlAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH10XBxMHVR5THQYbD1IZWAkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFVcbBQUeNU9fQlECUwtLbBQGXRhaHAEWN1caWhcA\">普通物理学教程 电磁学（拓展篇）</a>"
+    },
+    {
+      "id": "b075",
+      "kind": "text",
+      "zh": "<p>更进一步的是Griffiths的电动力学导论，也写得很清楚，适合普物层面的提高（我倒是不打算再用它学电动了，毕竟刷过一遍了，目前打算用Landau场论学电动）。</p>"
+    },
+    {
+      "id": "book008",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345734473476980736-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRXG14dAhc3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFcbXh0CFxgMXgdIMm9UFUddFwduZTJlPEx9enAAYRxtYmILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1ccWBwCEwdUHlslAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH10XBxcBVx5dEgobBlMZXAkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFVIbB10TNU9fQlENSAtHbBQGXRhZFAMVN1caWhcA\">电动力学导论（翻译版 原书第3版）</a>"
+    },
+    {
+      "id": "b076",
+      "kind": "text",
+      "zh": "<p><b>热学</b></p>"
+    },
+    {
+      "id": "b077",
+      "kind": "text",
+      "zh": "<p>Blundell（一家）写的热物理概念，这本书真的是深入浅出，起点很低，从概率论入手，终点很高，一直讲到统计物理，而且还有大量对专题的严肃讨论（激波、涨落耗散、非平衡、星体、大气），很有意思。</p>"
+    },
+    {
+      "id": "book009",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345736133590953984-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRXGl0TChY3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFcaXRMKFhgMXgdIMhZ6Ph89SgtuYj0YX1VeCHUxSF18d1QLWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1ccWBwHGgBcElolAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH10XBRIFVx9TFAoWBV0SXgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFQAXBQUcNU9fQlEVWQVUbBQGXBxSFAUTN1caWhcA\">热物理概念（第2版）：热力学与统计物理学</a>"
+    },
+    {
+      "id": "b078",
+      "kind": "text",
+      "zh": "<p><b>光学</b></p>"
+    },
+    {
+      "id": "b079",
+      "kind": "text",
+      "zh": "<p>Ajoy的光学，同样也是深入浅出，推导和阐述非常详尽，简直是傻瓜式了，怕你不会波动，专门给你写了5章从简谐振动开始，一直到Fourier分析。同时还对一些有意思的方法单开专题讲，如矩阵几何光学、全息术、Jones矩阵、光的粒子性、激光和光纤等等。个人觉得比什么现光基不知道高到哪里去了，当然还有另一本著名的教材，Hecht的，我没看过就不评价了。</p>"
+    },
+    {
+      "id": "book010",
+      "kind": "reference",
+      "zh": "<a href=\"https://union-click.jd.com/jdc?e=jdext-1345736596151226368-0&amp;p=AyIGZRhcFQIaA1ETUxcyEgRSGl4cAxQ3EUQDS10iXhBeGlcJDBkNXg9JHUlSSkkFSRwSBFIaXhwDFBgMXgdIMmRfDGUIVmdUYggYKGFaZVMsGyl8cmILWStbHAIQD1QaWxIBIgdUGlsRBxEEUxprJQIXNwd1g6O0yqLkB4%2B%2FjcePwitaJQIVB1ccWBwFEwFVHl0lAhoDZc31gdeauIyr%2FsOovNLYq46cqca50ytrJQEiXABPElAeEgVQH10XBRYPUhtfFQERAFccUgkDIgdUGlgUAxsOUxI1FGwSD1cYXxQLFwZRK1slASJZOxoIFQpCVVAaNU9fQlEQHxkcbBQGXBxSFQESN1caWhcA\">光学（第6版）</a>"
+    },
+    {
+      "id": "b080",
+      "kind": "rule",
+      "zh": ""
+    },
+    {
+      "id": "b081",
+      "kind": "text",
+      "zh": "<p>大一秋冬就到此为止，过几天就要返校了，希望春季学期能好好学习。</p>"
+    },
+    {
+      "id": "b082",
+      "kind": "quote",
+      "zh": "“怕什么真理无穷，进一寸有一寸的欢喜。” ——胡适"
+    }
+  ]
+}

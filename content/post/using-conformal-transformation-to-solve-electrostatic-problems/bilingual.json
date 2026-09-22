@@ -1,0 +1,300 @@
+{
+  "source_url": "https://zhuanlan.zhihu.com/p/56388478",
+  "slug": "using-conformal-transformation-to-solve-electrostatic-problems",
+  "captured": "2026-09-21",
+  "source_body_sha256": "5118b2f9478b9ec54d3b9412fd09f876ac10e504b532d1c86f8739b64a4bc848",
+  "cover": "cover.png",
+  "blocks": [
+    {
+      "id": "b001",
+      "kind": "text",
+      "zh": "<p>刚开始学习电磁学时就听说过保角变换法，可是直接看复变函数/电动力学中的保角变换部分过于困难，知乎上又少有对如何使用保角变换法解决静电场问题的介绍，因此我也一直没有机会了解这种高端的方法。这次质心冬令营讲解了一些相关内容，我便根据自己的理解，将保角变换法的相关内容记录于此文中。</p>",
+      "en": "<p>I heard about conformal mapping when I first started learning electromagnetism. But jumping straight into the conformal-mapping sections of complex analysis or electrodynamics was too hard, and there was not much on Zhihu about actually using it to solve electrostatics problems. So I never really got a chance to learn this fancy technique. This time, the Zhixin physics Olympiad winter camp covered some of it, and I thought I would write down what I understood here.</p>"
+    },
+    {
+      "id": "b002",
+      "kind": "h2",
+      "zh": "<b>解析函数</b>",
+      "en": "<b>Analytic Functions</b>"
+    },
+    {
+      "id": "b003",
+      "kind": "text",
+      "zh": "<p><b>解析/全纯函数</b>是复变函数中的一个基本概念，它指的是复平面上处处可微的一类复变函数。</p>",
+      "en": "<p><b>Analytic, or holomorphic, functions</b> are a basic concept in complex analysis: complex functions that are differentiable everywhere on the complex plane.</p>"
+    },
+    {
+      "id": "b004",
+      "kind": "text",
+      "zh": "<p>解析函数需要满足<b>柯西-黎曼条件</b>。简单地说（无视严谨性），复平面上可微，就是说极限 \\(\\lim_{\\Delta z \\rightarrow 0} \\frac{f(z+\\Delta z)-f(z)}{\\Delta z}\\) 要存在，其中 \\(z=x+iy, \\ \\ \\ \\ x, y \\in \\mathbb{R}\\) ， \\(f(z)=\\phi(z)+i\\psi(z), \\ \\ \\ \\phi(z),\\psi(z)\\in\\mathbb{R}\\) 。</p>",
+      "en": "<p>An analytic function must satisfy the <b>Cauchy–Riemann conditions</b>. Roughly speaking, and never mind rigor for a moment, being differentiable on the complex plane means that the limit \\(\\lim_{\\Delta z \\rightarrow 0} \\frac{f(z+\\Delta z)-f(z)}{\\Delta z}\\) exists, where \\(z=x+iy, \\ \\ \\ \\ x, y \\in \\mathbb{R}\\) and \\(f(z)=\\phi(z)+i\\psi(z), \\ \\ \\ \\phi(z),\\psi(z)\\in\\mathbb{R}\\).</p>"
+    },
+    {
+      "id": "b005",
+      "kind": "text",
+      "zh": "<p>把 \\(z\\) 和 \\(f\\) 代入，将分子凑出因子 \\(\\Delta x+i\\Delta y\\) 之后，即可得到柯西-黎曼条件： \\(\\frac{\\partial \\phi}{\\partial x}=\\frac{\\partial \\psi}{\\partial y}, \\frac{\\partial \\phi}{\\partial y}=-\\frac{\\partial \\psi}{\\partial x}\\) 。</p>",
+      "en": "<p>Substitute \\(z\\) and \\(f\\) and rearrange the numerator to factor out \\(\\Delta x+i\\Delta y\\). This gives the Cauchy–Riemann conditions: \\(\\frac{\\partial \\phi}{\\partial x}=\\frac{\\partial \\psi}{\\partial y}, \\frac{\\partial \\phi}{\\partial y}=-\\frac{\\partial \\psi}{\\partial x}\\).</p>"
+    },
+    {
+      "id": "b006",
+      "kind": "text",
+      "zh": "<p>这个条件很有意思，他实际上说明了 \\(\\phi, \\psi\\) 都满足拉普拉斯方程，以 \\(\\phi\\) 为例： \\(\\nabla^2 \\phi = \\frac{\\partial^2 \\phi}{\\partial x^2}+\\frac{\\partial^2 \\phi}{\\partial y^2} = \\frac{\\partial}{\\partial x}\\frac{\\partial \\phi}{\\partial x}+\\frac{\\partial}{\\partial y}\\frac{\\partial \\phi}{\\partial y}=\\frac{\\partial}{\\partial x}\\frac{\\partial \\psi}{\\partial y}-\\frac{\\partial}{\\partial y}\\frac{\\partial \\psi}{\\partial x}=0\\) 。</p>",
+      "en": "<p>This is an interesting condition: it actually tells us that \\(\\phi, \\psi\\) both satisfy Laplace’s equation. Taking \\(\\phi\\) as an example: \\(\\nabla^2 \\phi = \\frac{\\partial^2 \\phi}{\\partial x^2}+\\frac{\\partial^2 \\phi}{\\partial y^2} = \\frac{\\partial}{\\partial x}\\frac{\\partial \\phi}{\\partial x}+\\frac{\\partial}{\\partial y}\\frac{\\partial \\phi}{\\partial y}=\\frac{\\partial}{\\partial x}\\frac{\\partial \\psi}{\\partial y}-\\frac{\\partial}{\\partial y}\\frac{\\partial \\psi}{\\partial x}=0\\).</p>"
+    },
+    {
+      "id": "b007",
+      "kind": "text",
+      "zh": "<p>因此，我们便可以将电势作为其中的一个，比如 \\(\\phi(z)\\) 。</p>",
+      "en": "<p>We can therefore take the electric potential to be one of them, say \\(\\phi(z)\\).</p>"
+    },
+    {
+      "id": "b008",
+      "kind": "h2",
+      "zh": "<b>保角变换</b>",
+      "en": "<b>Conformal Mapping</b>"
+    },
+    {
+      "id": "b009",
+      "kind": "text",
+      "zh": "<p>找一个性质比较好的映射 \\(z^\\prime: \\mathbb{C} \\rightarrow\\mathbb{C}\\) ，把原复平面上的点 \\(z\\) 映射至一个新的点 \\(z^\\prime(z)\\) 。</p>",
+      "en": "<p>Find a reasonably well-behaved mapping \\(z^\\prime: \\mathbb{C} \\rightarrow\\mathbb{C}\\) that takes a point \\(z\\) in the original complex plane to a new point \\(z^\\prime(z)\\).</p>"
+    },
+    {
+      "id": "b010",
+      "kind": "text",
+      "zh": "<p>此时原复平面上的边界及电势 \\(\\Sigma_i, \\phi(z)\\) 也会映射到新的边界和电势 \\(\\Sigma^\\prime_i, \\phi^\\prime(z^\\prime)\\) 。</p>",
+      "en": "<p>The boundary and potential \\(\\Sigma_i, \\phi(z)\\) in the original complex plane are then mapped to a new boundary and potential \\(\\Sigma^\\prime_i, \\phi^\\prime(z^\\prime)\\).</p>"
+    },
+    {
+      "id": "b011",
+      "kind": "text",
+      "zh": "<p>如果我们使新的边界条件与原边界条件相同，由于电势均满足拉普拉斯方程，于是就会有 \\(\\phi(z)=\\phi^\\prime(z^\\prime)\\) 。</p>",
+      "en": "<p>If we impose the same boundary conditions in the new plane as in the original one, then, since both potentials satisfy Laplace’s equation, we have \\(\\phi(z)=\\phi^\\prime(z^\\prime)\\).</p>"
+    },
+    {
+      "id": "b012",
+      "kind": "text",
+      "zh": "<p><b><i>若选取合适的映射 </i></b>\\(z^\\prime\\)<b><i> ，将原来复杂的边界映射到简单边界，在新复平面中解出电势 </i></b>\\(\\phi^\\prime\\)<b><i> ，再回到原复平面中，即可得到原来待求解的电势 </i></b>\\(\\phi\\)<b><i> 。</i></b></p>",
+      "en": "<p><b><i>Choose a suitable mapping </i></b>\\(z^\\prime\\)<b><i> to turn a complicated boundary into a simple one, solve for the potential </i></b>\\(\\phi^\\prime\\)<b><i> in the new complex plane, and then map back to the original plane. This gives the potential we wanted, </i></b>\\(\\phi\\)<b><i>.</i></b></p>"
+    },
+    {
+      "id": "b013",
+      "kind": "text",
+      "zh": "<p>这就是<b>保角变换解决平面静电学问题</b>的基本思路。</p>",
+      "en": "<p>That is the basic idea behind <b>using conformal mapping to solve two-dimensional electrostatics problems</b>.</p>"
+    },
+    {
+      "id": "b014",
+      "kind": "text",
+      "zh": "<p>值得注意的是，对于一般的三维问题，只要其具有某一方向上的平移对称性，即可转化为平面问题。</p>",
+      "en": "<p>One thing to note: a general three-dimensional problem can be reduced to a two-dimensional problem as long as it has translational symmetry in some direction.</p>"
+    },
+    {
+      "id": "b015",
+      "kind": "text",
+      "zh": "<p>用 \\(A=\\frac{\\text{d}z^\\prime}{\\text{d}z}\\) 刻画变换前后长度的变化，</p>",
+      "en": "<p>Use \\(A=\\frac{\\text{d}z^\\prime}{\\text{d}z}\\) to describe how lengths change under the transformation.</p>"
+    },
+    {
+      "id": "b016",
+      "kind": "text",
+      "zh": "<p>则变换前后的电场满足 \\(E^\\prime=-\\frac{\\text{d}\\phi^\\prime}{\\text{d}z^\\prime}=-\\frac{\\text{d}\\phi}{\\text{d}z}/\\frac{\\text{d}z^\\prime}{\\text{d}z}=E/\\frac{\\text{d}z^\\prime}{\\text{d}z}=E/A\\) 。</p>",
+      "en": "<p>The electric fields before and after the transformation then satisfy \\(E^\\prime=-\\frac{\\text{d}\\phi^\\prime}{\\text{d}z^\\prime}=-\\frac{\\text{d}\\phi}{\\text{d}z}/\\frac{\\text{d}z^\\prime}{\\text{d}z}=E/\\frac{\\text{d}z^\\prime}{\\text{d}z}=E/A\\).</p>"
+    },
+    {
+      "id": "b017",
+      "kind": "text",
+      "zh": "<p>电荷量不变，线电荷密度由于线方向垂直于纸面，故不发生改变，面电荷密度则有 \\(\\sigma^\\prime=\\sigma/A\\) 。</p>",
+      "en": "<p>Charge is unchanged. The line charge density is also unchanged, because the line runs perpendicular to the page. The surface charge density, on the other hand, satisfies \\(\\sigma^\\prime=\\sigma/A\\).</p>"
+    },
+    {
+      "id": "b018",
+      "kind": "text",
+      "zh": "<p>电容 \\(C=\\frac{Q}{\\Delta\\phi}\\) 不变。</p>",
+      "en": "<p>The capacitance \\(C=\\frac{Q}{\\Delta\\phi}\\) is unchanged.</p>"
+    },
+    {
+      "id": "b019",
+      "kind": "h2",
+      "zh": "<b>一些常见的保角变换</b>",
+      "en": "<b>Some Common Conformal Mappings</b>"
+    },
+    {
+      "id": "b020",
+      "kind": "text",
+      "zh": "<p>我们可以先从一些常见的函数入手：</p>",
+      "en": "<p>We can start with a few familiar functions:</p>"
+    },
+    {
+      "id": "b021",
+      "kind": "text",
+      "zh": "<p><b>幂函数</b> \\(z^\\prime=z^n\\) </p>",
+      "en": "<p><b>Power functions</b> \\(z^\\prime=z^n\\)</p>"
+    },
+    {
+      "id": "b022",
+      "kind": "text",
+      "zh": "<p>复数 \\(z=re^{i\\theta}\\) ，经过变换得到 \\(z^\\prime=r^ne^{in\\theta}\\) 。</p>",
+      "en": "<p>The complex number \\(z=re^{i\\theta}\\) becomes \\(z^\\prime=r^ne^{in\\theta}\\) under this transformation.</p>"
+    },
+    {
+      "id": "b023",
+      "kind": "text",
+      "zh": "<p>考察这样的一类边界：</p>",
+      "en": "<p>Consider a boundary like this:</p>"
+    },
+    {
+      "id": "b024",
+      "kind": "figure",
+      "zh": "角边界",
+      "image": "figure-01.jpg",
+      "en": "A corner boundary"
+    },
+    {
+      "id": "b025",
+      "kind": "text",
+      "zh": "<p>经过变换后， \\(\\Sigma_1\\) 仅伸缩不旋转， \\(\\Sigma_2\\) 伸缩后辐角变为 \\(n\\theta\\) 。</p>",
+      "en": "<p>Under the transformation, \\(\\Sigma_1\\) is stretched but not rotated, while \\(\\Sigma_2\\) is stretched and its argument becomes \\(n\\theta\\).</p>"
+    },
+    {
+      "id": "b026",
+      "kind": "text",
+      "zh": "<p>如果我们选取 \\(n=\\frac{\\pi}{\\theta}\\) ，那么角就会被拉平。</p>",
+      "en": "<p>If we choose \\(n=\\frac{\\pi}{\\theta}\\), the corner is flattened out.</p>"
+    },
+    {
+      "id": "b027",
+      "kind": "text",
+      "zh": "<p>如果原平面 \\(\\alpha\\) 角处有一线电荷密度为 \\(\\lambda\\) 的均匀带电长直导线，我们想要求解电势、电场分布以及导线受力，原本需要暴算无限发散电像法，现在就可以应用保角变换 \\(z^\\prime=z^{\\pi/\\theta}\\) ，使得问题转化为：</p>",
+      "en": "<p>Suppose a long, straight, uniformly charged wire with line charge density \\(\\lambda\\) lies at the angle \\(\\alpha\\) in the original plane, and we want the potential, electric-field distribution, and force on the wire. Originally, this would call for a brute-force, endlessly proliferating construction of image charges. Now we can apply the conformal mapping \\(z^\\prime=z^{\\pi/\\theta}\\) and turn the problem into this:</p>"
+    },
+    {
+      "id": "b028",
+      "kind": "figure",
+      "zh": "把角拉平",
+      "image": "figure-02.jpg",
+      "en": "Flattening the corner"
+    },
+    {
+      "id": "b029",
+      "kind": "text",
+      "zh": "<p>接下来只需要在平面下方作出对称的一个电像即可解得 \\(\\phi^\\prime, E^\\prime\\) ，于是就得到 \\(\\phi=\\phi^\\prime, E=AE^\\prime\\) ，问题解决。</p>",
+      "en": "<p>All that remains is to place a single symmetric image charge below the plane to find \\(\\phi^\\prime, E^\\prime\\). We then have \\(\\phi=\\phi^\\prime, E=AE^\\prime\\). Problem solved.</p>"
+    },
+    {
+      "id": "b030",
+      "kind": "text",
+      "zh": "<p><b>对数函数</b> \\(z^\\prime=\\ln z\\) </p>",
+      "en": "<p><b>Logarithmic functions</b> \\(z^\\prime=\\ln z\\)</p>"
+    },
+    {
+      "id": "b031",
+      "kind": "text",
+      "zh": "<p>复数 \\(z=re^{i\\theta}\\) ，经过变换得到 \\(z^\\prime=\\ln{r} +i\\theta\\) ，即横坐标变为 \\(\\ln r\\) ，纵坐标变为 \\(\\theta\\) 。</p>",
+      "en": "<p>The complex number \\(z=re^{i\\theta}\\) becomes \\(z^\\prime=\\ln{r} +i\\theta\\): the horizontal coordinate becomes \\(\\ln r\\) and the vertical coordinate \\(\\theta\\).</p>"
+    },
+    {
+      "id": "b032",
+      "kind": "text",
+      "zh": "<p>考察这样的一类边界，我们想要求解其电容：</p>",
+      "en": "<p>Consider the following boundary. We want to find its capacitance:</p>"
+    },
+    {
+      "id": "b033",
+      "kind": "figure",
+      "zh": "不平行极板",
+      "image": "figure-03.jpg",
+      "en": "Nonparallel plates"
+    },
+    {
+      "id": "b034",
+      "kind": "text",
+      "zh": "<p>经过变换后，变为间距 \\(\\theta\\) ，板宽 \\(\\ln{{R_2}}-\\ln{{R_1}}\\) 的两平行极板，问题一下子就简单了很多，解决后再变换回来即可。</p>",
+      "en": "<p>The transformation turns it into two parallel plates separated by \\(\\theta\\), with plate width \\(\\ln{{R_2}}-\\ln{{R_1}}\\). Suddenly the problem is much simpler. Solve it, then transform back.</p>"
+    },
+    {
+      "id": "b035",
+      "kind": "text",
+      "zh": "<p>指数函数 \\(z^\\prime=e^z\\) 则恰恰相反，把带状区域映射为角型区域。</p>",
+      "en": "<p>The exponential function \\(z^\\prime=e^z\\) does exactly the reverse: it maps a strip into a wedge.</p>"
+    },
+    {
+      "id": "b036",
+      "kind": "text",
+      "zh": "<p><b>反演映射</b> \\(z^\\prime=\\frac{1}{z}\\) </p>",
+      "en": "<p><b>Inversion</b> \\(z^\\prime=\\frac{1}{z}\\)</p>"
+    },
+    {
+      "id": "b037",
+      "kind": "text",
+      "zh": "<p>考察复平面上的一个圆及其内部 \\(\\rho\\leq2r \\cos\\theta\\) ，经过变换得到 \\(z^\\prime=\\frac{1}{\\rho e^{i\\theta}}=\\frac{1}{2r}\\frac{e^{-i\\theta}}{\\cos(-\\theta)}=\\rho^\\prime e^{i\\theta^\\prime}\\) ，于是 \\(\\theta^\\prime=-\\theta,\\ \\ \\  \\rho^\\prime cos\\theta^\\prime =x^\\prime\\geq \\frac{1}{2r}\\) ，即直线 \\(x^\\prime=\\frac{1}{2r}\\) 及其右侧。</p>",
+      "en": "<p>Consider a circle and its interior in the complex plane, \\(\\rho\\leq2r \\cos\\theta\\). The transformation gives \\(z^\\prime=\\frac{1}{\\rho e^{i\\theta}}=\\frac{1}{2r}\\frac{e^{-i\\theta}}{\\cos(-\\theta)}=\\rho^\\prime e^{i\\theta^\\prime}\\), and hence \\(\\theta^\\prime=-\\theta,\\ \\ \\  \\rho^\\prime cos\\theta^\\prime =x^\\prime\\geq \\frac{1}{2r}\\): the straight line \\(x^\\prime=\\frac{1}{2r}\\) and the region to its right.</p>"
+    },
+    {
+      "id": "b038",
+      "kind": "text",
+      "zh": "<p>该变换可以将圆边界变换为直线边界。</p>",
+      "en": "<p>This transformation turns a circular boundary into a straight one.</p>"
+    },
+    {
+      "id": "b039",
+      "kind": "text",
+      "zh": "<p>读者可以通过借此证明球面电像法小试牛刀。</p>",
+      "en": "<p>Try your hand at using this to prove the image-charge construction for a sphere.</p>"
+    },
+    {
+      "id": "b040",
+      "kind": "text",
+      "zh": "<p>反演变换的推广是分式型变换 \\(z^\\prime=\\frac{az+b}{cz+d}\\) 。</p>",
+      "en": "<p>A generalization of inversion is the linear fractional transformation \\(z^\\prime=\\frac{az+b}{cz+d}\\).</p>"
+    },
+    {
+      "id": "b041",
+      "kind": "text",
+      "zh": "<p><b>三角函数</b> \\(z^\\prime=\\sin z\\) </p>",
+      "en": "<p><b>Trigonometric functions</b> \\(z^\\prime=\\sin z\\)</p>"
+    },
+    {
+      "id": "b042",
+      "kind": "text",
+      "zh": "<p>变换后 \\(z^\\prime=\\sin(x+iy)=\\sin x\\cos iy+\\cos x\\sin iy=\\sin x\\cosh y+i\\cos x\\sinh y=x^\\prime+iy^\\prime\\) ，所以有 \\(x^\\prime=\\sin x\\cosh y, ~y^\\prime=\\cos x\\sinh y\\)，此为双曲坐标系的标准形式 。</p>",
+      "en": "<p>After the transformation, \\(z^\\prime=\\sin(x+iy)=\\sin x\\cos iy+\\cos x\\sin iy=\\sin x\\cosh y+i\\cos x\\sinh y=x^\\prime+iy^\\prime\\), so \\(x^\\prime=\\sin x\\cosh y, ~y^\\prime=\\cos x\\sinh y\\), the standard form of hyperbolic coordinates.</p>"
+    },
+    {
+      "id": "b043",
+      "kind": "text",
+      "zh": "<p>故当 \\(y=const.\\) ，即原边界为一水平直线时，新边界为一椭圆；</p>",
+      "en": "<p>Thus, when \\(y=const.\\)—when the original boundary is a horizontal line—the new boundary is an ellipse;</p>"
+    },
+    {
+      "id": "b044",
+      "kind": "text",
+      "zh": "<p>当 \\(x=const.\\) 时，新边界为双曲线。</p>",
+      "en": "<p>when \\(x=const.\\), the new boundary is a hyperbola.</p>"
+    },
+    {
+      "id": "b045",
+      "kind": "text",
+      "zh": "<p>因此，可以用(反)三角函数实现直线、椭圆、双曲线之间的互换。</p>",
+      "en": "<p>So trigonometric functions and their inverses let us transform between straight lines, ellipses, and hyperbolas.</p>"
+    },
+    {
+      "id": "b046",
+      "kind": "text",
+      "zh": "<p><b>复合</b></p>",
+      "en": "<p><b>Composition</b></p>"
+    },
+    {
+      "id": "b047",
+      "kind": "text",
+      "zh": "<p>通过上述几种基本的保角变换，可以通过连续的多次变换处理更为复杂的边界。</p>",
+      "en": "<p>By applying these basic conformal mappings in succession, we can handle more complicated boundaries.</p>"
+    },
+    {
+      "id": "b048",
+      "kind": "text",
+      "zh": "<p>如果有什么边界是一次保角变换简化不了的，那就做两次。</p>",
+      "en": "<p>If there is a boundary you cannot simplify with one conformal mapping, do two.</p>"
+    }
+  ]
+}

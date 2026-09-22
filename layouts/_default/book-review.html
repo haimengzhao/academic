@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="article book-review-article">
+  <header class="book-review-header">
+    <a class="book-review-back" href="{{ "/post/" | relURL }}">← Posts</a>
+    <h1 lang="en">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="book-review-subtitle" lang="zh-Hans">{{ . }}</p>{{ end }}
+    <div class="book-review-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <span aria-hidden="true"> · </span>
+      <a href="{{ .Params.original_url }}" rel="noopener">{{ .Params.original_site | default "Zhihu" }} · {{ if eq .Params.source_language "en" }}English original{{ else }}Chinese original{{ end }}</a>
+    </div>
+    {{ with .Params.cover }}
+      {{ $cover := $.Resources.GetMatch . }}
+      {{ with $cover }}<figure class="book-review-cover"><a href="{{ .RelPermalink }}" target="_blank" rel="noopener"><img src="{{ .RelPermalink }}" alt="{{ $.Title }}" width="{{ .Width }}" height="{{ .Height }}"></a></figure>{{ end }}
+    {{ end }}
+  </header>
+  <div class="book-review-container">
+    {{ .Content }}
+  </div>
+</article>
+<script src="{{ "js/book-review.js" | relURL }}" defer></script>
+{{ end }}
