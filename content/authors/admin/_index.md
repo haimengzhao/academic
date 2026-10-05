@@ -77,7 +77,7 @@ user_groups:
 Hello ~ I'm Haimeng Zhao /haɪ məŋ dʒaʊ/ <span class="chinese-name" lang="zh-Hans">赵海萌</span>, a PhD student in Physics at Caltech, advised by [John Preskill](https://www.preskill.caltech.edu) and [Hsin-Yuan Huang](https://hsinyuan-huang.github.io).
 
 I'm deeply fascinated by how the universe works and how we can possibly understand it.
-So I started working on exploring the physical nature of learning and computation.
+So I started working on exploring the physical nature of learning.
 
 Three overarching questions motivate my work:
 1. How do physical laws impact our ability to learn and how to harness them?
