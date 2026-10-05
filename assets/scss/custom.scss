@@ -146,7 +146,7 @@ body.dark .btn-outline-primary:hover, body.dark .btn-outline-primary:focus { bac
   #profile .portrait-title { min-width: 0; }
   #profile .portrait-title h2 { font-size: 1.35rem; margin-bottom: 8px; }
   #profile .portrait-title h3 { margin: 4px 0 0; line-height: 1.4; }
-  #profile .network-icon { grid-column: 1 / -1; justify-self: center; margin: 0 auto; }
+  #profile .network-icon { grid-column: 1 / -1; grid-template-columns: repeat(6, minmax(0, 44px)); gap: 4px; width: 100%; max-width: 284px; justify-content: center; justify-self: center; margin: 0 auto; }
 }
 
 // Book reviews: paired paragraphs preserve alignment between the two languages.

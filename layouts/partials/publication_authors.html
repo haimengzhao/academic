@@ -3,14 +3,18 @@
 
 {{- $taxonomy := "authors" }}
 {{ with .Param $taxonomy }}
-  {{ $link_authors := site.Params.link_authors | default true }}
+  {{ $link_authors := true }}
+  {{ if isset site.Params "link_authors" }}{{ $link_authors = site.Params.link_authors }}{{ end }}
+  {{ if isset $.Params "link_authors" }}{{ $link_authors = $.Params.link_authors }}{{ end }}
   {{ range $index, $name_raw := . }}
     {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy .) -}}
     {{- $name := $profile_page.Title | default $name_raw -}}
+    {{- $key := strings.TrimRight "* " $name -}}
+    {{- $url := index hugo.Data.author_links $key -}}
     {{- if gt $index 0 }}, {{ end -}}
     <span {{ if eq (strings.TrimRight "* " $name) $owner }}class="site-author"{{end}}>
-      {{- if and $profile_page $link_authors -}}
-        <a href="{{$profile_page.RelPermalink}}">{{$name}}</a>
+      {{- if and $url $link_authors -}}
+        <a href="{{$url}}">{{$name}}</a>
       {{- else -}}
         {{$name}}
       {{- end -}}
